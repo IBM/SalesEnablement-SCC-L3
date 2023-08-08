@@ -1,0 +1,86 @@
+# Project info
+site_name: IBM Cloud Security and Compliance Center
+site_description: IBM Cloud Security and Compliance Center Level 3 Demonstration Guide
+site_author: Andrew R. Jones (andrewj@us.ibm.com)
+copyright: Copyright &copy; 2023 IBM
+
+# Repository
+repo_name:  IBM/SalesEnablement-SCC-L3
+
+#repo_url: https://github.com/IBM/SalesEnablement-SCC-L3
+#edit_uri: edit/master/docs
+docs_dir: docs
+
+
+nav:
+  - 'Welcome': 'index.md'
+  - 'Variables': 'variables.md'
+  - 'Next Steps': 'NextSteps.md'
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - content.code.annotate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+plugins:
+    - mkdocs-video
+    - macros
+    - search
+
+markdown_extensions:
+  - sane_lists
+  - pymdownx.details
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.keys
+  - attr_list
+
+extra:
+  generator: false
+  gitRepo: "https://github.com/IBM/SalesEnablement-SCC-L3"
+  learningplan:
+    name: "IBM Cloud Security and Compliance Center Level 3"
+    YLurlSales: "https://yourlearning.ibm.com/activity/PLAN-6317F3982CA7"
+    YLurlTechSales: "https://yourlearning.ibm.com/activity/PLAN-649585526BDA"
+    BPurl: "https://learn.ibm.com/course"
+  level2learningplan:
+    Name: "IBM Cloud Security and Compliance Center Foundation"
+    YLurl: "https://yourlearning.ibm.com/activity/PLAN-???"
+    BPurl: "https://learn.ibm.com/course"
+  offering:
+    name: "IBM Cloud Security and Compliance Center"
+  guide:
+    name: "IBM Cloud Security and Compliance Center - Level 3 Demonstration Guide"
+    url: "https://ibm.github.io/SalesEnablement-SCC-L3/"
+  itz:
+    cloudAccount: "2305900 - ITZ - ADHOC03"
+    collectionURL: ""
+    environmentURL: ""
+    iam:
+      AccessGroup: "SCC-L3"
+      ResourceGroup: "SCC-L3"
+    scc:
+      Instance: "SCC-L3"
+      Profile: "se-scc-l3"
+    cos:
+      Instance: "COS-SCC-L3"
+      Bucket: "scc-l3-bucket"
+      Region: "Dallas (us-south)"
+
