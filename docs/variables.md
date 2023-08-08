@@ -35,7 +35,7 @@
  
     CollectionURL: {{itz.CollectionURL}}
  
-    EnvironmentURL: {{itz.EnvrionmentURL}}
+    EnvironmentURL: {{itz.EnvironmentURL}}
 
     iam:
  
@@ -56,4 +56,3 @@
       Bucket: {{itz.cos.Bucket}}
  
       Region: {{itz.cos.Region}}
-      
