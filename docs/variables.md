@@ -8,7 +8,7 @@
  
     URL 4 Tech Sales = {{learningplan.YLurlTechSales}}
  
-    URL 4 BPs = {{learningplan.BPurlSales}}
+    URL 4 BPs = {{learningplan.BPurl}}
 
 
   level2learningplan:

@@ -56,7 +56,7 @@ extra:
   generator: false
   gitRepo: "https://github.com/IBM/SalesEnablement-SCC-L3"
   learningplan:
-    name: "IBM Cloud Security and Compliance Center Level 3"
+    Name: "IBM Cloud Security and Compliance Center Level 3"
     YLurlSales: "https://yourlearning.ibm.com/activity/PLAN-6317F3982CA7"
     YLurlTechSales: "https://yourlearning.ibm.com/activity/PLAN-649585526BDA"
     BPurl: "https://learn.ibm.com/course"
@@ -65,14 +65,14 @@ extra:
     YLurl: "https://yourlearning.ibm.com/activity/PLAN-???"
     BPurl: "https://learn.ibm.com/course"
   offering:
-    name: "IBM Cloud Security and Compliance Center"
+    Name: "IBM Cloud Security and Compliance Center (SCC)"
   guide:
-    name: "IBM Cloud Security and Compliance Center - Level 3 Demonstration Guide"
-    url: "https://ibm.github.io/SalesEnablement-SCC-L3/"
+    Name: "IBM Cloud Security and Compliance Center - Level 3 Demonstration Guide"
+    URL: "https://ibm.github.io/SalesEnablement-SCC-L3/"
   itz:
-    cloudAccount: "2305900 - ITZ - ADHOC03"
-    collectionURL: ""
-    environmentURL: ""
+    CloudAccount: "2305900 - ITZ - ADHOC03"
+    CollectionURL: ""
+    EnvironmentURL: ""
     iam:
       AccessGroup: "SCC-L3"
       ResourceGroup: "SCC-L3"
