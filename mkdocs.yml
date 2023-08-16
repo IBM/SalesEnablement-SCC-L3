@@ -14,6 +14,13 @@ docs_dir: docs
 
 nav:
   - 'Welcome': 'index.md'
+  - 'Demonstration Environment':
+    - 'Overview': 'env/Overview.md'
+    - 'Provisioning': 'env/Provision.md'
+    - 'Accessing': 'env/Access.md'
+  - 'Client Demonstration':
+    - 'Overview': 'demo/Overview.md'
+    - 'Step-by-step Guide': 'demo/Step-by-Step.md'
   - 'Variables': 'variables.md'
   - 'Next Steps': 'NextSteps.md'
 
