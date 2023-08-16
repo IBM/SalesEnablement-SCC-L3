@@ -16,8 +16,8 @@ nav:
   - 'Welcome': 'index.md'
   - 'Demonstration Environment':
     - 'Overview': 'env/Overview.md'
-    - 'Provisioning': 'env/Provision.md'
-    - 'Accessing': 'env/Access.md'
+    - 'Provisioning': 'env/Create a reservation.md'
+    - 'Accessing': 'env/Access the environment.md'
   - 'Client Demonstration':
     - 'Overview': 'demo/Overview.md'
     - 'Step-by-step Guide': 'demo/Step-by-Step.md'
