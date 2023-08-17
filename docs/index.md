@@ -7,7 +7,7 @@ Welcome to the demonstration guide for the {{learningplan.Name}} learning plan. 
 
 !!! Important
 
-    In addition to the Level 2 training, all sellers and technical sellers are encouraged to read the <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-getting-started&interface=ui" target="_blank>SCC documentation</a>. The documentation contains a wealth of information that is not covered in the Level 2 or Level 3 training including topics like:
+    In addition to the Level 2 training, all sellers and technical sellers are encouraged to read the <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-getting-started&interface=ui" target="_blank">SCC documentation</a>. The documentation contains a wealth of information that is not covered in the Level 2 or Level 3 training including topics like:
 
     - SCC's underlying architecture. Did you know SCC is a multi-tenant solution?
     - High availability (HA) and disaster recover (DR)
