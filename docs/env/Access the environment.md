@@ -23,7 +23,7 @@ Note: if you do not see a notification like this, then, in most cases, your ITZ 
 
 ![](_attachments/joinAccount.png)
 
-6. Click the **account selection** drop-down menu and select the **{{itz.CloudAccount}}** account.
+6. Click the **account selection** drop-down menu and select the **{{itz.account}}** account.
 
 ![](_attachments/switchAccount.png)
 
