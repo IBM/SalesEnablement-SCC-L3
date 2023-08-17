@@ -5,11 +5,11 @@ To access the the pre-provisioned IBM Cloud Security and Compliance Center (SCC)
 
 1. Open a web browser to the **IBM Cloud for VMware Solutions - Level 3** environment reservation page.
 
-<a href="https://techzone.ibm.com/my/reservations/create/???" target="_blank">Create a reservation</a>.
+   <a href="https://techzone.ibm.com/my/reservations/create/???" target="_blank">Create a reservation</a>.
 
-Follow the authentication prompts using your IBM Cloud identification (ID). These steps will vary for IBMers and Business Partners and are not illustrated here.
+   Follow the authentication prompts using your IBM Cloud identification (ID). These steps will vary for IBMers and Business Partners and are not illustrated here.
 
-Note: you may need to accept the latest ITZ terms and conditions before proceeding.
+   Note: you may need to accept the latest ITZ terms and conditions before proceeding.
 
 2. Click the **Reserve now** radio button.
 3. Click the **Practice / Self Education** tile.

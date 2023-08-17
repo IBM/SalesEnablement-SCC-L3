@@ -10,4 +10,4 @@ There are several advantages of leveraging a pre-provisioned SCC instance includ
     
     Please remember to delete any resources you provision as part of this learning plan!
 
-In the next chapter, learn how to make a reservation to the ITZ environment.
+In the next chapter, learn how to make a reservation for the ITZ environment.

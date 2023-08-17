@@ -5,7 +5,17 @@ Welcome to the demonstration guide for the {{learningplan.Name}} learning plan. 
 - IBMers: <a href="{{level2learningplan.YLurl}}" target="_blank">{{level2learningplan.YLurl}}</a>
 - Business Partners: <a href="{{level2learningplan.BPurl}} target="_blank">{{level2learningplan.BPurl}}</a>
 
-Every good client demonstration should tell a story the client can relate to. This may be a particular pain point the client is experiencing, or a common industry scenario. SCC includes both industry specific (e.g. Financial Services), cross industry controls, and the ability to build custom controls. When performing an actual client demonstration, sellers should focus on the controls most important to the client.
+!!! Important
+
+    In addition to the Level 2 training, all sellers and technical sellers are encouraged to read the <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-getting-started&interface=ui" target="_blank>SCC documentation</a>. The documentation contains a wealth of information that is not covered in the Level 2 or Level 3 training including topics like:
+
+    - SCC's underlying architecture. Did you know SCC is a multi-tenant solution?
+    - High availability (HA) and disaster recover (DR)
+    - Protecting SCC resources with context-based restrictions
+
+
+
+Every good client demonstration should tell a story the client can relate to. This may be a particular pain point the client is experiencing, or a common industry scenario. SCC includes both industry specific (e.g. Financial Services), cross industry controls, and the ability to build custom controls. When performing an actual client demonstration, sellers should focus on the controls most important to the client. Additionally, if you know what IBM Cloud resources the client is leveraging, validate if those resources can be evaluated by SCC. Find the current list of resources that can be evaluated by SCC <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-scannable-components&interface=ui" target="_blank">here</a>.
 
 ## Key SCC Concepts
 Before continuing review the following key concepts associated with SCC. Additional details on these and other SCC-related concepts can be found <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-posture-management" target="_blank">here</a>.
