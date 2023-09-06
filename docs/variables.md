@@ -39,20 +39,20 @@
 
     iam:
  
-      AccessGroup: {{itz.iam.AccessGroup}}
+      AccessGroup: {{iam.AccessGroup}}
  
-      ResourceGroup: {{itz.iam.ResourceGroup}}
+      ResourceGroup: {{iam.ResourceGroup}}
     
     scc:
  
-      Instance: {{itz.scc.Instance}}
+      Instance: {{.scc.Instance}}
  
-      Profile: {{itz.scc.Profile}}
+      Profile: {{scc.Profile}}
     
     cos:
  
-      Instance: {{itz.cos.Instance}}
+      Instance: {{cos.Instance}}
  
-      Bucket: {{itz.cos.Bucket}}
+      Bucket: {{cos.Bucket}}
  
-      Region: {{itz.cos.Region}}
+      Region: {{cos.Region}}
