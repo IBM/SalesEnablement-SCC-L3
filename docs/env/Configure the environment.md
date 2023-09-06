@@ -163,11 +163,11 @@ A new browser window or tab will open on your mobile device.
 
 11. Click **Confirm**.
 
-![](_attachments/enConfirm.jpeg)
+![](_attachments/enConfirm.png)
 
 12. Upon receiving the **Successfully Subscribed** message, close the window on your mobile device.
 
-![](_attachments/enSuccessful.jpeg)
+![](_attachments/enSuccessful.png)
 
 13. Return to the Event Notification's Subscriptions browser window and close it.
 
