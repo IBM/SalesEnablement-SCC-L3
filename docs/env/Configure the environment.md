@@ -42,6 +42,10 @@ Note, if the browser window is narrow, you might see an **account selection** ic
 
 ![](_attachments/vpcVSIs.png)
 
+Note, you may see an **Authorization error** message on this screen. It can be ignored.
+
+![](_attachments/vpcVSIsAuthErr.png)
+
 6. Enter a unique VSI **Name** in the **Details**  section.
 
 As this is shared environment, it is important to specify a unique name for your VSI. As an example, name your VSI after yourself, like **arjones-vsi**. Note, VSI names must begin with a lower case letter and only alphanumeric characters and hyphens are allowed.
@@ -62,7 +66,7 @@ As this is shared environment, it is important to specify a unique name for your
   
   **SSH keys**: {{vpc.SSHkey}}
   
-  **Virtual private cloud** is set to **{{vpc.Instance}}**.
+  **Virtual private cloud**: **{{vpc.Instance}}**.
 
   If these values are not the same, set them as shown.
 
