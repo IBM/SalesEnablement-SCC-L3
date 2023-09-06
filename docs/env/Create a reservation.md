@@ -16,6 +16,8 @@ To access the the pre-provisioned IBM Cloud Security and Compliance Center (SCC)
 4. Enter **Level 3 training** in the **Purpose description** field.
 5. Click the **Preferred Geography** pull-down and select **AMERICAS - any region - any datacenter**.
 
+The SCC resources used in this demonstration environment are all provisioned in the US South region. There is no benefit to selecting a different location.
+
 The **End date and time** is set for 2 days. You can shorten that duration here. After the reservation is ready, you can also extend the reservation up to a maximum of 6 days.
 
 6. Click the **I agree to IBM Technology Zone's T&Cs** checkbox.

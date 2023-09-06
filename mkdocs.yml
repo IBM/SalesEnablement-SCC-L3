@@ -16,8 +16,9 @@ nav:
   - 'Welcome': 'index.md'
   - 'Demonstration Environment':
     - 'Overview': 'env/Overview.md'
-    - 'Provisioning': 'env/Create a reservation.md'
-    - 'Accessing': 'env/Access the environment.md'
+    - 'Provision': 'env/Create a reservation.md'
+    - 'Access': 'env/Access the environment.md'
+    - 'Configure': 'env/Configure the environment.md'
   - 'Client Demonstration':
     - 'Overview': 'demo/Overview.md'
     - 'Step-by-step Guide': 'demo/Step-by-Step.md'
@@ -90,4 +91,13 @@ extra:
       Instance: "COS-SCC-L3"
       Bucket: "scc-l3-bucket"
       Region: "Dallas (us-south)"
+    en:
+      Instance: "eventnotifications-scc-l3"
+      Subscription: "SCC-l3-subscription"
+    vpc:
+      Instance: "vpc-for-scc-l3"
+      SSHkey: "scc-l3-key"
+      
+
+
 
