@@ -81,23 +81,23 @@ extra:
     CloudAccount: "2305900 - ITZ - ADHOC03"
     CollectionURL: ""
     EnvironmentURL: ""
-    iam:
-      AccessGroup: "SCC-L3"
-      ResourceGroup: "SCC-L3"
-    scc:
-      Instance: "SCC-L3"
-      Profile: "se-scc-l3"
-    cos:
-      Instance: "COS-SCC-L3"
-      Bucket: "scc-l3-bucket"
-      Region: "Dallas (us-south)"
-    en:
-      Instance: "eventnotifications-scc-l3"
-      Subscription: "SCC-l3-subscription"
-    vpc:
-      Instance: "vpc-for-scc-l3"
-      SSHkey: "scc-l3-key"
-      
+  iam:
+    AccessGroup: "SCC-L3"
+    ResourceGroup: "SCC-L3"
+  scc:
+    Instance: "SCC-L3"
+    Profile: "se-scc-l3"
+  cos:
+    Instance: "COS-SCC-L3"
+    Bucket: "scc-l3-bucket"
+    Region: "Dallas (us-south)"
+  en:
+    Instance: "eventnotifications-scc-l3"
+    Subscription: "SCC-l3-subscription"
+  vpc:
+    Instance: "vpc-for-scc-l3"
+    SSHkey: "scc-l3-key"
+
 
 
 
