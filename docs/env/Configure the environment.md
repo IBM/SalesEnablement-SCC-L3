@@ -92,9 +92,11 @@ It should only take about a minute to provision the VSI. Once the VSI shows the 
 
 ### Create a SCC attachment and run an initial scan
 
-1. Navigate to the **SCC Dashboard** page in the IBM Cloud portal.
+12. Navigate to the **SCC Dashboard** page in the IBM Cloud portal.
 
 ![](_attachments/vpcVSINetworkInterfaceReady.png)
+
+13. XXXXXXXXXXXXXXXXXXXXXX
 
 ## Enable SMS notifications (Optional)
 
