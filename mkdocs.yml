@@ -79,8 +79,8 @@ extra:
     URL: "https://ibm.github.io/SalesEnablement-SCC-L3/"
   itz:
     CloudAccount: "2305900 - ITZ - ADHOC03"
-    CollectionURL: ""
-    EnvironmentURL: ""
+    CollectionURL: "xyz"
+    EnvironmentURL: "xyz"
   iam:
     AccessGroup: "SCC-L3"
     ResourceGroup: "SCC-L3"
