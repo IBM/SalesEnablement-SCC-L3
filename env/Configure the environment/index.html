@@ -541,11 +541,21 @@
 <p>Before using the IBM Technology Zone (ITZ), a few additional configuration steps need to be performed. </p>
 <h2 id="setup-the-remediation-scenario">Setup the remediation scenario</h2>
 <p>A compelling demonstration of IBM Cloud Security and Compliance Center (SCC) not only includes showing the results of a compliance scan, but also demonstrating how compliance failures can be remediated. In this demonstration guide, you will demonstrate how to remediate a failed compliance scan related to a VSI running in an IBM Cloud Virtual Private Cloud (VPC) and internet protocol (IP) network spoofing. While IP network spoofing has legitimate business uses, it is also a potential vulnerability. You can learn more about IP address spoofing <a href="https://en.wikipedia.org/wiki/IP_address_spoofing" target="_blank">here</a>. SCC has a predefined control that checks to see if a VSI in a VPC has IP network spoofing enabled and flags those VSI's as non-compliant. This scenario was chosen as it is easy to turn this setting on and off of a VSI and VSI's in VPC are inexpensive resources. </p>
-<p>In the next steps:
-  - provision a VSI instance
-  - enable <strong>IP network spoofing</strong> on the VSI
-  - create a SCC attachment that scans for VSIs with IP network spoofing enabled
-  - run an initial scan</p>
+<p>In the next steps:</p>
+<ul>
+<li>
+<p>provision a VSI instance</p>
+</li>
+<li>
+<p>enable <strong>IP network spoofing</strong> on the VSI</p>
+</li>
+<li>
+<p>create a SCC attachment that scans for VSIs with IP network spoofing enabled</p>
+</li>
+<li>
+<p>run an initial scan</p>
+</li>
+</ul>
 <p>In the actual demonstration section of this demonstration guide, you will show the client the compliance failure related to the VSI you created, remediate the issue, re-run the scan, and show the new, successful compliance results.</p>
 <h3 id="provision-a-vsi-with-ip-spoofing-enabled">Provision a VSI with IP spoofing enabled</h3>
 <ol>
@@ -578,13 +588,13 @@
 <ol start="7">
 <li>Verify all the other settings are as follows:</li>
 </ol>
-<p><strong>Architecture</strong>: Intel
-  <strong>Location</strong>: Geography = North America, Region = Dallas, Zone = Dallas 2
-  <strong>Resource group</strong>: SCC-L3
-  <strong>Image</strong>: CentOS, Image type = Stock image
-  <strong>Profile</strong>: Balanced|bx2-2x8
-  <strong>SSH keys</strong>: scc-l3-key
-  <strong>Virtual private cloud</strong> is set to <strong>vpc-for-scc-l3</strong>.</p>
+<p><strong>Architecture</strong>: Intel</p>
+<p><strong>Location</strong>: Geography = North America, Region = Dallas, Zone = Dallas 2</p>
+<p><strong>Resource group</strong>: SCC-L3</p>
+<p><strong>Image</strong>: CentOS, Image type = Stock image</p>
+<p><strong>Profile</strong>: Balanced|bx2-2x8</p>
+<p><strong>SSH keys</strong>: scc-l3-key</p>
+<p><strong>Virtual private cloud</strong> is set to <strong>vpc-for-scc-l3</strong>.</p>
 <p>If these values are not the same, set them as shown.</p>
 <p>All of these should be the default values. All other fields should will either be empty or have generated values (e.g. Boot volume, Data volumes, etc.).</p>
 <ol start="8">
