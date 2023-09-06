@@ -1,8 +1,8 @@
 Before using the IBM Technology Zone (ITZ), a few additional configuration steps need to be performed. 
 
-## Setup a remediation scenario
+## Setup the remediation scenario
 
-A compelling demonstration of IBM Cloud Security and Compliance Center (SCC) not only includes showing the results of a compliance scan, but also demonstrating how compliance failures can be remediated. In this demonstration guide, you will demonstrate how to remediate a failed compliance scan related to a VSI running in an IBM Cloud Virtual Private Cloud (VPC) and internet protocal (IP) network spoofing. While IP network spoofing has legitimate business uses, it is also a potential vulnerability. You can learn more about IP address spoofing <a href="https://en.wikipedia.org/wiki/IP_address_spoofing" target="_blank">here</a>. SCC has a predefined control that checks to see if a VSI in a VPC has IP network spoofing enabled and flags those VSI's as non-compliant. This scenario was chosen as it is easy to turn this setting on and off of a VSI and VSI's in VPC are inexpensive resources. 
+A compelling demonstration of IBM Cloud Security and Compliance Center (SCC) not only includes showing the results of a compliance scan, but also demonstrating how compliance failures can be remediated. In this demonstration guide, you will demonstrate how to remediate a failed compliance scan related to a VSI running in an IBM Cloud Virtual Private Cloud (VPC) and internet protocol (IP) network spoofing. While IP network spoofing has legitimate business uses, it is also a potential vulnerability. You can learn more about IP address spoofing <a href="https://en.wikipedia.org/wiki/IP_address_spoofing" target="_blank">here</a>. SCC has a predefined control that checks to see if a VSI in a VPC has IP network spoofing enabled and flags those VSI's as non-compliant. This scenario was chosen as it is easy to turn this setting on and off of a VSI and VSI's in VPC are inexpensive resources. 
 
 In the next steps:
   - provision a VSI instance
@@ -20,7 +20,7 @@ In the actual demonstration section of this demonstration guide, you will show t
 
 When the page loads, authenticate with your IBM Cloud ID and password. The authentication process varies depending on the primary account that your ID is associated with and any multi-factor authentication or other security controls in place for the account.
 
-2. Click the **account selection** drop-down menu and select the **{{itz.account}}** account.
+2. Click the **account selection** drop-down menu and select the **{{itz.CloudAccount}}** account.
 
 ![](../env/_attachments/switchAccount.png)
 
@@ -96,7 +96,7 @@ This is an optional task for the Level 3 learning plan requirements. Follow thes
 
 When the page loads, authenticate with your IBM Cloud ID and password. The authentication process varies depending on the primary account that your ID is associated with and any multi-factor authentication or other security controls in place for the account.
 
-2. Click the **account selection** drop-down menu and select the **{{itz.account}}** account.
+2. Click the **account selection** drop-down menu and select the **{{itz.CloudAccount}}** account.
 
 ![](../env/_attachments/switchAccount.png)
 

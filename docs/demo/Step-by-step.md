@@ -10,7 +10,7 @@ In this phase of the demo, you will be using a baking show approach to show how 
 
 When the page loads, authenticate with your IBM Cloud ID and password. The authentication process varies depending on the primary account that your ID is associated with and any multi-factor authentication or other security controls in place for the account.
 
-2. Click the **account selection** drop-down menu and select the **{{itz.account}}** account.
+2. Click the **account selection** drop-down menu and select the **{{itz.CloudAccount}}** account.
 
 ![](../env/_attachments/switchAccount.png)
 
