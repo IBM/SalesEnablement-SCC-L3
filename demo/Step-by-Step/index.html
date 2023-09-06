@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#explore-provisioning-an-scc-instance" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -260,7 +265,7 @@
   
     <li class="md-nav__item">
       <a href="../../env/Create%20a%20reservation/" class="md-nav__link">
-        Provisioning
+        Provision
       </a>
     </li>
   
@@ -274,7 +279,21 @@
   
     <li class="md-nav__item">
       <a href="../../env/Access%20the%20environment/" class="md-nav__link">
-        Accessing
+        Access
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../env/Configure%20the%20environment/" class="md-nav__link">
+        Configure
       </a>
     </li>
   
@@ -344,9 +363,65 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Step-by-step Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Step-by-step Guide
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#explore-provisioning-an-scc-instance" class="md-nav__link">
+    Explore provisioning an SCC instance
+  </a>
+  
+    <nav class="md-nav" aria-label="Explore provisioning an SCC instance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scc-configuration-and-integration-phase" class="md-nav__link">
+    SCC configuration and integration phase
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-initiate-and-view-scan-results" class="md-nav__link">
+    Configure, initiate, and view scan results
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clean-up" class="md-nav__link">
+    Clean up
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -407,6 +482,48 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#explore-provisioning-an-scc-instance" class="md-nav__link">
+    Explore provisioning an SCC instance
+  </a>
+  
+    <nav class="md-nav" aria-label="Explore provisioning an SCC instance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scc-configuration-and-integration-phase" class="md-nav__link">
+    SCC configuration and integration phase
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-initiate-and-view-scan-results" class="md-nav__link">
+    Configure, initiate, and view scan results
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clean-up" class="md-nav__link">
+    Clean up
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -421,6 +538,53 @@
 
   <h1>Step-by-step Guide</h1>
 
+<p>Demonstrations should resonate with the audience. It is important to know your audience and the roles they have within their company when preparing and delivering your demonstrations. The demonstration steps provided below may not resonate with all user roles. For instance, the Chief Risk Officer (CRO) may not be concerned about how to provision and instance fo IBM Cloud Security and Compliance Center (SCC), but members of the CRO's technical staff tasked with doing so will. Some individuals will be focused on the aspects of compliance related to their code development while others will be focus on the infrastructure the applications run on in production. When planning a client demonstration focus on the most important aspects of the offering to the audience in attendance and be selective on the aspects of the SCC suite of offerings you choose to show.</p>
+<h2 id="explore-provisioning-an-scc-instance">Explore provisioning an SCC instance</h2>
+<p>In this phase of the demo, you will be using a baking show approach to show how an IBM Cloud Security and Compliance Center (SCC) instance and related resources are provisioned. As mentioned earlier, you will not be provisioning these resources, rather you will utilize pre-provisioned resources. As mentioned earlier, this scenario may be of interest to only a few individuals in the client's organization and may be skipped if not demonstrating to the technical team that will be responsible for deploying SCC.</p>
+<ol>
+<li>Open a web browser to the <strong>IBM Cloud Portal</strong>.</li>
+</ol>
+<p><a href="https://cloud.ibm.com" target="_blank">IBM Cloud Portal</a>.</p>
+<p>When the page loads, authenticate with your IBM Cloud ID and password. The authentication process varies depending on the primary account that your ID is associated with and any multi-factor authentication or other security controls in place for the account.</p>
+<ol start="2">
+<li>Click the <strong>account selection</strong> drop-down menu and select the <strong>{{ no such element: dict object['account'] }}</strong> account.</li>
+</ol>
+<p><img alt="" src="../../env/_attachments/switchAccount.png" /></p>
+<p>Note, if the browser window is narrow, you might see an <strong>account selection</strong> icon like this: <img alt="" src="../../env/_attachments/switchAccountIcon.png" /> instead of the full account name.</p>
+<ol start="3">
+<li>Click the <strong>Security and Compliance</strong> icon (<img alt="" src="../_attachments/sccIcon.png" />) in the menu bar.</li>
+</ol>
+<p><img alt="" src="../_attachments/dashBoard.png" /></p>
+<ol start="4">
+<li>Click <strong>Create instance+</strong>.</li>
+</ol>
+<p><img alt="" src="../_attachments/sccOverviewPage.png" /></p>
+<ol start="5">
+<li>Click the <strong>Select a location</strong> drop-down menu.</li>
+</ol>
+<p><strong>Discussion points:</strong> SCC instances are specific to IBM Cloud regions. As shown in the portal, SCC is currently available in three regions. Look for additional regions to be added in the future based upon client demands.</p>
+<p><img alt="" src="../_attachments/sccProvision-location.png" /></p>
+<ol start="6">
+<li>Select the <strong>Dallas (us-south)</strong> location.</li>
+<li>Click the <strong>Standard</strong> pricing plan.</li>
+</ol>
+<p><img alt="" src="../_attachments/sccProvision-pricingPlan.png" /></p>
+<p><strong>Discussion points:</strong> SCC provides a trial pricing plan, which allows clients to try SCC at no cost for 30 days. The standard pricing plan is based upon the number of <strong>evaluations</strong> performed. Clients are charged if an evaluation produces a result of pass or fail. Charges are not incurred for the evaluation if the check cannot be performed or is not applicable. Each scan that is run provides with the number of billable evaluations in the results user interface (UI). More information on SCC pricing can be found <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-scc-pricing&interface=ui" target="_blank">here</a>. IBM Cloud Security and Compliance Center Workload Protection (WP) has a different pricing model. WP is priced hourly based on the number of nodes protected. More information about WP pricing can be found <a href="https://cloud.ibm.com/docs/workload-protection?topic=workload-protection-pricing_plans" target="_blank">here</a>.</p>
+<ol start="8">
+<li>Click the <strong>I have read and agree to the following license agreements</strong> checkbox.</li>
+</ol>
+<p><img alt="" src="../_attachments/sccProvision-agreement.png" /></p>
+<p><strong>Discussion points:</strong> That is all the information required to create an SCC instance. You could discuss the use of resource groups, tags, and access management tags which are used to organize and control access cloud resources. Provisioning the instances typically takes under a couple of minutes. Inform your audience that you will now switch to an existing SCC instance. </p>
+<ol start="9">
+<li>Click the browser's back button to return to the <strong>Security and Compliance</strong> overview page.</li>
+</ol>
+<p>Note, if you click <strong>Create</strong> in the <strong>{{ no such element: dict object['account'] }}</strong> account, you will receive an error. </p>
+<p><img alt="" src="../_attachments/sccOverviewPage2.png" /></p>
+<h3 id="scc-configuration-and-integration-phase">SCC configuration and integration phase</h3>
+<p>Before using SCC, a few additional steps need to be performed. First, a IBM Cloud Object Storage (COS) bucket needs to be assigned to the SCC instance. COS is used to store the results of scans performed by SCC. The process of provisioning COS and assigning a bucket to SCC is not covered in this guide. To learn more about the process, consult the documentation <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-storage&interface=ui" target="_blank">here</a>.</p>
+<p>Workload Protection (WP) is a core part of the SCC suite but is provisioned and configured separately. This integration is already done in this ITZ environment and will be part of the demonstration steps below. To learn more about WP, how it is provisioned, and how to integrate with SCC, check out the documentation <a href="https://cloud.ibm.com/docs/workload-protection?topic=workload-protection-getting-started" target="_blank">here</a>.</p>
+<h2 id="configure-initiate-and-view-scan-results">Configure, initiate, and view scan results</h2>
+<h2 id="clean-up">Clean up</h2>
 <!-- Should add a section for tech sales to cover IAM settings, use demo environment as an example. 
 https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-assign-roles
 
@@ -449,6 +613,8 @@ https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-at_even
 </code></pre></div>
 <p>and context-based restrictions: https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-cbr&amp;interface=ui</p>
 <div class="highlight"><pre><span></span><code>--&gt;
+
+&lt;!-- Event notification - add their cell phone number to receive SMS alerts of scan&#39;s complete --&gt;
 </code></pre></div>
 
 
