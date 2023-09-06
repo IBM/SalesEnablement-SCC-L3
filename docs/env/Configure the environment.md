@@ -5,9 +5,13 @@ Before using the IBM Technology Zone (ITZ), a few additional configuration steps
 A compelling demonstration of IBM Cloud Security and Compliance Center (SCC) not only includes showing the results of a compliance scan, but also demonstrating how compliance failures can be remediated. In this demonstration guide, you will demonstrate how to remediate a failed compliance scan related to a VSI running in an IBM Cloud Virtual Private Cloud (VPC) and internet protocol (IP) network spoofing. While IP network spoofing has legitimate business uses, it is also a potential vulnerability. You can learn more about IP address spoofing <a href="https://en.wikipedia.org/wiki/IP_address_spoofing" target="_blank">here</a>. SCC has a predefined control that checks to see if a VSI in a VPC has IP network spoofing enabled and flags those VSI's as non-compliant. This scenario was chosen as it is easy to turn this setting on and off of a VSI and VSI's in VPC are inexpensive resources. 
 
 In the next steps:
+
   - provision a VSI instance
+  
   - enable **IP network spoofing** on the VSI
+  
   - create a SCC attachment that scans for VSIs with IP network spoofing enabled
+  
   - run an initial scan
 
 In the actual demonstration section of this demonstration guide, you will show the client the compliance failure related to the VSI you created, remediate the issue, re-run the scan, and show the new, successful compliance results.
@@ -47,11 +51,17 @@ As this is shared environment, it is important to specify a unique name for your
 7. Verify all the other settings are as follows:
 
   **Architecture**: Intel
+  
   **Location**: Geography = North America, Region = Dallas, Zone = Dallas 2
+  
   **Resource group**: {{iam.ResourceGroup}}
+  
   **Image**: CentOS, Image type = Stock image
+  
   **Profile**: Balanced|bx2-2x8
+  
   **SSH keys**: {{vpc.SSHkey}}
+  
   **Virtual private cloud** is set to **{{vpc.Instance}}**.
 
   If these values are not the same, set them as shown.
@@ -81,8 +91,6 @@ It should only take about a minute to provision the VSI. Once the VSI shows the 
 1. Navigate to the **SCC Dashboard** page in the IBM Cloud portal.
 
 ![](_attachments/vpcVSINetworkInterfaceReady.png)
-
-
 
 ## Enable SMS notifications (Optional)
 
