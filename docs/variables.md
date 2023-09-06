@@ -45,7 +45,7 @@
     
     scc:
  
-      Instance: {{.scc.Instance}}
+      Instance: {{scc.Instance}}
  
       Profile: {{scc.Profile}}
     
