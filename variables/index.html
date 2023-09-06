@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#macro-rendering-error" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -377,6 +382,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Variables
@@ -418,6 +425,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -431,59 +440,19 @@
                 
 
 
-  <h1>Variables</h1>
-
-<p>gitRep = https://github.com/IBM/SalesEnablement-SCC-L3</p>
-<p>learningplan:</p>
-<div class="highlight"><pre><span></span><code>Name = IBM Cloud Security and Compliance Center Level 3
-
-URL 4 Sales = https://yourlearning.ibm.com/activity/PLAN-6317F3982CA7
-
-URL 4 Tech Sales = https://yourlearning.ibm.com/activity/PLAN-649585526BDA
-
-URL 4 BPs = https://learn.ibm.com/course
-</code></pre></div>
-<p>level2learningplan:</p>
-<div class="highlight"><pre><span></span><code>Name: IBM Cloud Security and Compliance Center Foundation
-
-YLurl: https://yourlearning.ibm.com/activity/PLAN-???
-
-BPurl: https://learn.ibm.com/course
-</code></pre></div>
-<p>offering:</p>
-<div class="highlight"><pre><span></span><code>Name: IBM Cloud Security and Compliance Center (SCC)
-</code></pre></div>
-<p>guide:</p>
-<div class="highlight"><pre><span></span><code>Name: IBM Cloud Security and Compliance Center - Level 3 Demonstration Guide
-
-URL: https://ibm.github.io/SalesEnablement-SCC-L3/
-</code></pre></div>
-<p>itz:</p>
-<div class="highlight"><pre><span></span><code>CloudAccount: 2305900 - ITZ - ADHOC03
-
-CollectionURL:
-
-EnvironmentURL:
-
-iam:
-
-  AccessGroup: SCC-L3
-
-  ResourceGroup: SCC-L3
-
-scc:
-
-  Instance: SCC-L3
-
-  Profile: se-scc-l3
-
-cos:
-
-  Instance: COS-SCC-L3
-
-  Bucket: scc-l3-bucket
-
-  Region: Dallas (us-south)
+<h1 id="macro-rendering-error"><em>Macro Rendering Error</em></h1>
+<p><strong>UndefinedError</strong>: 'dict object' has no attribute 'iam'</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Traceback (most recent call last):
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  File &quot;/usr/local/lib/python3.9/site-packages/mkdocs_macros/plugin.py&quot;, line 480, in render
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    return md_template.render(**page_variables)
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  File &quot;/Users/andrewjones/Library/Python/3.9/lib/python/site-packages/jinja2/environment.py&quot;, line 1301, in render
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    self.environment.handle_exception()
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  File &quot;/Users/andrewjones/Library/Python/3.9/lib/python/site-packages/jinja2/environment.py&quot;, line 936, in handle_exception
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    raise rewrite_traceback_stack(source=source)
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  File &quot;&lt;template&gt;&quot;, line 42, in top-level template code
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>  File &quot;/Users/andrewjones/Library/Python/3.9/lib/python/site-packages/jinja2/environment.py&quot;, line 485, in getattr
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    return getattr(obj, attribute)
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>jinja2.exceptions.UndefinedError: &#39;dict object&#39; has no attribute &#39;iam&#39;
 </code></pre></div>
 
 
