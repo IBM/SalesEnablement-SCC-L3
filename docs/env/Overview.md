@@ -4,7 +4,7 @@ There are several advantages of leveraging a pre-provisioned SCC instance includ
 
 !!! Warning "This is a shared environment, and you will have limited access to creating resources."
 
-    Since this is a shared environment, your IBM Cloud identification (ID) will have limited access. For instance, you will not be able to provision a new SCC instance, but you will be able to create things like rules and attachments, initiate scans, and view the SCC dashboard. Attempts to perform actions you do not have permissions for will result in an error like:
+    Since this is a shared environment, your IBM Cloud identification (ID) will have limited access. For instance, you will not be able to provision a new SCC instance, but you will be able to create rules and attachments, initiate scans, view the SCC dashboard, etc. Attempts to perform actions you do not have permissions for will result in an error like:
 
     ![](../demo/_attachments/NoPermissions.png)
     
