@@ -45,7 +45,7 @@ curlRC=$(curl -s --write-out "%{http_code}" --output $outputfile -X POST \
   "volume_attachments": [],
   "boot_volume_attachment": {
     "volume": {
-      "name": "xxxxxx-boot-1694089870000",
+      "name": "'$vsiName'",
       "capacity": 100,
       "profile": {
         "name": "general-purpose"
