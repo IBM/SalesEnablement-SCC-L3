@@ -92,7 +92,7 @@ It should only take about a minute to provision the VSI. Once the VSI shows the 
 
 ![](_attachments/dashboardCloudShell.png)
 
-This will open a new browser window and tab with the IBM Cloud Shell. Proceed to the next step once the command prompt is ready.
+This will open a new browser window and tab with the IBM Cloud Shell. Proceed to the next step once the command prompt is ready (similar to the one highlighted below).
 
 ![](_attachments/cloudShell.png)
 
@@ -104,6 +104,23 @@ chmod +x createVSI.bash
 ./createVSI.bash
 ```
 
+Example output:
+
+![](_attachments/createVSIoutput.png)
+
+Take note of the name of the VSI just created (highlighted above). Your VSI name will be the first part of your IBM Cloud user ID (typically email address) followed by **scc-vsi**. For example: **andrew--scc-vsi**
+
+### Verify the VSI was created with IP spoofing enabled
+
+Return to the IBM Cloud browser window/tab.
+
+3. Click the **VPC Infrastructure** icon (![](_attachments/vpcIcon.png)) in the menu bar.
+   
+![](_attachments/dashBoardVPC.png)
+
+4. Click the **Virtual server instances** option in the left-hand menu.
+
+![](_attachments/vpcOverviewVSI.png)
 
 
 ### Create a SCC attachment and run an initial scan

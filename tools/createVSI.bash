@@ -6,7 +6,7 @@ echo "Retrieving IAM token..."
 export iam_token=`ibmcloud iam oauth-tokens |cut -f 5 -d' '`
 # Get user id to create vsi name, convert to lower case
 export userName=`id -un`
-export vsiName="${userName,,}"-scc-vsi
+export vsiName="${userName,,}"-$RANDOM-scc-vsi
 echo "Creating VSI named: $vsiName ..."
 echo ""
 #
