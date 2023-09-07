@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#setup-the-remediation-scenario" class="md-skip">
+        <a href="#provision-a-vsi-with-ip-spoofing-enabled" class="md-skip">
           Skip to content
         </a>
       
@@ -324,36 +324,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#setup-the-remediation-scenario" class="md-nav__link">
-    Setup the remediation scenario
-  </a>
-  
-    <nav class="md-nav" aria-label="Setup the remediation scenario">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#provision-a-vsi-with-ip-spoofing-enabled" class="md-nav__link">
     Provision a VSI with IP spoofing enabled
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#verify-the-vsi-was-created-with-ip-spoofing-enabled" class="md-nav__link">
     Verify the VSI was created with IP spoofing enabled
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#create-a-scc-attachment-and-run-an-initial-scan" class="md-nav__link">
     Create a SCC attachment and run an initial scan
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -434,8 +421,36 @@
   
   
     <li class="md-nav__item">
-      <a href="../../demo/Step-by-Step/" class="md-nav__link">
-        Step-by-step Guide
+      <a href="../../demo/scc/" class="md-nav__link">
+        High-level demonstration of SCC
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../demo/remediation/" class="md-nav__link">
+        Remediating a failed compliance control
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../demo/wp/" class="md-nav__link">
+        High-level demonstration of Workload Protection
       </a>
     </li>
   
@@ -488,36 +503,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#setup-the-remediation-scenario" class="md-nav__link">
-    Setup the remediation scenario
-  </a>
-  
-    <nav class="md-nav" aria-label="Setup the remediation scenario">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#provision-a-vsi-with-ip-spoofing-enabled" class="md-nav__link">
     Provision a VSI with IP spoofing enabled
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#verify-the-vsi-was-created-with-ip-spoofing-enabled" class="md-nav__link">
     Verify the VSI was created with IP spoofing enabled
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#create-a-scc-attachment-and-run-an-initial-scan" class="md-nav__link">
     Create a SCC attachment and run an initial scan
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -537,7 +539,6 @@
 
   <h1>Configure remediation scenario</h1>
 
-<h2 id="setup-the-remediation-scenario">Setup the remediation scenario</h2>
 <p>A compelling demonstration of IBM Cloud Security and Compliance Center (SCC) not only includes showing the results of a compliance scan, but also demonstrating how compliance failures can be remediated. In this demonstration guide, you will demonstrate how to remediate a failed compliance scan related to internet protocol (IP) address spoofing on a virtual server instance (VSI) running in an IBM Cloud Virtual Private Cloud (VPC). While IP address spoofing has legitimate business uses, it is also a potential vulnerability. Learn more about IP address spoofing <a href="https://en.wikipedia.org/wiki/IP_address_spoofing" target="_blank">here</a>. SCC has a predefined control that checks to see if a VSI in a VPC has IP address spoofing enabled and flags those VSI's as non-compliant. This scenario was chosen as it is easy to turn enable and disable this setting on a VSI and VSI's in VPC are inexpensive resources which provision very quickly. </p>
 <p>In the next steps:</p>
 <ul>
@@ -702,7 +703,7 @@ It should only take about a minute to provision the VSI. Once the VSI shows the 
 <p><img alt="" src="../_attachments/sccDashboardConfigAttachReview.png" /></p>
 <p>The <strong>attachment</strong> is now saved and the initial scan is being run.</p>
 <p><img alt="" src="../_attachments/sccDashboardConfigAttachRunning.png" /></p>
-<p>Notice the <strong>Scan in progress</strong> message for your attachment. Due to a user interface issue with this page and at least some browsers, this progress message will remain on the screen until you refresh the page. As this is a very simple scan of one control on a very limited scope, this scan only takes a minute or two to run.  Wait a couple of minutes and then click the browser's refresh button and the <strong>Next scan</strong> information should be shown.</p>
+<p>Notice the <strong>Scan in progress</strong> message for your attachment. Due to a user interface issue with this page (at least some browsers), this progress message will remain on the screen until you refresh the page. As this is a very simple scan of one control on a very limited scope, this scan only takes a minute or two to run.  Wait a couple of minutes and then click the browser's refresh button and the <strong>Next scan</strong> information should be shown.</p>
 <p><img alt="" src="../_attachments/sccDashboardConfigAttachNextScan.png" /></p>
 <p>At this point, you can proceed to the next chapter to learn about and configure IBM Cloud Event Notifications to enhance your client demonstration or continue to the next section to perform a client demonstration. While enabling IBM Cloud Event Notifications is optional, you are encouraged to at least read the introduction to learn more about IBM Cloud Event Notifications.</p>
 
