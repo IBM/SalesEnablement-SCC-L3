@@ -544,10 +544,7 @@
 <p>In the next steps:</p>
 <ul>
 <li>
-<p>provision a VSI instance</p>
-</li>
-<li>
-<p>enable <strong>IP network spoofing</strong> on the VSI</p>
+<p>provision a VSI instance with <strong>IP network spoofing</strong> enabled</p>
 </li>
 <li>
 <p>create a SCC attachment that scans for VSIs with IP network spoofing enabled</p>
@@ -568,54 +565,79 @@
 </ol>
 <p><img alt="" src="../_attachments/switchAccount.png" /></p>
 <p>Note, if the browser window is narrow, you might see an <strong>account selection</strong> icon like this: <img alt="" src="../_attachments/switchAccountIcon.png" /> instead of the full account name.</p>
+<!-- 3. Click the **VPC Infrastructure** icon (![](_attachments/vpcIcon.png)) in the menu bar.
+
+![](_attachments/dashBoardVPC.png)
+
+4. Click the **Virtual server instances** option in the left-hand menu.
+
+![](_attachments/vpcOverviewVSI.png)
+
+5. Click **Create +**.
+
+![](_attachments/vpcVSIs.png)
+
+Note, you may see an **Authorization error** message on this screen. It can be ignored.
+
+![](_attachments/vpcVSIsAuthErr.png)
+
+6. Enter a unique VSI **Name** in the **Details**  section.
+
+As this is shared environment, it is important to specify a unique name for your VSI. As an example, name your VSI after yourself, like **arjones-vsi**. Note, VSI names must begin with a lower case letter and only alphanumeric characters and hyphens are allowed.
+
+![](_attachments/vpcVSI-name.png)
+
+7. Verify all the other settings are as follows:
+
+  **Architecture**: Intel
+
+  **Location**: Geography = North America, Region = Dallas, Zone = Dallas 2
+
+  **Resource group**: SCC-L3
+
+  **Image**: CentOS, Image type = Stock image
+
+  **Profile**: Balanced|bx2-2x8
+
+  **SSH keys**: scc-l3-key
+
+  **Virtual private cloud**: **vpc-for-scc-l3**.
+
+  If these values are not the same, set them as shown.
+
+  All of these should be the default values. All other fields should will either be empty or have generated values (e.g. Boot volume, Data volumes, etc.).
+
+8. Click **Create virtual server**.
+
+![](_attachments/vpcVSI-save.png)
+
+It should only take about a minute to provision the VSI. Once the VSI shows the status of **Running**, continue to the next steps.
+
+9. Click the VSI name created earlier in the table of **Virtual server instances for VPC**.
+
+![](_attachments/vpcVSIlist.png)
+
+10. Scroll down to the **Network interfaces** section and click the pencil icon (![](_attachments/pencilIcon.png)) to edit the **eth0** network interface.
+
+![](_attachments/vpcVSINetworkInterfaces.png)
+
+11. Click the **Allow IP spoofing** toggle button to set it to **Enabled** and then click **Save**.
+
+![](_attachments/vpcVSINetworkInterfaceEnableIPSpoofing.png) -->
+
 <ol start="3">
-<li>Click the <strong>VPC Infrastructure</strong> icon (<img alt="" src="../_attachments/vpcIcon.png" />) in the menu bar.</li>
+<li>Click the <strong>IBM Cloud Shell</strong> icon (<img alt="" src="../_attachments/cloudShellIcon.png" />)</li>
 </ol>
-<p><img alt="" src="../_attachments/dashBoardVPC.png" /></p>
+<p><img alt="" src="../_attachments/dashboardCloudShell.png" /></p>
+<p>This will open a new browser window and tab with the IBM Cloud Shell. Proceed to the next step once the command prompt is ready.</p>
+<p><img alt="" src="../_attachments/cloudShell.png" /></p>
 <ol start="4">
-<li>Click the <strong>Virtual server instances</strong> option in the left-hand menu.</li>
+<li>Copy and paste the following commands from this guide to the IBM Cloud Shell window and press enter.</li>
 </ol>
-<p><img alt="" src="../_attachments/vpcOverviewVSI.png" /></p>
-<ol start="5">
-<li>Click <strong>Create +</strong>.</li>
-</ol>
-<p><img alt="" src="../_attachments/vpcVSIs.png" /></p>
-<p>Note, you may see an <strong>Authorization error</strong> message on this screen. It can be ignored.</p>
-<p><img alt="" src="../_attachments/vpcVSIsAuthErr.png" /></p>
-<ol start="6">
-<li>Enter a unique VSI <strong>Name</strong> in the <strong>Details</strong>  section.</li>
-</ol>
-<p>As this is shared environment, it is important to specify a unique name for your VSI. As an example, name your VSI after yourself, like <strong>arjones-vsi</strong>. Note, VSI names must begin with a lower case letter and only alphanumeric characters and hyphens are allowed.</p>
-<p><img alt="" src="../_attachments/vpcVSI-name.png" /></p>
-<ol start="7">
-<li>Verify all the other settings are as follows:</li>
-</ol>
-<p><strong>Architecture</strong>: Intel</p>
-<p><strong>Location</strong>: Geography = North America, Region = Dallas, Zone = Dallas 2</p>
-<p><strong>Resource group</strong>: SCC-L3</p>
-<p><strong>Image</strong>: CentOS, Image type = Stock image</p>
-<p><strong>Profile</strong>: Balanced|bx2-2x8</p>
-<p><strong>SSH keys</strong>: scc-l3-key</p>
-<p><strong>Virtual private cloud</strong>: <strong>vpc-for-scc-l3</strong>.</p>
-<p>If these values are not the same, set them as shown.</p>
-<p>All of these should be the default values. All other fields should will either be empty or have generated values (e.g. Boot volume, Data volumes, etc.).</p>
-<ol start="8">
-<li>Click <strong>Create virtual server</strong>.</li>
-</ol>
-<p><img alt="" src="../_attachments/vpcVSI-save.png" /></p>
-<p>It should only take about a minute to provision the VSI. Once the VSI shows the status of <strong>Running</strong>, continue to the next steps.</p>
-<ol start="9">
-<li>Click the VSI name created earlier in the table of <strong>Virtual server instances for VPC</strong>.</li>
-</ol>
-<p><img alt="" src="../_attachments/vpcVSIlist.png" /></p>
-<ol start="10">
-<li>Scroll down to the <strong>Network interfaces</strong> section and click the pencil icon (<img alt="" src="../_attachments/pencilIcon.png" />) to edit the <strong>eth0</strong> network interface.</li>
-</ol>
-<p><img alt="" src="../_attachments/vpcVSINetworkInterfaces.png" /></p>
-<ol start="11">
-<li>Click the <strong>Allow IP spoofing</strong> toggle button to set it to <strong>Enabled</strong> and then click <strong>Save</strong>.</li>
-</ol>
-<p><img alt="" src="../_attachments/vpcVSINetworkInterfaceEnableIPSpoofing.png" /></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>wget -O createVSI.bash https://raw.githubusercontent.com/IBM/SalesEnablement-SCC-L3/main/tools/createVSI.bash
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>chmod +x createVSI.bash
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>./createVSI.bash
+</code></pre></div>
 <h3 id="create-a-scc-attachment-and-run-an-initial-scan">Create a SCC attachment and run an initial scan</h3>
 <ol start="12">
 <li>Navigate to the <strong>SCC Dashboard</strong> page in the IBM Cloud portal.</li>
