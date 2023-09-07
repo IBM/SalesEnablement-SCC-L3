@@ -1,5 +1,3 @@
-## Setup the remediation scenario
-
 A compelling demonstration of IBM Cloud Security and Compliance Center (SCC) not only includes showing the results of a compliance scan, but also demonstrating how compliance failures can be remediated. In this demonstration guide, you will demonstrate how to remediate a failed compliance scan related to internet protocol (IP) address spoofing on a virtual server instance (VSI) running in an IBM Cloud Virtual Private Cloud (VPC). While IP address spoofing has legitimate business uses, it is also a potential vulnerability. Learn more about IP address spoofing <a href="https://en.wikipedia.org/wiki/IP_address_spoofing" target="_blank">here</a>. SCC has a predefined control that checks to see if a VSI in a VPC has IP address spoofing enabled and flags those VSI's as non-compliant. This scenario was chosen as it is easy to turn enable and disable this setting on a VSI and VSI's in VPC are inexpensive resources which provision very quickly. 
 
 In the next steps:
@@ -184,7 +182,7 @@ The **attachment** is now saved and the initial scan is being run.
 
 ![](_attachments/sccDashboardConfigAttachRunning.png)
 
-Notice the **Scan in progress** message for your attachment. Due to a user interface issue with this page and at least some browsers, this progress message will remain on the screen until you refresh the page. As this is a very simple scan of one control on a very limited scope, this scan only takes a minute or two to run.  Wait a couple of minutes and then click the browser's refresh button and the **Next scan** information should be shown.
+Notice the **Scan in progress** message for your attachment. Due to a user interface issue with this page (at least some browsers), this progress message will remain on the screen until you refresh the page. As this is a very simple scan of one control on a very limited scope, this scan only takes a minute or two to run.  Wait a couple of minutes and then click the browser's refresh button and the **Next scan** information should be shown.
 
 ![](_attachments/sccDashboardConfigAttachNextScan.png)
 

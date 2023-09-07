@@ -22,7 +22,9 @@ nav:
     - 'Configure SMS messaging (OPTIONAL)': 'env/ConfigureSMS.md'
   - 'Client Demonstration':
     - 'Overview': 'demo/Overview.md'
-    - 'Step-by-step Guide': 'demo/Step-by-Step.md'
+    - 'High-level demonstration of SCC': 'demo/scc.md'
+    - 'Remediating a failed compliance control': 'demo/remediation.md'
+    - 'High-level demonstration of Workload Protection': 'demo/wp.md'
   - 'Next Steps': 'NextSteps.md'
 
 theme:

@@ -1,8 +1,4 @@
-Demonstrations should resonate with the audience. It is important to know your audience and the roles they have within their company when preparing and delivering your demonstrations. The demonstration steps provided below may not resonate with all user roles. For instance, the Chief Risk Officer (CRO) may not be concerned about how to provision and instance fo IBM Cloud Security and Compliance Center (SCC), but members of the CRO's technical staff tasked with doing so will. Some individuals will be focused on the aspects of compliance related to their code development while others will be focus on the infrastructure the applications run on in production. When planning a client demonstration focus on the most important aspects of the offering to the audience in attendance and be selective on the aspects of the SCC suite of offerings you choose to show.
-
-## Explore provisioning an SCC instance
-
-In this phase of the demo, you will be using a baking show approach to show how an IBM Cloud Security and Compliance Center (SCC) instance and related resources are provisioned. As mentioned earlier, you will not be provisioning these resources, rather you will utilize pre-provisioned resources. As mentioned earlier, this scenario may be of interest to only a few individuals in the client's organization and may be skipped if not demonstrating to the technical team that will be responsible for deploying SCC.
+In this demonstration flow, you will be using a baking show approach to show how an IBM Cloud Security and Compliance Center (SCC) instance and related resources are provisioned. You will not be provisioning these resources, rather you will utilize pre-provisioned resources. **As mentioned earlier, this scenario may be of interest to only a few individuals in the client's organization and may be skipped if not demonstrating to the technical team that will be responsible for deploying SCC.**
 
 1. Open a web browser to the **IBM Cloud Portal**.
 
@@ -55,41 +51,10 @@ Before using SCC, a few additional steps need to be performed. First, a IBM Clou
 
 Workload Protection (WP) is a core part of the SCC suite but is provisioned and configured separately. This integration is already done in this ITZ environment and will be part of the demonstration steps below. To learn more about WP, how it is provisioned, and how to integrate with SCC, check out the documentation <a href="https://cloud.ibm.com/docs/workload-protection?topic=workload-protection-getting-started" target="_blank">here</a>.
 
-## Configure, initiate, and view scan results
+TBW - 
 
-
-
-## Clean up
-
-<!-- Should add a section for tech sales to cover IAM settings, use demo environment as an example. 
-https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-assign-roles
-
-also
-https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-access-management&interface=ui
--->
-
-<!-- mention event notifications https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-event-notifications&interface=ui -->
-
-<!-- can we use this as the flow: https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-scan-resources&interface=ui -->
-
-
-<!-- for reading dashboard, refer to:https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-results&interface=ui
-
-
-Success rate
-    The rate at which your configurations pass the evaluation that is conducted. Note: The number of evaluations conducted does not always match the number of billable evaluations, as there is no charge for assessments evaluated as unable to perform. Be sure to look for the billable evaluations in each scan result if you need to estimate your cost.
-Total controls
-    The total number of controls that have been evaluated in the past 30 days.
-Total evaluations
-    The total number of evaluations that have been run in the past 30 days. An evaluation is the check of one resource against one assessment.  -->
-
-    <!-- if we split out a tech sales section, consider talking about multi-tenant aspect of SCC and refer them to this documentation: https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-compute-isolation&interface=ui 
-    
-    additionally, integration with Activity Tracker: 
-    https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-at_events&interface=ui
-   
-   and context-based restrictions: https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-cbr&interface=ui
-   
-    -->
-
-    <!-- Event notification - add their cell phone number to receive SMS alerts of scan's complete -->
+Dashboard
+Control Libraries and Controls
+Attachments
+Scan results
+Drift
