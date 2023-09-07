@@ -6,9 +6,7 @@ A compelling demonstration of IBM Cloud Security and Compliance Center (SCC) not
 
 In the next steps:
 
-  - provision a VSI instance
-  
-  - enable **IP network spoofing** on the VSI
+  - provision a VSI instance with **IP network spoofing** enabled
   
   - create a SCC attachment that scans for VSIs with IP network spoofing enabled
   
@@ -30,7 +28,7 @@ When the page loads, authenticate with your IBM Cloud ID and password. The authe
 
 Note, if the browser window is narrow, you might see an **account selection** icon like this: ![](../env/_attachments/switchAccountIcon.png) instead of the full account name.
 
-3. Click the **VPC Infrastructure** icon (![](_attachments/vpcIcon.png)) in the menu bar.
+<!-- 3. Click the **VPC Infrastructure** icon (![](_attachments/vpcIcon.png)) in the menu bar.
    
 ![](_attachments/dashBoardVPC.png)
 
@@ -88,7 +86,25 @@ It should only take about a minute to provision the VSI. Once the VSI shows the 
 
 11. Click the **Allow IP spoofing** toggle button to set it to **Enabled** and then click **Save**.
 
-![](_attachments/vpcVSINetworkInterfaceEnableIPSpoofing.png)
+![](_attachments/vpcVSINetworkInterfaceEnableIPSpoofing.png) -->
+
+3. Click the **IBM Cloud Shell** icon (![](_attachments/cloudShellIcon.png))
+
+![](_attachments/dashboardCloudShell.png)
+
+This will open a new browser window and tab with the IBM Cloud Shell. Proceed to the next step once the command prompt is ready.
+
+![](_attachments/cloudShell.png)
+
+4. Copy and paste the following commands from this guide to the IBM Cloud Shell window and press enter.
+
+```
+wget -O createVSI.bash {{guide.createVSIscript}}
+chmod +x createVSI.bash
+./createVSI.bash
+```
+
+
 
 ### Create a SCC attachment and run an initial scan
 
