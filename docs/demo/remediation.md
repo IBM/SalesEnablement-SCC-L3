@@ -1,3 +1,7 @@
 To be written
 
 One not very well documented "feature" of IBM Cloud Security and Compliance Center is that the results of a scan are cached for an hour. If a second scan for an attachment is performed within the hour after another scan has completed, the 2nd scan is not performed and the results from the previous scan are used. Read more <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-ts-cache&interface=ui" target="_blank">here</a>. Note: a support ticket has been opened asking this information be moved to a main section of the SCC documentation. In general, this is not an issue when deployed in a production environment, however it does cause some challenges when demonstrating how the results change when a detected compliance issue is remediated.
+
+Watch a video of the above scenario:
+
+![type:video](./_videos/remediation.mp4)

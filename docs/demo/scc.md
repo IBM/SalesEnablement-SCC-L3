@@ -58,3 +58,8 @@ Control Libraries and Controls
 Attachments
 Scan results
 Drift
+
+Watch a video of the above scenario:
+
+![type:video](./_videos/scc.mp4)
+
