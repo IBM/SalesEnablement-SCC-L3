@@ -646,15 +646,17 @@ It should only take about a minute to provision the VSI. Once the VSI shows the 
 <p>This will open a new browser window and tab with the IBM Cloud Shell. Proceed to the next step once the command prompt is ready (similar to the one highlighted below).</p>
 <p><img alt="" src="../_attachments/cloudShell.png" /></p>
 <ol start="4">
-<li>Copy and paste the following commands from this guide to the IBM Cloud Shell window and press enter.</li>
+<li>Copy and paste (<img alt="" src="_attachments/copyAndPasteIcon.png" />) the following commands from this guide to the IBM Cloud Shell window and press enter. </li>
 </ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>wget -O createVSI.bash https://raw.githubusercontent.com/IBM/SalesEnablement-SCC-L3/main/tools/createVSI.bash
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>chmod +x createVSI.bash
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>./createVSI.bash
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>#
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>#
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>wget -O createVSI.bash https://raw.githubusercontent.com/IBM/SalesEnablement-SCC-L3/main/tools/createVSI.bash
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>chmod +x createVSI.bash
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>./createVSI.bash
 </code></pre></div>
 <p>Example output:</p>
 <p><img alt="" src="../_attachments/createVSIoutput.png" /></p>
-<p>Take note of the name of the VSI just created (highlighted above). Your VSI name will be the first part of your IBM Cloud user ID (typically email address) followed by <strong>scc-vsi</strong>. For example: <strong>andrew--scc-vsi</strong></p>
+<p>Take note of the name of the VSI just created (highlighted above). Your VSI name will be the first part of your IBM Cloud user ID (typically email address) followed by a random number and <strong>-scc-vsi</strong>. For example: <strong>andrew-14294-scc-vsi</strong></p>
 <h3 id="verify-the-vsi-was-created-with-ip-spoofing-enabled">Verify the VSI was created with IP spoofing enabled</h3>
 <p>Return to the IBM Cloud browser window/tab.</p>
 <ol start="3">
@@ -665,6 +667,14 @@ It should only take about a minute to provision the VSI. Once the VSI shows the 
 <li>Click the <strong>Virtual server instances</strong> option in the left-hand menu.</li>
 </ol>
 <p><img alt="" src="../_attachments/vpcOverviewVSI.png" /></p>
+<ol start="5">
+<li>Click your VSI's name in the table.</li>
+</ol>
+<p><img alt="" src="../_attachments/vpcListOfVSIs.png" /></p>
+<ol start="6">
+<li>Scroll down to the <strong>Network interfaces</strong> section and verify <strong>Allow IP spoofing</strong> is enabled.</li>
+</ol>
+<p><img alt="" src="../_attachments/vpcVSISpoofingEnabled.png" /></p>
 <h3 id="create-a-scc-attachment-and-run-an-initial-scan">Create a SCC attachment and run an initial scan</h3>
 <ol start="12">
 <li>Navigate to the <strong>SCC Dashboard</strong> page in the IBM Cloud portal.</li>
