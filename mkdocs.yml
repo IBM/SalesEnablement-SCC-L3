@@ -67,7 +67,8 @@ extra:
     Name: "IBM Cloud Security and Compliance Center Level 3"
     YLurlSales: "https://yourlearning.ibm.com/activity/PLAN-6317F3982CA7"
     YLurlTechSales: "https://yourlearning.ibm.com/activity/PLAN-649585526BDA"
-    BPurl: "https://learn.ibm.com/course"
+    BPurlSales: "https://learn.ibm.com/course"
+    BPurlTechSales: "https://learn.ibm.com/course"
   level2learningplan:
     Name: "IBM Cloud Security and Compliance Center Foundation"
     YLurl: "https://yourlearning.ibm.com/activity/PLAN-???"
