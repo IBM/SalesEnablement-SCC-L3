@@ -78,7 +78,7 @@ extra:
     Name: "IBM Cloud Security and Compliance Center - Level 3 Demonstration Guide"
     URL: "https://ibm.github.io/SalesEnablement-SCC-L3/"
     createVSIscript: "https://raw.githubusercontent.com/IBM/SalesEnablement-SCC-L3/main/tools/createVSI.bash"
-      itz:
+  itz:
     CloudAccount: "2305900 - ITZ - ADHOC03"
     CollectionURL: "xyz"
     EnvironmentURL: "xyz"
