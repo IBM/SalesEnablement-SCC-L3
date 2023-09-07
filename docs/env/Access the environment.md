@@ -1,6 +1,5 @@
 Do not continue to the next steps until your IBM Technology Zone (ITZ) reservation for the IBM Cloud Security and Compliance Center (SCC) environment is in the **Ready** state. 
 
-#
 # Access the ITZ environment
 1. Open a web browser to the **IBM Cloud Portal**.
 

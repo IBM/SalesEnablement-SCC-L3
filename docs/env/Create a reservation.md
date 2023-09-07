@@ -1,6 +1,5 @@
 To access the the pre-provisioned IBM Cloud Security and Compliance Center (SCC) instance, you must first create a reservation for the environment in IBM Technology Zone (ITZ).
 
-##
 ## Create a reservation for the demonstration environment in ITZ
 
 1. Open a web browser to the **IBM Cloud Security and Compliance Center - Level 3** environment reservation page.
@@ -18,7 +17,7 @@ To access the the pre-provisioned IBM Cloud Security and Compliance Center (SCC)
 
 The SCC resources used in this demonstration environment are all provisioned in the US South region. There is no benefit to selecting a different location.
 
-The **End date and time** is set for 2 days. You can shorten that duration here. After the reservation is ready, you can also extend the reservation up to a maximum of 6 days.
+The **End date and time** is set for 2 days. You can shorten that duration here. After the reservation is ready, you can also extend the reservation up to a maximum of 6 days once it has been created.
 
 6. Click the **I agree to IBM Technology Zone's T&Cs** checkbox.
 7. Click **Submit**.
@@ -27,5 +26,4 @@ The **End date and time** is set for 2 days. You can shorten that duration here.
 
 It takes approximately 20 minutes for the reservation to be processed. You can monitor the progress of the reservation <a href="https://techzone.ibm.com/my/reservations" target="_blank">here</a>.
 
-When the status of the reservation is **Ready**, continue to the next chapter of this demonstration guide.
-
+When the status of the reservation is **Ready**, continue to the next chapter of this demonstration guide to learn how to access the environment.
