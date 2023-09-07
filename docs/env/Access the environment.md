@@ -28,4 +28,4 @@ Note: if you do not see a notification like this, then, in most cases, your ITZ 
 
 Note, if the browser window is narrow, you might see an **account selection** icon like this: ![](_attachments/switchAccountIcon.png) instead of the full account name.
 
-Now that the reservation is active, the invitation to join the account has been accepted, and you have switched to the ITZ account with the pre-provisioned SCC instance, you are ready to proceed to the next chapter to configure the environment in preparation of performing a demonstration. 
+Now that the reservation is active, the invitation to join the account has been accepted, and you have switched to the ITZ account with the pre-provisioned SCC instance, you are ready to proceed to the next chapters to configure the environment in preparation of performing a demonstration. 

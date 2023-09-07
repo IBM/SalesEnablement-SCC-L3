@@ -16,13 +16,13 @@ nav:
   - 'Welcome': 'index.md'
   - 'Demonstration Environment':
     - 'Overview': 'env/Overview.md'
-    - 'Provision': 'env/Create a reservation.md'
-    - 'Access': 'env/Access the environment.md'
-    - 'Configure': 'env/Configure the environment.md'
+    - 'Provisioning the environment': 'env/Create a reservation.md'
+    - 'Access the environment': 'env/Access the environment.md'
+    - 'Configure remediation scenario': 'env/Configure the environment.md'
+    - 'Configure SMS messaging (OPTIONAL)': 'env/ConfigureSMS.md'
   - 'Client Demonstration':
     - 'Overview': 'demo/Overview.md'
     - 'Step-by-step Guide': 'demo/Step-by-Step.md'
-  - 'Variables': 'variables.md'
   - 'Next Steps': 'NextSteps.md'
 
 theme:
