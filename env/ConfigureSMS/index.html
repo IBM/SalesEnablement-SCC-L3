@@ -17,7 +17,7 @@
     
     
       
-        <title>Configure remediation scenario - IBM Cloud Security and Compliance Center</title>
+        <title>Configure SMS messaging (OPTIONAL) - IBM Cloud Security and Compliance Center</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#setup-the-remediation-scenario" class="md-skip">
+        <a href="#enable-sms-notifications-optional" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configure remediation scenario
+              Configure SMS messaging (OPTIONAL)
             
           </span>
         </div>
@@ -292,6 +292,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../Configure%20the%20environment/" class="md-nav__link">
+        Configure remediation scenario
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -302,12 +316,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Configure remediation scenario
+          Configure SMS messaging (OPTIONAL)
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Configure remediation scenario
+        Configure SMS messaging (OPTIONAL)
       </a>
       
         
@@ -324,36 +338,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#setup-the-remediation-scenario" class="md-nav__link">
-    Setup the remediation scenario
+  <a href="#enable-sms-notifications-optional" class="md-nav__link">
+    Enable SMS notifications (Optional)
   </a>
-  
-    <nav class="md-nav" aria-label="Setup the remediation scenario">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#provision-a-vsi-with-ip-spoofing-enabled" class="md-nav__link">
-    Provision a VSI with IP spoofing enabled
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#verify-the-vsi-was-created-with-ip-spoofing-enabled" class="md-nav__link">
-    Verify the VSI was created with IP spoofing enabled
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-a-scc-attachment-and-run-an-initial-scan" class="md-nav__link">
-    Create a SCC attachment and run an initial scan
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -361,20 +348,6 @@
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ConfigureSMS/" class="md-nav__link">
-        Configure SMS messaging (OPTIONAL)
-      </a>
     </li>
   
 
@@ -488,36 +461,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#setup-the-remediation-scenario" class="md-nav__link">
-    Setup the remediation scenario
+  <a href="#enable-sms-notifications-optional" class="md-nav__link">
+    Enable SMS notifications (Optional)
   </a>
-  
-    <nav class="md-nav" aria-label="Setup the remediation scenario">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#provision-a-vsi-with-ip-spoofing-enabled" class="md-nav__link">
-    Provision a VSI with IP spoofing enabled
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#verify-the-vsi-was-created-with-ip-spoofing-enabled" class="md-nav__link">
-    Verify the VSI was created with IP spoofing enabled
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-a-scc-attachment-and-run-an-initial-scan" class="md-nav__link">
-    Create a SCC attachment and run an initial scan
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -535,176 +481,80 @@
                 
 
 
-  <h1>Configure remediation scenario</h1>
+  <h1>Configure SMS messaging (OPTIONAL)</h1>
 
-<h2 id="setup-the-remediation-scenario">Setup the remediation scenario</h2>
-<p>A compelling demonstration of IBM Cloud Security and Compliance Center (SCC) not only includes showing the results of a compliance scan, but also demonstrating how compliance failures can be remediated. In this demonstration guide, you will demonstrate how to remediate a failed compliance scan related to internet protocol (IP) address spoofing on a virtual server instance (VSI) running in an IBM Cloud Virtual Private Cloud (VPC). While IP address spoofing has legitimate business uses, it is also a potential vulnerability. Learn more about IP address spoofing <a href="https://en.wikipedia.org/wiki/IP_address_spoofing" target="_blank">here</a>. SCC has a predefined control that checks to see if a VSI in a VPC has IP address spoofing enabled and flags those VSI's as non-compliant. This scenario was chosen as it is easy to turn enable and disable this setting on a VSI and VSI's in VPC are inexpensive resources which provision very quickly. </p>
-<p>In the next steps:</p>
-<ul>
-<li>
-<p>provision a VSI instance with <strong>IP network spoofing</strong> enabled</p>
-</li>
-<li>
-<p>create a SCC attachment that scans for VSIs with IP network spoofing enabled</p>
-</li>
-<li>
-<p>run an initial scan</p>
-</li>
-</ul>
-<p>In the Client Demonstration section, you will show the client the compliance failure related to the VSI you created, remediate the issue, re-run the scan, and show the new, successful compliance results.</p>
-<h3 id="provision-a-vsi-with-ip-spoofing-enabled">Provision a VSI with IP spoofing enabled</h3>
+<h2 id="enable-sms-notifications-optional">Enable SMS notifications (Optional)</h2>
+<p>This is an optional task for the Level 3 learning plan requirements. </p>
+<p>SCC can integrate with IBM Cloud Event Notifications which is used to send notifications to users via e-mail, SMS, or other supported notification channels (recall the <strong>Notify me</strong> toggle in the <strong>Scan settings</strong> page of when creating an attachment). The ITZ environment for this demonstration guide is enabled with IBM Cloud Event Notifications. Step-by-step instructions for enabling SMS notifications to your personal mobile device are provided below. To learn about provisioning IBM Cloud Event Notifications and configuration SCC to use it, read the documentation <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-event-notifications&interface=ui" target="_blank">here</a>.</p>
+<p>Follow these steps to add SMS notifications as part of your demonstration. </p>
+<!-- 
+1. Open a web browser to the **IBM Cloud Portal**.
+
+<a href="https://cloud.ibm.com" target="_blank">IBM Cloud Portal</a>.
+
+When the page loads, authenticate with your IBM Cloud ID and password. The authentication process varies depending on the primary account that your ID is associated with and any multi-factor authentication or other security controls in place for the account.
+
+2. Click the **account selection** drop-down menu and select the **2305900 - ITZ - ADHOC03** account.
+
+![](../env/_attachments/switchAccount.png)
+
+Note, if the browser window is narrow, you might see an **account selection** icon like this: ![](../env/_attachments/switchAccountIcon.png) instead of the full account name.
+
+3. Click the **Security and Compliance** icon (![](../demo/_attachments/sccIcon.png)) in the menu bar.
+
+![](../demo/_attachments/dashBoard.png) -->
+
 <ol>
-<li>Open a web browser to the <strong>IBM Cloud Portal</strong>.</li>
+<li>Click the <strong>Settings</strong> option in the left-hand menu of the Security and Compliance page.</li>
 </ol>
-<p><a href="https://cloud.ibm.com" target="_blank">IBM Cloud Portal</a>.</p>
-<p>When the page loads, authenticate with your IBM Cloud ID and password. The authentication process varies depending on the primary account that your ID is associated with and any multi-factor authentication or other security controls in place for the account.</p>
+<p><img alt="" src="../demo/_attachments/sccDashboardStartENSetup.png" /> </p>
 <ol start="2">
-<li>Click the <strong>account selection</strong> drop-down menu and select the <strong>2305900 - ITZ - ADHOC03</strong> account.</li>
+<li>Click the <strong>eventnotifications-scc-l3</strong> link under <strong>Event Notifications</strong>. </li>
 </ol>
-<p><img alt="" src="../_attachments/switchAccount.png" /></p>
-<p>Note, if the browser window is narrow, you might see an <strong>account selection</strong> icon like this: <img alt="" src="../_attachments/switchAccountIcon.png" /> instead of the full account name.</p>
-<!-- 3. Click the **VPC Infrastructure** icon (![](_attachments/vpcIcon.png)) in the menu bar.
-
-![](_attachments/dashBoardVPC.png)
-
-4. Click the **Virtual server instances** option in the left-hand menu.
-
-![](_attachments/vpcOverviewVSI.png)
-
-5. Click **Create +**.
-
-![](_attachments/vpcVSIs.png)
-
-Note, you may see an **Authorization error** message on this screen. It can be ignored.
-
-![](_attachments/vpcVSIsAuthErr.png)
-
-6. Enter a unique VSI **Name** in the **Details**  section.
-
-As this is shared environment, it is important to specify a unique name for your VSI. As an example, name your VSI after yourself, like **arjones-vsi**. Note, VSI names must begin with a lower case letter and only alphanumeric characters and hyphens are allowed.
-
-![](_attachments/vpcVSI-name.png)
-
-7. Verify all the other settings are as follows:
-
-  **Architecture**: Intel
-
-  **Location**: Geography = North America, Region = Dallas, Zone = Dallas 2
-
-  **Resource group**: SCC-L3
-
-  **Image**: CentOS, Image type = Stock image
-
-  **Profile**: Balanced|bx2-2x8
-
-  **SSH keys**: scc-l3-key
-
-  **Virtual private cloud**: **vpc-for-scc-l3**.
-
-  If these values are not the same, set them as shown.
-
-  All of these should be the default values. All other fields should will either be empty or have generated values (e.g. Boot volume, Data volumes, etc.).
-
-8. Click **Create virtual server**.
-
-![](_attachments/vpcVSI-save.png)
-
-It should only take about a minute to provision the VSI. Once the VSI shows the status of **Running**, continue to the next steps.
-
-9. Click the VSI name created earlier in the table of **Virtual server instances for VPC**.
-
-![](_attachments/vpcVSIlist.png)
-
-10. Scroll down to the **Network interfaces** section and click the pencil icon (![](_attachments/pencilIcon.png)) to edit the **eth0** network interface.
-
-![](_attachments/vpcVSINetworkInterfaces.png)
-
-11. Click the **Allow IP spoofing** toggle button to set it to **Enabled** and then click **Save**.
-
-![](_attachments/vpcVSINetworkInterfaceEnableIPSpoofing.png) -->
-
+<p><img alt="" src="../_attachments/dashBoardSettingsEN.png" /></p>
+<p>Don't worry about the <strong>Missing authorization</strong> message in the Storage section. In this ITZ environment, your ID does not have permissions to view this information. Rest assured that the environment is properly configured.</p>
+<p>A new browser window or tab will be opened.</p>
 <ol start="3">
-<li>Click the <strong>IBM Cloud Shell</strong> icon (<img alt="" src="../_attachments/cloudShellIcon.png" />)</li>
+<li>Click <strong>Subscriptions</strong> in left-hand menu.</li>
 </ol>
-<p><img alt="" src="../_attachments/dashboardCloudShell.png" /></p>
-<p>This will open a new browser window and tab with the IBM Cloud Shell. Proceed to the next step once the command prompt is ready (similar to the one highlighted below).</p>
-<p><img alt="" src="../_attachments/cloudShell.png" /></p>
+<p><img alt="" src="../_attachments/enOverview.png" /></p>
 <ol start="4">
-<li>Copy and paste (<img alt="" src="../_attachments/copyAndPasteIcon.png" />) the following commands from this guide to the IBM Cloud Shell window and press enter. </li>
+<li>Click the three ellipses icon (<img alt="" src="../_attachments/ellipses.png" />) for the <strong>SCC-l3-subscription</strong> entry in the table and then click <strong>Edit</strong>.</li>
 </ol>
-<p>The script calls the IBM Cloud command line interfaces to provision a VSI in a pre-provisioned VPC instance.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>#
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>#
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>wget -O createVSI.bash https://raw.githubusercontent.com/IBM/SalesEnablement-SCC-L3/main/tools/createVSI.bash
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>chmod +x createVSI.bash
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>./createVSI.bash
-</code></pre></div>
-<p>Example output:</p>
-<p><img alt="" src="../_attachments/createVSIoutput.png" /></p>
-<p>Take note of the name of the VSI just created (highlighted above). Your VSI name will be the first part of your IBM Cloud user ID (typically email address) followed by a random number and <strong>-scc-vsi</strong>. For example: <strong>andrew-14294-scc-vsi</strong></p>
-<h3 id="verify-the-vsi-was-created-with-ip-spoofing-enabled">Verify the VSI was created with IP spoofing enabled</h3>
-<p>Return to the IBM Cloud browser window/tab.</p>
+<p><img alt="" src="../_attachments/enSubscriptions.png" /></p>
 <ol start="5">
-<li>Click the <strong>VPC Infrastructure</strong> icon (<img alt="" src="../_attachments/vpcIcon.png" />) in the menu bar.</li>
+<li>Enter your SMS enabled mobile device number in the <strong>Phone numbers</strong> dialog, and then click the <strong>Add +</strong> button in the <strong>Recipients</strong> section of the <strong>Subscription details</strong> dialog.</li>
 </ol>
-<p><img alt="" src="../_attachments/dashBoardVPC.png" /></p>
+<p>The mobile device number you enter must be in the proper format. Numbers should being with + and country code. Use the <strong>Learn more</strong> link in the dialog if you are unsure of the proper format.</p>
+<p><img alt="" src="../_attachments/enSubscriptionsAddNumber.png" /></p>
+<div class="admonition important">
+<p class="admonition-title">Do not change anything else on this page</p>
+<p>The IAM permissions required to add mobile device numbers to a subscription also allow users to modify the subscription topic and name. Please do not change these values as this will negatively affect other IBM and Business Partner sellers using this demonstration environment.</p>
+</div>
 <ol start="6">
-<li>Click the <strong>Virtual server instances</strong> option in the left-hand menu.</li>
+<li>Click <strong>Save</strong>.</li>
 </ol>
-<p><img alt="" src="../_attachments/vpcOverviewVSI.png" /></p>
+<p><img alt="" src="../_attachments/enSubscriptionsSaveNumber.png" /></p>
+<p>Shortly after saving the subscription, a SMS message should be received on your mobile device. You must click the link provided to continue to receive the SMS message notifications. You can unsubscribe at anytime.</p>
 <ol start="7">
-<li>Click your VSI's name in the table.</li>
+<li>Click the verification link in the SMS message on your mobile device.</li>
 </ol>
-<p><img alt="" src="../_attachments/vpcListOfVSIs.png" /></p>
+<p><img alt="" src="../_attachments/enVerification.jpeg" /></p>
+<p>Note, the above image was taken from a Apple iPhone. It may look different on other mobile devices.</p>
+<p>A new browser window or tab will open on your mobile device.</p>
 <ol start="8">
-<li>Scroll down to the <strong>Network interfaces</strong> section and verify <strong>Allow IP spoofing</strong> is enabled.</li>
+<li>Click <strong>Confirm</strong>.</li>
 </ol>
-<p><img alt="" src="../_attachments/vpcVSISpoofingEnabled.png" /></p>
-<h3 id="create-a-scc-attachment-and-run-an-initial-scan">Create a SCC attachment and run an initial scan</h3>
-<p>In the steps that follow, using a pre-provisioned instance of SCC, you will create an <strong>attachment</strong> which will scan for VSI on VPCs in a single IBM Cloud resource group to see if <strong>IP network spoofing</strong> is enabled. When the <strong>attachment</strong> is saved, the first scan will automatically be performed.  </p>
-<p>Recall in the scenario described earlier, we will show the failed compliance check (IP spoofing is disabled for all VSIs in VPCs), remediate the issue, and then re-scan to show the compliance check is successful. It is important to understand that SCC cache's scan results for one hour. This means if you run the same scan within an hour of the last time the scan was run, a new scan is NOT performed and the old results are returned. This will be important to remember when performing a client demonstration or if you a recording your Stand and Deliver. </p>
-<p>In the Client Demonstration section of this guide, you demonstrate how to view the scan results, remediate the issue, re-run the scan, and view the new results and the "drift" in compliance between the scans. Additional, commentary will be provided in that section of the guide. For now simply follow the next steps to create the attachment and have the first scan execute.</p>
+<p><img alt="" src="../_attachments/enConfirm.png" /></p>
 <ol start="9">
-<li>Navigate to the <strong>SCC Dashboard</strong> page in the IBM Cloud portal.</li>
+<li>Upon receiving the <strong>Successfully Subscribed</strong> message, close the window on your mobile device.</li>
 </ol>
-<p><img alt="" src="../_attachments/vpcVSINetworkInterfaceReady.png" /></p>
+<p><img alt="" src="../_attachments/enSuccessful.png" /></p>
 <ol start="10">
-<li>Click <strong>Attachments</strong> in the left-hand menu.</li>
+<li>Return to the Event Notification's Subscriptions browser window and close it.</li>
 </ol>
-<p><img alt="" src="../_attachments/sccDashboardConfig.png" /></p>
-<ol start="11">
-<li>Click <strong>Create +</strong>.</li>
-</ol>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachments.png" /></p>
-<ol start="12">
-<li>Enter a unique <strong>Name</strong> for your attachment and then click <strong>Next</strong>.</li>
-</ol>
-<p>Attachment names need to be unique. To avoid issues, it is suggested that you use a name similar to the VSI created earlier, for example: <strong>andrew-14294-ipspoofing-compliance</strong>.</p>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachmDetails.png" /></p>
-<ol start="13">
-<li>Select <strong>se-scc-l3-DO-NOT-DELETE</strong> in the <strong>Profile</strong> pull-down menu and then click <strong>Next</strong></li>
-</ol>
-<p>You will examine the <strong>se-scc-l3-DO-NOT-DELETE</strong> profile in detail in the next section of the guide.</p>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachProfile.png" /></p>
-<ol start="14">
-<li>Select <strong>SCC-L3</strong> in the <strong>Scope</strong> pull-down menu and click <strong>Next</strong>.</li>
-</ol>
-<p>You will learn more about the <strong>Scope</strong> setting in the next section of the guide.</p>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachScope.png" /></p>
-<ol start="15">
-<li>Review the details on the <strong>Scan settings</strong> page and click <strong>Next</strong>.</li>
-</ol>
-<p>For now, the default settings are fine, and will be explain in more details in the next section of the guide.</p>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachScanSettings.png" /></p>
-<ol start="16">
-<li>Review all the <strong>attachment</strong> settings and click <strong>Create</strong>.</li>
-</ol>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachReview.png" /></p>
-<p>The <strong>attachment</strong> is now saved and the initial scan is being run.</p>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachRunning.png" /></p>
-<p>Notice the <strong>Scan in progress</strong> message for your attachment. Due to a user interface issue with this page and at least some browsers, this progress message will remain on the screen until you refresh the page. As this is a very simple scan of one control on a very limited scope, this scan only takes a minute or two to run.  Wait a couple of minutes and then click the browser's refresh button and the <strong>Next scan</strong> information should be shown.</p>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachNextScan.png" /></p>
-<p>At this point, you can proceed to the next chapter to learn about and configure IBM Cloud Event Notifications to enhance your client demonstration or continue to the next section to perform a client demonstration. While enabling IBM Cloud Event Notifications is optional, you are encouraged to at least read the introduction to learn more about IBM Cloud Event Notifications.</p>
+<p>Note, at this point the scan you created earlier is not enabled to send notifications. You will update this setting in the next section of the guide.</p>
+<p>You are now ready to proceed to the next section to learn how to perform a client demonstration. </p>
 
 
 
@@ -723,7 +573,7 @@ It should only take about a minute to provision the VSI. Once the VSI shows the 
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../Access%20the%20environment/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Access the environment" rel="prev">
+        <a href="../Configure%20the%20environment/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Configure remediation scenario" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -732,20 +582,20 @@ It should only take about a minute to provision the VSI. Once the VSI shows the 
               <span class="md-footer__direction">
                 Previous
               </span>
-              Access the environment
+              Configure remediation scenario
             </div>
           </div>
         </a>
       
       
         
-        <a href="../ConfigureSMS/" class="md-footer__link md-footer__link--next" aria-label="Next: Configure SMS messaging (OPTIONAL)" rel="next">
+        <a href="../../demo/Overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Configure SMS messaging (OPTIONAL)
+              Overview
             </div>
           </div>
           <div class="md-footer__button md-icon">
