@@ -97,6 +97,8 @@ This will open a new browser window and tab with the IBM Cloud Shell. Proceed to
 ![](_attachments/cloudShell.png)
 
 4. Copy and paste (![](_attachments/copyAndPasteIcon.png)) the following commands from this guide to the IBM Cloud Shell window and press enter. 
+   
+The script calls the IBM Cloud command line interfaces to provision a VSI in a pre-provisioned VPC instance.
 
 ```
 #
@@ -116,35 +118,88 @@ Take note of the name of the VSI just created (highlighted above). Your VSI name
 
 Return to the IBM Cloud browser window/tab.
 
-3. Click the **VPC Infrastructure** icon (![](_attachments/vpcIcon.png)) in the menu bar.
+5. Click the **VPC Infrastructure** icon (![](_attachments/vpcIcon.png)) in the menu bar.
    
 ![](_attachments/dashBoardVPC.png)
 
-4. Click the **Virtual server instances** option in the left-hand menu.
+6. Click the **Virtual server instances** option in the left-hand menu.
 
 ![](_attachments/vpcOverviewVSI.png)
 
-5. Click your VSI's name in the table.
+7. Click your VSI's name in the table.
 
 ![](_attachments/vpcListOfVSIs.png)
 
-6. Scroll down to the **Network interfaces** section and verify **Allow IP spoofing** is enabled.
+8. Scroll down to the **Network interfaces** section and verify **Allow IP spoofing** is enabled.
 
 ![](_attachments/vpcVSISpoofingEnabled.png)
 
 ### Create a SCC attachment and run an initial scan
 
-12. Navigate to the **SCC Dashboard** page in the IBM Cloud portal.
+In the steps that follow, using a pre-provisioned instance of SCC, you will create an **attachment** which will scan for VSI on VPCs in a single IBM Cloud resource group to see if **IP network spoofing** is enabled. When the **attachment** is saved, the first scan will automatically be performed.  
+
+Recall in the scenario described earlier, we will show the failed compliance check (IP spoofing is disabled for all VSIs in VPCs), remediate the issue, and then re-scan to show the compliance check is successful. It is important to understand that SCC cache's scan results for one hour. This means if you run the same scan within an hour of the last time the scan was run, a new scan is NOT performed and the old results are returned. This will be important to remember when performing a client demonstration or if you a recording your Stand and Deliver. 
+
+In the Client Demonstration section of this guide, you demonstrate how to view the scan results, remediate the issue, re-run the scan, and view the new results and the "drift" in compliance between the scans. Additional, commentary will be provided in that section of the guide. For now simply follow the next steps to create the attachment and have the first scan execute.
+
+9. Navigate to the **SCC Dashboard** page in the IBM Cloud portal.
 
 ![](_attachments/vpcVSINetworkInterfaceReady.png)
 
-13. XXXXXXXXXXXXXXXXXXXXXX
+10. Click **Attachments** in the left-hand menu.
+
+![](_attachments/sccDashboardConfig.png)
+
+11. Click **Create +**
+
+![](_attachments/sccDashboardConfigAttachments.png)
+
+12. Enter a unique **Name** for your attachment and then click **Next**.
+
+Attachment names need to be unique. To avoid issues, it is suggested that you use a name similar to the VSI created earlier, for example: **andrew-14294-ipspoofing-compliance**.
+
+![](_attachments/sccDashboardConfigAttachmDetails.png)
+
+13. Select **se-scc-l3-DO-NOT-DELETE** in the **Profile** pull-down menu and then click **Next**
+
+You will examine the **se-scc-l3-DO-NOT-DELETE** profile in detail in the next section of the guide.
+
+![](_attachments/sccDashboardConfigAttachProfile.png)
+
+14. Select **SCC-L3** in the **Scope** pull-down menu and click **Next**.
+
+You will learn more about the **Scope** setting in the next section of the guide.
+
+![](_attachments/sccDashboardConfigAttachScope.png)
+
+15. Review the details on the **Scan settings** page and click **Next**.
+
+For now, the default settings are fine, and will be explain in more details in the next section of the guide.
+
+![](_attachments/sccDashboardConfigAttachScanSettings.png)
+
+16. Review all the **attachment** settings and click **Create**.
+
+![](_attachments/sccDashboardConfigAttachReview.png)
+
+The **attachment** is now saved and the initial scan is being run.
+
+![](_attachments/sccDashboardConfigAttachRunning.png)
+
+Notice the **Scan in progress** message for your attachment. Due to a user interface issue with this page and at least some browsers, this progress message will remain on the screen until you refresh the page. As this is a very simple scan of one control on a very limited scope, this scan only takes a minute or two to run.  Wait a couple of minutes and then click the browser's refresh button and the **Next scan** information should be shown.
+
+![](_attachments/sccDashboardConfigAttachNextScan.png)
+
+
+
 
 ## Enable SMS notifications (Optional)
 
-SCC can integrate with IBM Cloud Event Notifications which is used to send notifications to users via e-mail, SMS, or other supported notification channels. The ITZ environment for this demonstration guide is enabled with IBM Cloud Event Notifications. Step-by-step instructions for enabling SMS notifications to your personal mobile device are provided below. To learn about provisioning IBM Cloud Event Notifications and configuration SCC to use it, read the documentation <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-event-notifications&interface=ui" target="_blank">here</a>.
+This is an optional task for the Level 3 learning plan requirements. 
 
-This is an optional task for the Level 3 learning plan requirements. Follow these steps to add SMS notifications as part of your demonstration. 
+SCC can integrate with IBM Cloud Event Notifications which is used to send notifications to users via e-mail, SMS, or other supported notification channels (recall the **Notify me** toggle in the **Scan settings** page of when creating an attachment). The ITZ environment for this demonstration guide is enabled with IBM Cloud Event Notifications. Step-by-step instructions for enabling SMS notifications to your personal mobile device are provided below. To learn about provisioning IBM Cloud Event Notifications and configuration SCC to use it, read the documentation <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-event-notifications&interface=ui" target="_blank">here</a>.
+
+Follow these steps to add SMS notifications as part of your demonstration. 
 
 1. Open a web browser to the **IBM Cloud Portal**.
 
@@ -215,4 +270,6 @@ A new browser window or tab will open on your mobile device.
 
 13. Return to the Event Notification's Subscriptions browser window and close it.
 
-You are ready to proceed to the next section of this demonstration guide to learn how to perform a client demonstration. 
+Note, at this point the scan you created is still not enabled to send notifications. You will update this setting in the next section of the guide.
+
+You are now ready to proceed to the next section to learn how to perform a client demonstration. 
