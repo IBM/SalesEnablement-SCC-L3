@@ -2,7 +2,7 @@ Before using the IBM Technology Zone (ITZ), a few additional configuration steps
 
 ## Setup the remediation scenario
 
-A compelling demonstration of IBM Cloud Security and Compliance Center (SCC) not only includes showing the results of a compliance scan, but also demonstrating how compliance failures can be remediated. In this demonstration guide, you will demonstrate how to remediate a failed compliance scan related to a VSI running in an IBM Cloud Virtual Private Cloud (VPC) and internet protocol (IP) network spoofing. While IP network spoofing has legitimate business uses, it is also a potential vulnerability. You can learn more about IP address spoofing <a href="https://en.wikipedia.org/wiki/IP_address_spoofing" target="_blank">here</a>. SCC has a predefined control that checks to see if a VSI in a VPC has IP network spoofing enabled and flags those VSI's as non-compliant. This scenario was chosen as it is easy to turn this setting on and off of a VSI and VSI's in VPC are inexpensive resources and provision very quickly. 
+A compelling demonstration of IBM Cloud Security and Compliance Center (SCC) not only includes showing the results of a compliance scan, but also demonstrating how compliance failures can be remediated. In this demonstration guide, you will demonstrate how to remediate a failed compliance scan related to internet protocol (IP) address spoofing on a virtual server instance (VSI) running in an IBM Cloud Virtual Private Cloud (VPC). While IP address spoofing has legitimate business uses, it is also a potential vulnerability. Learn more about IP address spoofing <a href="https://en.wikipedia.org/wiki/IP_address_spoofing" target="_blank">here</a>. SCC has a predefined control that checks to see if a VSI in a VPC has IP address spoofing enabled and flags those VSI's as non-compliant. This scenario was chosen as it is easy to turn enable and disable this setting on a VSI and VSI's in VPC are inexpensive resources which provision very quickly. 
 
 In the next steps:
 
@@ -150,7 +150,7 @@ In the Client Demonstration section of this guide, you demonstrate how to view t
 
 ![](_attachments/sccDashboardConfig.png)
 
-11. Click **Create +**
+11. Click **Create +**.
 
 ![](_attachments/sccDashboardConfigAttachments.png)
 
@@ -190,9 +190,6 @@ Notice the **Scan in progress** message for your attachment. Due to a user inter
 
 ![](_attachments/sccDashboardConfigAttachNextScan.png)
 
-
-
-
 ## Enable SMS notifications (Optional)
 
 This is an optional task for the Level 3 learning plan requirements. 
@@ -201,6 +198,7 @@ SCC can integrate with IBM Cloud Event Notifications which is used to send notif
 
 Follow these steps to add SMS notifications as part of your demonstration. 
 
+<!-- 
 1. Open a web browser to the **IBM Cloud Portal**.
 
 <a href="https://cloud.ibm.com" target="_blank">IBM Cloud Portal</a>.
@@ -215,13 +213,13 @@ Note, if the browser window is narrow, you might see an **account selection** ic
 
 3. Click the **Security and Compliance** icon (![](../demo/_attachments/sccIcon.png)) in the menu bar.
    
-![](../demo/_attachments/dashBoard.png)
+![](../demo/_attachments/dashBoard.png) -->
 
-4. Click **Settings** in left-hand menu.
+1. Click the **Settings** option in the left-hand menu of the Security and Compliance page.
 
-![](_attachments/dashBoardSettings.png)
+![](../demo/_attachments/sccDashboardStartENSetup.png) 
 
-5. Click the **{{en.Instance}}** link under **Event Notifications**. 
+2. Click the **{{en.Instance}}** link under **Event Notifications**. 
 
 ![](_attachments/dashBoardSettingsEN.png)
 
@@ -229,15 +227,15 @@ Don't worry about the **Missing authorization** message in the Storage section. 
 
 A new browser window or tab will be opened.
 
-6. Click **Subscriptions** in left-hand menu.
+3. Click **Subscriptions** in left-hand menu.
 
 ![](_attachments/enOverview.png)
 
-7. Click the three ellipses icon (![](_attachments/ellipses.png)) for the **{{en.Subscription}}** entry in the table and then click **Edit**.
+4. Click the three ellipses icon (![](_attachments/ellipses.png)) for the **{{en.Subscription}}** entry in the table and then click **Edit**.
 
 ![](_attachments/enSubscriptions.png)
 
-8. Enter your SMS enabled mobile device number in the **Phone numbers** dialog, and then click the **Add +** button in the **Recipients** section of the **Subscription details** dialog.
+5. Enter your SMS enabled mobile device number in the **Phone numbers** dialog, and then click the **Add +** button in the **Recipients** section of the **Subscription details** dialog.
 
 The mobile device number you enter must be in the proper format. Numbers should being with + and country code. Use the **Learn more** link in the dialog if you are unsure of the proper format.
 
@@ -246,29 +244,29 @@ The mobile device number you enter must be in the proper format. Numbers should 
 !!! Important "Do not change anything else on this page"
     The IAM permissions required to add mobile device numbers to a subscription also allow users to modify the subscription topic and name. Please do not change these values as this will negatively affect other IBM and Business Partner sellers using this demonstration environment.
 
-9. Click **Save**.
+6. Click **Save**.
 
 ![](_attachments/enSubscriptionsSaveNumber.png)
 
 Shortly after saving the subscription, a SMS message should be received on your mobile device. You must click the link provided to continue to receive the SMS message notifications. You can unsubscribe at anytime.
 
-10. Click the verification link in the SMS message on your mobile device.
+7. Click the verification link in the SMS message on your mobile device.
 
 ![](_attachments/enVerification.jpeg)
 
-Note, the above image was taken from a Apple iPhone mobile device. It may look different on other devices.
+Note, the above image was taken from a Apple iPhone. It may look different on other mobile devices.
 
 A new browser window or tab will open on your mobile device.
 
-11. Click **Confirm**.
+8. Click **Confirm**.
 
 ![](_attachments/enConfirm.png)
 
-12. Upon receiving the **Successfully Subscribed** message, close the window on your mobile device.
+9. Upon receiving the **Successfully Subscribed** message, close the window on your mobile device.
 
 ![](_attachments/enSuccessful.png)
 
-13. Return to the Event Notification's Subscriptions browser window and close it.
+10. Return to the Event Notification's Subscriptions browser window and close it.
 
 Note, at this point the scan you created is still not enabled to send notifications. You will update this setting in the next section of the guide.
 
