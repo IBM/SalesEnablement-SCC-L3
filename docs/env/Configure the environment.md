@@ -96,9 +96,11 @@ This will open a new browser window and tab with the IBM Cloud Shell. Proceed to
 
 ![](_attachments/cloudShell.png)
 
-4. Copy and paste the following commands from this guide to the IBM Cloud Shell window and press enter.
+4. Copy and paste (![](_attachments/copyAndPasteIcon.png)) the following commands from this guide to the IBM Cloud Shell window and press enter. 
 
 ```
+#
+#
 wget -O createVSI.bash {{guide.createVSIscript}}
 chmod +x createVSI.bash
 ./createVSI.bash
@@ -108,7 +110,7 @@ Example output:
 
 ![](_attachments/createVSIoutput.png)
 
-Take note of the name of the VSI just created (highlighted above). Your VSI name will be the first part of your IBM Cloud user ID (typically email address) followed by **scc-vsi**. For example: **andrew--scc-vsi**
+Take note of the name of the VSI just created (highlighted above). Your VSI name will be the first part of your IBM Cloud user ID (typically email address) followed by a random number and **-scc-vsi**. For example: **andrew-14294-scc-vsi**
 
 ### Verify the VSI was created with IP spoofing enabled
 
@@ -122,6 +124,13 @@ Return to the IBM Cloud browser window/tab.
 
 ![](_attachments/vpcOverviewVSI.png)
 
+5. Click your VSI's name in the table.
+
+![](_attachments/vpcListOfVSIs.png)
+
+6. Scroll down to the **Network interfaces** section and verify **Allow IP spoofing** is enabled.
+
+![](_attachments/vpcVSISpoofingEnabled.png)
 
 ### Create a SCC attachment and run an initial scan
 
