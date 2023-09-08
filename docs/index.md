@@ -10,7 +10,7 @@ Welcome to the demonstration guide for the {{learningplan.Name}} learning plan. 
 
     **IBM Sales and Tech Sales** must develop and record a Stand & Deliver presentation. This video is intended to simulate your delivery of a “live” demo in front of a client — on camera. IBMers will have flexibility in defining a hypothetical client, the pain points that customer has, and the goals they aspire to achieve. The recording will then cover the seller’s hands-on demonstration and pitch to the client of the value of the IBM solution using the environments and techniques of this lab.
 
-    Specific criteria that must be demonstrated as part of the Stand & Deliver recordings is provided within the documentation that accompanies the Level 3 course in YourLearning.
+    Specific criteria that must be demonstrated as part of the Stand & Deliver recording is provided within the Evaluation Checklist that accompanies the Level 3 course in YourLearning.
 
 Before starting this learning plan, it is highly recommended that you complete the {{level2learningplan.Name}} learning plan as that base knowledge is assumed for this course. The Level 2 courses can be found here:
 
@@ -18,8 +18,6 @@ Before starting this learning plan, it is highly recommended that you complete t
 - Business Partners: <a href="{{level2learningplan.BPurl}} target="_blank">{{level2learningplan.BPurl}}</a>
 
 Another excellent resource is the <a href="https://pages.github.ibm.com/IBM-Cloud-Satellite-and-PaaS-Community/technology-pattern-scc/" target="_blank">IBM Technology Patterns for Regulated Cloud workloads</a>. This web site includes use cases, client stories, and other seller enablement. The site also includes additional assets for demos and labs related to SCC. These assets include reservable IBM Technology Zone (ITZ) environments. These environments are excellent options for proof-of-concepts and the like for individualized client engagements. This differs from the environment used for this learning plan. The ITZ environment for this learning plan utilizes pre-provisioned resources in a shared environment allowing sellers and technical sellers to very quickly have access to a demonstration environment without the need for time-consuming provisioning and configuration tasks.
-
-TBW: ONCE FINALIZED ADD MORE SPECIFIC SUMMARY OF WHAT THE DEMO WILL CONSIST OF FOR SALES AND FOR TECHNICAL SALES (E.G. PROTECT WORKLOADS, SECURITY AND COMPLIANCE MANAGEMENT, ASSESS 3RD & 4TH PARTY RISK,). WILL NOT HAVE  HYBRID MULTI-CLOUD STRATEGY IN THIS ENVIRONMENT, BUT CAN BE MENTIONED IN WP SECTION.
 
 Every good client demonstration should tell a story the client can relate to. This may be a particular pain point the client is experiencing or a common industry scenario. SCC includes both industry specific (e.g. Financial Services), cross industry controls, and the ability to build custom controls. When performing an actual client demonstration, sellers should focus on the controls most relevant to the client. Refer to the afore mentioned technology pattern for more information on SCC use cases. Additionally, if you know what IBM Cloud resources the client is already using, validate if those resources can be evaluated by SCC. Find the current list of resources that can be evaluated by SCC <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-scannable-components&interface=ui" target="_blank">here</a>.
 
@@ -58,4 +56,4 @@ These concepts can be visualized in these steps:
 4. The results of the scan or stored in a IBM Cloud Object Storage (COS) specified by the client when the SCC instance is created.
 5. And finally, the results are made accessible through the SCC Dashboard in the IBM Cloud Portal.
 
-In the next sections of this demonstration guide learn how to demonstration SCC to clients using the flow above along with sample talking points and a few additional demonstration ideas that may be relevant to specific client audiences.
+In the next sections of this demonstration guide, learn how to demonstration SCC to clients using the flow above along with sample talking points and a additional demonstration ideas that may be relevant to specific client audiences.

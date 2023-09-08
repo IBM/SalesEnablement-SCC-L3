@@ -8,7 +8,7 @@ That concludes this part of the {{learningplan.name}}.
     
     If you enabled SMS messaging, simply click the unsubscribe link on any of the SMS messages you received on your mobile device and follow the directions to unsubscribe.
 
-REFER BACK TO SCC PATTERN FOR ADDITIONAL USE CASES. WE DIDN'T COVER MULTI-CLOUD IN THIS DEMO, BUT IT IS A KEY CAPABILITY OF THE OFFERING AND COULD BE DEMOED USING THE DEMOS DESCRIBED IN THE PATTERN.
+TBW - REFER BACK TO SCC PATTERN FOR ADDITIONAL USE CASES. WE DIDN'T COVER MULTI-CLOUD IN THIS DEMO, BUT IT IS A KEY CAPABILITY OF THE OFFERING AND COULD BE DEMOED USING THE DEMOS DESCRIBED IN THE PATTERN.
 
 Remember to complete the {{learningplan.name}} learning plan:
 
