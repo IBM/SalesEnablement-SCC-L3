@@ -74,6 +74,30 @@ A new browser window or tab opens on your mobile device.
 
 10. Return to the Event Notification's Subscriptions browser window and close it.
 
-Note, the scan you created earlier is not enabled to send notifications. You will update this setting in the next section of the guide.
+Note, the scan you created earlier is not enabled to send notifications. Lets edit that scan and enable notifications.
+
+11. Return the browser window or tab with the SCC **Settings** page and click the **Attachments** option in left-hand menu.
+
+![](_attachments/sccSettingsPage2.png)
+
+12. Click the ellipses icon (![](../env/_attachments/ellipses.png)) of the **Attachment** you created earlier and then click **Edit**. In this example, **andrew-14294-ipspoofing-compliance**.
+
+![](_attachments/sccAttachmentsEdit.png)
+
+13. Click **Next** three times until you reach the **Scan settings** page.
+
+![](_attachments/sccAttachmentsEditScanSettings.png)
+
+14. Click the **Notify me** toggle button in the **Failure notifications** section.
+
+![](_attachments/sccAttachmentsEditScanSettingsToggle.png)
+
+15. Enter **1** in the **Threshold** entry field (or move the % slide to the far left).
+
+![](_attachments/sccAttachmentsEditScanSettingsThreshold.png)
+
+By setting the threshold to 1% will ensure a notification is sent when the issue has been remediate on at least one resource.
+
+16. Click **Next** and then click **Save** to save the changes to your attachment.
 
 You are now ready to proceed to the next section to learn how to perform a client demonstration. 
