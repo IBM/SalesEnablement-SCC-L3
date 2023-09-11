@@ -22,6 +22,7 @@ nav:
     - 'Configure SMS messaging (OPTIONAL)': 'env/ConfigureSMS.md'
   - 'Client Demonstrations':
     - 'Overview': 'demo/Overview.md'
+    - 'Provisioning an SCC instance (OPTIONAL)': 'demo/provisioning.md'
     - 'High-level demonstration of SCC': 'demo/scc.md'
     - 'Remediating a failed compliance control': 'demo/remediation.md'
     - 'High-level demonstration of Workload Protection': 'demo/wp.md'
