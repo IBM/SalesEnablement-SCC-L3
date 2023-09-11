@@ -96,7 +96,7 @@ Note, the scan you created earlier is not enabled to send notifications. Lets ed
 
 ![](_attachments/sccAttachmentsEditScanSettingsThreshold.png)
 
-By setting the threshold to 1% will ensure a notification is sent when the issue has been remediate on at least one resource.
+Setting the threshold to 1% will ensure a notification is sent when the issue has been remediate on at least one resource.
 
 16. Click **Next** and then click **Save** to save the changes to your attachment.
 
