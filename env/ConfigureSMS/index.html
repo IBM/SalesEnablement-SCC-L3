@@ -463,7 +463,7 @@
   <h1>Configure SMS messaging (OPTIONAL)</h1>
 
 <p>This is an optional task for the Level 3 learning plan requirements. </p>
-<p>SCC can integrate with IBM Cloud Event Notifications which is used to send notifications to users via e-mail, SMS, or other supported notification channels (recall the <strong>Notify me</strong> toggle in the <strong>Scan settings</strong> page of when creating an attachment). The ITZ environment for this demonstration guide is enabled with IBM Cloud Event Notifications. Step-by-step instructions for enabling SMS notifications to your personal mobile device are provided below. To learn about provisioning IBM Cloud Event Notifications and configuration SCC to use it, read the documentation <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-event-notifications&interface=ui" target="_blank">here</a>.</p>
+<p>IBM Cloud Security and Compliance Center (SCC) can integrate with IBM Cloud Event Notifications, which is used to send notifications to users via email, SMS, or other supported notification channels (recall the <strong>Notify me</strong> toggle in the <strong>Scan settings</strong> page when creating an attachment). The ITZ environment for this demonstration guide is enabled with IBM Cloud Event Notifications. Step-by-step instructions for enabling SMS notifications to your personal mobile device are provided below. To learn about provisioning IBM Cloud Event Notifications and configuration SCC to use it, read the documentation <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-event-notifications&interface=ui" target="_blank">here</a>.</p>
 <p>Follow these steps to add SMS notifications as part of your demonstration. </p>
 <!-- 
 1. Open a web browser to the **IBM Cloud Portal**.
@@ -490,10 +490,10 @@ Note, if the browser window is narrow, you might see an **account selection** ic
 <li>Click the <strong>eventnotifications-scc-l3</strong> link under <strong>Event Notifications</strong>. </li>
 </ol>
 <p><img alt="" src="../_attachments/dashBoardSettingsEN.png" /></p>
-<p>Don't worry about the <strong>Missing authorization</strong> message in the Storage section. In this ITZ environment, your ID does not have permissions to view this information. Rest assured that the environment is properly configured.</p>
-<p>A new browser window or tab will be opened.</p>
-<ol start="3">
-<li>Click <strong>Subscriptions</strong> in left-hand menu.</li>
+<p>Don't worry about the <strong>Missing authorization</strong> message in the Storage section. In this ITZ environment, your ID does not have permission to view this information. Rest assured that the environment is properly configured.</p>
+<p>A new browser window or tab will open.</p>
+<ol>
+<li>Click <strong>Subscriptions</strong> in the left-hand menu.</li>
 </ol>
 <p><img alt="" src="../_attachments/enOverview.png" /></p>
 <ol start="4">
@@ -503,24 +503,24 @@ Note, if the browser window is narrow, you might see an **account selection** ic
 <ol start="5">
 <li>Enter your SMS enabled mobile device number in the <strong>Phone numbers</strong> dialog, and then click the <strong>Add +</strong> button in the <strong>Recipients</strong> section of the <strong>Subscription details</strong> dialog.</li>
 </ol>
-<p>The mobile device number you enter must be in the proper format. Numbers should being with + and country code. Use the <strong>Learn more</strong> link in the dialog if you are unsure of the proper format.</p>
+<p>The mobile device number that you enter must be in the proper format. Numbers should begin with + and country code. Use the <strong>Learn more</strong> link in the dialog if you are unsure of the proper format.</p>
 <p><img alt="" src="../_attachments/enSubscriptionsAddNumber.png" /></p>
 <div class="admonition important">
 <p class="admonition-title">Do not change anything else on this page</p>
-<p>The IAM permissions required to add mobile device numbers to a subscription also allow users to modify the subscription topic and name. Please do not change these values as this will negatively affect other IBM and Business Partner sellers using this demonstration environment.</p>
+<p>The IAM permissions that are required to add mobile device numbers to a subscription also allow users to modify the subscription topic and name. Do not change these values as this will negatively affect other IBM and Business Partner sellers that use this demonstration environment.</p>
 </div>
 <ol start="6">
 <li>Click <strong>Save</strong>.</li>
 </ol>
 <p><img alt="" src="../_attachments/enSubscriptionsSaveNumber.png" /></p>
-<p>Shortly after saving the subscription, a SMS message should be received on your mobile device. You must click the link provided to continue to receive the SMS message notifications. You can unsubscribe at anytime.</p>
+<p>Shortly after saving the subscription, an SMS message should be received on your mobile device. You must click the link that is provided to continue to receive the SMS message notifications. You can unsubscribe at any time.</p>
 <ol start="7">
 <li>Click the verification link in the SMS message on your mobile device.</li>
 </ol>
 <p><img alt="" src="../_attachments/enVerification.jpeg" /></p>
-<p>Note, the above image was taken from a Apple iPhone. It may look different on other mobile devices.</p>
-<p>A new browser window or tab will open on your mobile device.</p>
-<ol start="8">
+<p>Note, the above image was taken from an Apple iPhone. It might look different on other mobile devices.</p>
+<p>A new browser window or tab opens on your mobile device.</p>
+<ol>
 <li>Click <strong>Confirm</strong>.</li>
 </ol>
 <p><img alt="" src="../_attachments/enConfirm.png" /></p>
@@ -531,7 +531,7 @@ Note, if the browser window is narrow, you might see an **account selection** ic
 <ol start="10">
 <li>Return to the Event Notification's Subscriptions browser window and close it.</li>
 </ol>
-<p>Note, at this point the scan you created earlier is not enabled to send notifications. You will update this setting in the next section of the guide.</p>
+<p>Note, the scan you created earlier is not enabled to send notifications. You will update this setting in the next section of the guide.</p>
 <p>You are now ready to proceed to the next section to learn how to perform a client demonstration. </p>
 
 
