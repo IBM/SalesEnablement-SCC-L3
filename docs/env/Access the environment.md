@@ -15,7 +15,7 @@ When the page loads, authenticate with your IBM Cloud ID and password. The authe
 
 ![](_attachments/joinNowNotification.png)
 
-Note: if you do not see a notification like this, then, in most cases, your ITZ reservation is not in the **Ready** state. Wait for the reservation to become **Ready**. You will also receive an email with the **Join now** link.
+Note: if you do not see a notification like this, then in most cases, your ITZ reservation is not in the **Ready** state. Wait for the reservation to become **Ready**. You will also receive an email with the **Join now** link.
 
 4. Click the **I accept the product...** checkbox.
 5. Click **Join Account**.
@@ -28,4 +28,4 @@ Note: if you do not see a notification like this, then, in most cases, your ITZ 
 
 Note, if the browser window is narrow, you might see an **account selection** icon like this: ![](_attachments/switchAccountIcon.png) instead of the full account name.
 
-Now that the reservation is active, the invitation to join the account has been accepted, and you have switched to the ITZ account with the pre-provisioned SCC instance, you are ready to proceed to the next chapters to configure the environment in preparation of performing a demonstration. 
+Now that the reservation is active, the invitation to join the account was accepted, and you switched to the ITZ account with the pre-provisioned SCC instance, you are ready to proceed to the next chapter to configure the environment in preparation of performing a demonstration. 

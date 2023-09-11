@@ -1,14 +1,14 @@
-A compelling demonstration of IBM Cloud Security and Compliance Center (SCC) not only includes showing the results of a compliance scan, but also demonstrating how compliance failures can be remediated. In this demonstration guide, you will demonstrate how to remediate a failed compliance scan related to internet protocol (IP) address spoofing on a virtual server instance (VSI) running in an IBM Cloud Virtual Private Cloud (VPC). While IP address spoofing has legitimate business uses, it is also a potential vulnerability. Learn more about IP address spoofing <a href="https://en.wikipedia.org/wiki/IP_address_spoofing" target="_blank">here</a>. SCC has a predefined control that checks to see if a VSI in a VPC has IP address spoofing enabled and flags those VSI's as non-compliant. This scenario was chosen as it is easy to turn enable and disable this setting on a VSI and VSI's in VPC are inexpensive resources which provision very quickly. 
+A compelling demonstration of IBM Cloud Security and Compliance Center (SCC) not only includes showing the results of a compliance scan, but also demonstrating how compliance failures can be remediated. In this demonstration guide, demonstrate how to remediate a failed compliance scan that is related to internet protocol (IP) address spoofing on a virtual server instance (VSI) running in an IBM Cloud Virtual Private Cloud (VPC). While IP address spoofing has legitimate business uses, it is also a potential vulnerability. Learn more about IP address spoofing <a href="https://en.wikipedia.org/wiki/IP_address_spoofing" target="_blank">here</a>. SCC has a predefined control that checks to see whether a VSI in a VPC has IP address spoofing enabled and flags those VSI's as noncompliant. This scenario was chosen as it is easy to enable and disable this setting on a VSI and VSI's in VPC are inexpensive resources which provision quickly. 
 
 In the next steps:
 
   - provision a VSI instance with **IP network spoofing** enabled
   
-  - create a SCC attachment that scans for VSIs with IP network spoofing enabled
+  - create an SCC attachment that scans for VSIs with IP network spoofing enabled
   
   - run an initial scan
 
-In the Client Demonstration section, you will show the client the compliance failure related to the VSI you created, remediate the issue, re-run the scan, and show the new, successful compliance results.
+In the Client Demonstration section, you show the client the compliance failure that is related to the VSI you created, remediate the issue, rerun the scan, and show the new, successful compliance results.
 
 ### Provision a VSI with IP spoofing enabled
   
@@ -88,11 +88,11 @@ It should only take about a minute to provision the VSI. Once the VSI shows the 
 
 ![](_attachments/dashboardCloudShell.png)
 
-This will open a new browser window and tab with the IBM Cloud Shell. Proceed to the next step once the command prompt is ready (similar to the one highlighted below).
+A new browser window or tab will open with the IBM Cloud Shell. Proceed to the next step when the command prompt is ready (similar to the one highlighted below).
 
 ![](_attachments/cloudShell.png)
 
-4. Copy and paste (![](_attachments/copyAndPasteIcon.png)) the following commands from this guide to the IBM Cloud Shell window and press enter. 
+4. Copy and paste (![](_attachments/copyAndPasteIcon.png)) the following commands to the IBM Cloud Shell window and press enter. 
    
 The script calls the IBM Cloud command line interfaces to provision a VSI in a pre-provisioned VPC instance.
 
@@ -108,9 +108,9 @@ Example output:
 
 ![](_attachments/createVSIoutput.png)
 
-Take note of the name of the VSI just created (highlighted above). Your VSI name will be the first part of your IBM Cloud user ID (typically email address) followed by a random number and **-scc-vsi**. For example: **andrew-14294-scc-vsi**
+Take note of the name of the VSI created (highlighted above). Your VSI's name is the first part of your IBM Cloud user ID (typically email address) followed by a random number and **-scc-vsi**. For example: **andrew-14294-scc-vsi**
 
-### Verify the VSI was created with IP spoofing enabled
+### Verify that the VSI was created with IP spoofing enabled
 
 Return to the IBM Cloud browser window/tab.
 
@@ -126,17 +126,17 @@ Return to the IBM Cloud browser window/tab.
 
 ![](_attachments/vpcListOfVSIs.png)
 
-8. Scroll down to the **Network interfaces** section and verify **Allow IP spoofing** is enabled.
+8. Scroll down to the **Network interfaces** section and verify that **Allow IP spoofing** is enabled.
 
 ![](_attachments/vpcVSISpoofingEnabled.png)
 
-### Create a SCC attachment and run an initial scan
+### Create an SCC attachment and run an initial scan
 
-In the steps that follow, using a pre-provisioned instance of SCC, you will create an **attachment** which will scan for VSI on VPCs in a single IBM Cloud resource group to see if **IP network spoofing** is enabled. When the **attachment** is saved, the first scan will automatically be performed.  
+In the steps that follow, using a pre-provisioned instance of SCC, you create an **attachment** which scans for VSIs on VPCs in a single IBM Cloud resource group to see whether **IP network spoofing** is enabled. When the **attachment** is saved, the first scan will automatically be performed.  
 
-Recall in the scenario described earlier, we will show the failed compliance check (IP spoofing is disabled for all VSIs in VPCs), remediate the issue, and then re-scan to show the compliance check is successful. It is important to understand that SCC cache's scan results for one hour. This means if you run the same scan within an hour of the last time the scan was run, a new scan is NOT performed and the old results are returned. This will be important to remember when performing a client demonstration or if you a recording your Stand and Deliver. 
+Recall in the scenario described earlier, we will show the failed compliance check (IP spoofing is disabled for all VSIs in VPCs), remediate the issue, and then rescan to show the compliance check is successful. It is important to understand that SCC cache's scan results for one hour. This means if you run the same scan within an hour of the last time the scan was run, a new scan is NOT performed and the old results are returned. This is important to remember when performing a client demonstration or if you are recording your Stand and Deliver. 
 
-In the Client Demonstration section of this guide, you demonstrate how to view the scan results, remediate the issue, re-run the scan, and view the new results and the "drift" in compliance between the scans. Additional, commentary will be provided in that section of the guide. For now simply follow the next steps to create the attachment and have the first scan execute.
+In the Client Demonstration section of this guide, you demonstrate how to view the scan results, remediate the issue, rerun the scan, and view the new results and the "drift" in compliance between the scans. More commentary is provided in that section of the guide. For now, follow the next steps to create the attachment and have the first scan run.
 
 9. Navigate to the **SCC Dashboard** page in the IBM Cloud portal.
 
@@ -182,8 +182,8 @@ The **attachment** is now saved and the initial scan is being run.
 
 ![](_attachments/sccDashboardConfigAttachRunning.png)
 
-Notice the **Scan in progress** message for your attachment. Due to a user interface issue with this page (at least some browsers), this progress message will remain on the screen until you refresh the page. As this is a very simple scan of one control on a very limited scope, this scan only takes a minute or two to run.  Wait a couple of minutes and then click the browser's refresh button and the **Next scan** information should be shown.
+Notice the **Scan in progress** message for your attachment. Due to a user interface issue with this page (at least some browsers), this progress message remains on the screen until you refresh the page. As this is a simple scan of one control on a very limited scope, this scan takes a minute or two to run.  Wait a couple of minutes and then click the browser's refresh button and the **Next scan** information should be shown.
 
 ![](_attachments/sccDashboardConfigAttachNextScan.png)
 
-At this point, you can proceed to the next chapter to learn about and configure IBM Cloud Event Notifications to enhance your client demonstration or continue to the next section to perform a client demonstration. While enabling IBM Cloud Event Notifications is optional, you are encouraged to at least read the introduction to learn more about IBM Cloud Event Notifications.
+You can now proceed to the next chapter to learn about and configure IBM Cloud Event Notifications to enhance your client demonstration or continue to the next section to perform a client demonstration. While enabling IBM Cloud Event Notifications is optional, you are encouraged to at least read the introduction to learn more about IBM Cloud Event Notifications.

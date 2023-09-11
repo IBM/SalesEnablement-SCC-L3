@@ -1,6 +1,6 @@
 That concludes this part of the {{learningplan.name}}. 
 
-!!! Important "Please delete any resources you created!"
+!!! Important "Delete any resources that you created!"
 
     The IBM Technology Zone (ITZ) environment you used is shared by everyone using this learning plan.  Please remove all resources you may have created in completing the course, like Virtual Server Instances (VSIs), SCC attachments and rules, etc.
 
@@ -16,7 +16,7 @@ Remember to complete the {{learningplan.name}} learning plan:
 
 **Business Partners** (both sellers and technical sellers) must pass the {{learningplan.name}} quiz from learn.ibm.com. The Business Partner quiz verifies use of the demonstration environment and click-thru demonstrations, and not one's general knowledge of the offerings.
 
-Use the links below to return to YourLearning (IBMers) or learn.ibm.com (business partners). Be sure and mark the Demonstration Guide activity complete.
+Use the links below to return to YourLearning (IBMers) or learn.ibm.com (Business Partners). Be sure and mark the Demonstration Guide activity complete.
 
 IBMers:
     Sales: {{learningplan.YLurlSales}}
