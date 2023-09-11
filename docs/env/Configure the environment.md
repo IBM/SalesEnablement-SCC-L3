@@ -14,7 +14,7 @@ In the Client Demonstration section, you show the client the compliance failure 
   
 1. Open a web browser to the **IBM Cloud Portal**.
 
-<a href="https://cloud.ibm.com" target="_blank">IBM Cloud Portal</a>.
+<a href="https://cloud.ibm.com" target="_blank">IBM Cloud Portal</a>
 
 When the page loads, authenticate with your IBM Cloud ID and password. The authentication process varies depending on the primary account that your ID is associated with and any multi-factor authentication or other security controls in place for the account.
 

@@ -4,7 +4,7 @@ To access the pre-provisioned IBM Cloud Security and Compliance Center (SCC) ins
 
 1. Open a web browser to the **IBM Cloud Security and Compliance Center - Level 3** environment reservation page.
    
-   <a href="https://techzone.ibm.com/my/reservations/create/64de55a2f0429d0017267c02" target="_blank">Create a reservation</a>.
+   <a href="https://techzone.ibm.com/my/reservations/create/64de55a2f0429d0017267c02" target="_blank">Create a reservation</a>
    
    Follow the authentication prompts using your IBM Cloud identification (ID). These steps vary for IBMers and Business Partners and are not illustrated here.
    

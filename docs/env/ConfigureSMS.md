@@ -33,7 +33,7 @@ Don't worry about the **Missing authorization** message in the Storage section. 
 
 A new browser window or tab will open.
 
-1. Click **Subscriptions** in the left-hand menu.
+3. Click **Subscriptions** in the left-hand menu.
 
 ![](_attachments/enOverview.png)
 
@@ -64,7 +64,7 @@ Note, the above image was taken from an Apple iPhone. It might look different on
 
 A new browser window or tab opens on your mobile device.
 
-1. Click **Confirm**.
+8. Click **Confirm**.
 
 ![](_attachments/enConfirm.png)
 
