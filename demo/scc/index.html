@@ -67,11 +67,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#scc-configuration-and-integration-phase" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -368,6 +363,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../provisioning/" class="md-nav__link">
+        Provisioning an SCC instance (OPTIONAL)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -377,38 +386,9 @@
       
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          High-level demonstration of SCC
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         High-level demonstration of SCC
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#scc-configuration-and-integration-phase" class="md-nav__link">
-    SCC configuration and integration phase
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -482,21 +462,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#scc-configuration-and-integration-phase" class="md-nav__link">
-    SCC configuration and integration phase
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -511,7 +476,7 @@
 
   <h1>High-level demonstration of SCC</h1>
 
-<p>In this demonstration flow, you will be using a baking show approach to show how an IBM Cloud Security and Compliance Center (SCC) instance and related resources are provisioned. You will not be provisioning these resources, rather you will utilize pre-provisioned resources. <strong>As mentioned earlier, this scenario may be of interest to only a few individuals in the client's organization and may be skipped if not demonstrating to the technical team that will be responsible for deploying SCC.</strong></p>
+<p>This demonstration flow provides an high-level overview of IBM Cloud Security and Compliance Center (SCC). It introduces the key concepts of controls, profiles, and attachments and illustrates how to use the SCC Dashboard and review SCC scan results. </p>
 <ol>
 <li>Open a web browser to the <strong>IBM Cloud Portal</strong>.</li>
 </ol>
@@ -526,42 +491,97 @@
 <li>Click the <strong>Security and Compliance</strong> icon (<img alt="" src="../_attachments/sccIcon.png" />) in the menu bar.</li>
 </ol>
 <p><img alt="" src="../_attachments/dashBoard.png" /></p>
+<p>The SCC overview page in the IBM Cloud Portal provides a good starting point for demonstrations.</p>
+<p><img alt="" src="../_attachments/sccOverviewPage3.png" /></p>
+<p>Introduce SCC in an impactful way that will resonate with the audience. For example, discuss recent news stories related to the client's main industry and compliance failures.</p>
+<p>Describe the benefits of SCC, for example, SCC helps protect organizations from financial and civil penalities by identifying misconfigurations and addressing compliance issues both on premises and in the cloud. SCC does this by conducing scans of the client's environment.</p>
+<p>To run a scan an attachment must first be created.</p>
 <ol start="4">
-<li>Click <strong>Create instance+</strong>.</li>
+<li>Click the <strong>Get started</strong> button.</li>
 </ol>
-<p><img alt="" src="../_attachments/sccOverviewPage.png" /></p>
+<p><img alt="" src="../_attachments/sccOverviewPage3-getstarted.png" /></p>
 <ol start="5">
-<li>Click the <strong>Select a location</strong> drop-down menu.</li>
+<li>Enter <strong>testscan</strong> in the <strong>Name</strong> field and click <strong>Next</strong></li>
 </ol>
-<p><strong>Discussion points:</strong> SCC instances are specific to IBM Cloud regions. As shown in the portal, SCC is currently available in three regions. Look for additional regions to be added in the future based upon client demands.</p>
-<p><img alt="" src="../_attachments/sccProvision-location.png" /></p>
+<p><img alt="" src="../_attachments/sccCreateAttachment.png" /></p>
 <ol start="6">
-<li>Select the <strong>Dallas (us-south)</strong> location.</li>
-<li>Click the <strong>Standard</strong> pricing plan.</li>
+<li>Click the <strong>Profile</strong> pull down.</li>
 </ol>
-<p><img alt="" src="../_attachments/sccProvision-pricingPlan.png" /></p>
-<p><strong>Discussion points:</strong> SCC provides a trial pricing plan, which allows clients to try SCC at no cost for 30 days. The standard pricing plan is based upon the number of <strong>evaluations</strong> performed. Clients are charged if an evaluation produces a result of pass or fail. Charges are not incurred for the evaluation if the check cannot be performed or is not applicable. Each scan that is run provides with the number of billable evaluations in the results user interface (UI). More information on SCC pricing can be found <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-scc-pricing&interface=ui" target="_blank">here</a>. IBM Cloud Security and Compliance Center Workload Protection (WP) has a different pricing model. WP is priced hourly based on the number of nodes protected. More information about WP pricing can be found <a href="https://cloud.ibm.com/docs/workload-protection?topic=workload-protection-pricing_plans" target="_blank">here</a>.</p>
+<p><img alt="" src="../_attachments/sccCreateAttachmentProfiles.png" /></p>
+<p>Scroll through the pre-defined profiles provided by SCC and describe the most relevant profiles to the client. For example, if the client is in the financial industry, spend some time describing the IBM Cloud for Financial Services profile which is developed and maintained by IBM and leading financial institutions. To learn more about the pre-defined profiles, visit the product documentation <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-predefined-profiles&interface=ui" target="_blank">here</a>. Note, the acronym CIS stands for <strong>Center for Internet Security</strong>: <a href="https://www.cisecurity.org" target="_blank">https://www.cisecurity.org</a>. </p>
+<ol start="7">
+<li>Select the <strong>IBM Cloud Security Best Practices</strong> profile or one of the other pre-defined ones if more appropriate for your client.</li>
+</ol>
+<p><img alt="" src="../_attachments/sccCreateAttachmentProfilesBestPractices.png" /></p>
+<p>Describe how <strong>profiles</strong> are composed of a set off <strong>controls</strong> which define rules for evaluating the configurations of resources.</p>
+<p>Expand one of the controls and describe the compliance check this control performs.</p>
 <ol start="8">
-<li>Click the <strong>I have read and agree to the following license agreements</strong> checkbox.</li>
+<li>Click the down arrow (<img alt="" src="../_attachments/downArrow.png" />) next to the <strong>Check whether Virtual Servers for VPC instance has all interfaces with IP-spoofing disabled.</strong> and then click the <strong>JSON</strong> tab.</li>
 </ol>
-<p><img alt="" src="../_attachments/sccProvision-agreement.png" /></p>
-<p><strong>Discussion points:</strong> That is all the information required to create an SCC instance. You could discuss the use of resource groups, tags, and access management tags which are used to organize and control access cloud resources. Provisioning the instances typically takes under a couple of minutes. Inform your audience that you will now switch to an existing SCC instance. </p>
-<ol start="9">
-<li>Click the browser's back button to return to the <strong>Security and Compliance</strong> overview page.</li>
+<p>Each control has a specification, in this case "Check whether Virtual Servers for VPC instance has all interfaces with IP-spoofing disabled" and rules that checks for the desired state against a resource.</p>
+<ol start="8">
+<li>Click <strong>Next</strong>.</li>
+<li>Click the <strong>Scope</strong> pull-down menu.</li>
 </ol>
-<p>Note, if you click <strong>Create</strong> in the <strong>{{ no such element: dict object['account'] }}</strong> account, you will receive an error. </p>
-<p><img alt="" src="../_attachments/sccOverviewPage2.png" /></p>
-<h3 id="scc-configuration-and-integration-phase">SCC configuration and integration phase</h3>
-<p>Before using SCC, a few additional steps need to be performed. First, a IBM Cloud Object Storage (COS) bucket needs to be assigned to the SCC instance. COS is used to store the results of scans performed by SCC. The process of provisioning COS and assigning a bucket to SCC is not covered in this guide. To learn more about the process, consult the documentation <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-storage&interface=ui" target="_blank">here</a>.</p>
-<p>Workload Protection (WP) is a core part of the SCC suite but is provisioned and configured separately. This integration is already done in this ITZ environment and will be part of the demonstration steps below. To learn more about WP, how it is provisioned, and how to integrate with SCC, check out the documentation <a href="https://cloud.ibm.com/docs/workload-protection?topic=workload-protection-getting-started" target="_blank">here</a>.</p>
-<p>TBW - </p>
-<p>Dashboard
-Control Libraries and Controls
-Attachments
-Scan results
-Drift</p>
+<p><img alt="" src="../_attachments/sccCreateAttachmentScopeMenu.png" /></p>
+<p>Describe how scan's can be scoped to an account, sub-account or sub-account group (in the case of an Enterprise cloud account), or a resource group. The scope defines which resources will be evaluated against the controls in the profile.</p>
+<ol start="10">
+<li>Click <strong>SCC-L3 and then click </strong>Next**.</li>
+</ol>
+<p><img alt="" src="../_attachments/sccCreateAttachmentScopeMenu2.png" /></p>
+<ol start="11">
+<li>Click <strong>Next</strong> on the <strong>Scan settings</strong> page.</li>
+</ol>
+<p><img alt="" src="../_attachments/sccCreateAttachmentScanSettings.png" /></p>
+<p>The scan settings pages allows you to enable or disable the scan, set the schedule for the scan, and enable notifications.  We will cover the <strong>Notifications</strong> in a later demonstration flow.</p>
+<ol start="12">
+<li>Review the attachment settings.</li>
+</ol>
+<p><img alt="" src="../_attachments/sccCreateAttachmentReview.png" /></p>
+<p>Described that the time to take to run a scan depends on the number of controls specified and the scope which defines what resources are to be scanned. Given a scan against the IAM Cloud Security Best Practices will take several minutes, let the audience know that you will now switch to an attachment created earlier with the same parameters.</p>
+<ol start="13">
+<li>
+<p>Click <strong>Cancel</strong> and then click **Cancel on the confirmation dialog that pops up.</p>
+</li>
+<li>
+<p>Click <strong>Attachments</strong> in left-hand menu.</p>
+</li>
+</ol>
+<p><img alt="" src="../_attachments/sccOverviewPage3-attachments.png" /></p>
+<p>Highlight to the audience the attachment named <strong>SCC-L3-attachment - DO NOT DELETE</strong>.</p>
+<p><img alt="" src="../_attachments/sccAttachments-Example.png" /></p>
+<p>This attachment scans for the compliance controls specified in the IBM Cloud Security Best Practices profile. </p>
+<ol start="15">
+<li>Click the ellipses icon (<img alt="" src="../../env/_attachments/ellipses.png" />) for the <strong>SCC-L3-attachment - DO NOT DELETE</strong> entry and then click <strong>View scan results</strong>.</li>
+</ol>
+<p><img alt="" src="../_attachments/sccAttachments-ExampleEllipses.png" /></p>
+<ol start="16">
+<li>Click the most recent (top of list) scan results in the table.</li>
+</ol>
+<p><img alt="" src="../_attachments/sccAttachments-Results.png" /></p>
+<p>The overview page shows the results of the scan that was run. Use the following definitions to describe the results to the audience.</p>
+<p>Success rate - % of evaluations that returned a compliant result.</p>
+<p>Evaluation - assessment of a specific control to a specific resource.</p>
+<p><strong>Assessment</strong> - The actual evaluation of a configuration for compliance with applicable standards. An assessment can be either automated or manual depending on the control.</p>
+<ol start="17">
+<li>Click the <strong>Timeframe</strong> pull-down menu for the <strong>Drift</strong> graphic and select a timeframe to best visualize drift.</li>
+</ol>
+<p>This scan was originally setup in early August 02, 2023. After the original scan, several remediation steps were taken to resolve some of the non-compliant checks.  To best show the <strong>drift</strong> in compliance select a the shortest time frame that brings August 02, 2023 into view. For example,select <strong>3 months</strong> if you are running before the end of October, 2023, otherwise select 6 months or 1 year.</p>
+<p><img alt="" src="../_attachments/sccAttachments-ResultsDrift.png" /></p>
+<p>Describe how the Drift view provides a nice visual for the compliance status of the environment over a period of time. It is easy to see where improvements were made and perhaps where some compliance ground was lost.</p>
+<p>The bottom table shows individual resources that have failed an evaluation.</p>
+<ol start="18">
+<li>Click the down arrow icon (<img alt="" src="../_attachments/downArrow.png" />) next to the <strong>scc-test-vsi-do-not-delete</strong> resource in the table.</li>
+</ol>
+<p><img alt="" src="../_attachments/sccAttachments-ResultsSCC-vsi.png" /></p>
+<p>This view shows all the evaluations that passed and failed for a particular resource, in this case a Virtual Server Instance (VSI) in a Virtual Private Cloud (VPC) on IBM Cloud. From here, remediation can begin to improve compliance posture. </p>
+<ol start="19">
+<li>Click the <strong>Controls</strong> tab and then click <strong>Non-compliant</strong> in the Evaluation drop-down menu in the table.</li>
+</ol>
+<p><img alt="" src="_attachments/sccAttachments-ResultsControlsTab.png" /></p>
+<p>There are various views (by Control, by Resource, etc) and filters that can be applied to the output to visualize where issues are in the environments compliance posture and a starting point in understanding where to focus effort in terms of implementing security and compliance measures to remediate potential vulnerabilities.</p>
 <p>Watch a video of the above scenario:</p>
-<p><div class="video-container"><iframe src="./_videos/scc.mp4" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
+<p><div class="video-container"><iframe src="./_videos/scc-high-levl.mp4" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
 
 
 
@@ -580,7 +600,7 @@ Drift</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../Overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview" rel="prev">
+        <a href="../provisioning/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Provisioning an SCC instance (OPTIONAL)" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -589,7 +609,7 @@ Drift</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Overview
+              Provisioning an SCC instance (OPTIONAL)
             </div>
           </div>
         </a>
