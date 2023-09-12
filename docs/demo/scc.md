@@ -127,6 +127,94 @@ This view shows all the evaluations that passed and failed for a particular reso
 
 There are various views (by Control, by Resource, etc) and filters that can be applied to the output to visualize where issues are in the environments compliance posture and a starting point in understanding where to focus effort in terms of implementing security and compliance measures to remediate potential vulnerabilities.
 
+The steps that follow go into more details regarding controls, control libraries, and profiles. 
+
+21. Click the **Dashboard** link at the top of the page.
+
+![](_attachments/sccControls.png)
+
+ABCDEF
+
+22. Click the **Controls** option and then **Control libraries** in left-hand menu.
+
+![](_attachments/sccDashboardControlsMenu.png)
+
+ABCDEF
+
+![](_attachments/sccControlLibraries.png)
+
+ABCDEF (custom predefined)
+
+23. Click **IBM Cloud Security Best Practices**.
+
+![](_attachments/sccControlLibraries2.png)
+
+ABCDEF
+
+![](_attachments/sccControlLibrariesSecurityBPs1.png)
+
+SCROLL DOWN TO SHOW THERE ARE QUITE A FEW OF THEM
+
+24. Click the **Grouped by component** tab.
+
+![](_attachments/sccControlLibrariesSecurityBPs2.png)
+
+
+ABCD - talk about the component view and where focus of security controls are.
+
+![](_attachments/sccControlLibrariesSecurityBPsByComp.png)
+
+expand some of the components to view the actual controls
+
+25. Click the **Security and Compliance** link at the top of the page.
+
+![](_attachments/sccControlLibrariesSecurityBPsByComp2.png)
+
+26. Click **Profiles** in left-hand menu.
+
+![](_attachments/sccDashboardControlsMenu2.png)
+
+explain profiles
+
+27. Click **Create +**.
+
+![](_attachments/sccProfiles.png)
+
+28. Enter **test** in the **Name** field and **test** in the **Description** field and then click **Next**
+
+![](_attachments/sccProfilesDetails.png)
+
+talk about version control
+
+29. Click **Add +** on the **Controls** page.
+
+![](_attachments/sccProfilesControls.png)
+
+30. Click **IBM Cloud Security Best Practices** and then click **Next**.
+
+![](_attachments/sccProfilesControls2.png)
+
+31. Click a couple of the checkboxes to select individual controls and then click **Add**.
+
+![](_attachments/sccProfilesControls3.png)
+
+32. Click **Next**.
+
+![](_attachments/sccProfilesControls4.png)
+
+33. Click **Next**.
+
+![](_attachments/sccProfilesParameters.png)
+
+34. Click **Cancel** and click **Cancel** on the confirmation pop-up dialog.
+
+![](_attachments/sccProfilesReview.png)
+
+While you have permission to save new profiles, to avoid additional cleanup work at the end of this learning plan, please click cancel.
+
+WRAP UP and lead into remediation.
+
+
 Watch a video of the above scenario:
 
 ![type:video](./_videos/scc-high-levl.mp4)

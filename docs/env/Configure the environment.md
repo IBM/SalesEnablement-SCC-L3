@@ -124,6 +124,8 @@ Return to the IBM Cloud browser window/tab.
 
 7. Click your VSI's name in the table.
 
+If you do not see your VSI, verify the **Region** is set to **Dallas**.
+
 ![](_attachments/vpcListOfVSIs.png)
 
 8. Scroll down to the **Network interfaces** section and verify that **Allow IP spoofing** is enabled.
@@ -178,11 +180,11 @@ For now, the default settings are fine, and will be explain in more details in t
 
 ![](_attachments/sccDashboardConfigAttachReview.png)
 
-The **attachment** is now saved and the initial scan is being run.
+The **attachment** is now saved and the initial scan is being run. Notice the **Scan in progress** message for your attachment. Due to a user interface issue with this page (at least some browsers), this progress message remains on the screen until you refresh the page. As this is a simple scan of one control on a very limited scope, this scan takes a minute or two to run. **Wait a couple of minutes and then click the browser's refresh button and the *Next scan* information should update.**
 
 ![](_attachments/sccDashboardConfigAttachRunning.png)
 
-Notice the **Scan in progress** message for your attachment. Due to a user interface issue with this page (at least some browsers), this progress message remains on the screen until you refresh the page. As this is a simple scan of one control on a very limited scope, this scan takes a minute or two to run.  Wait a couple of minutes and then click the browser's refresh button and the **Next scan** information should be shown.
+After refreshing your browser, the table should be similar to the one below.
 
 ![](_attachments/sccDashboardConfigAttachNextScan.png)
 
