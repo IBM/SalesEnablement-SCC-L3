@@ -54,4 +54,3 @@ Workload Protection (WP) is a core part of the SCC suite but is provisioned and 
 Watch a video of the above scenario:
 
 ![type:video](./_videos/SCC-provisioning-final.mp4)
-
