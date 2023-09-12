@@ -519,29 +519,29 @@
 <li>Click the down arrow (<img alt="" src="../_attachments/downArrow.png" />) next to the <strong>Check whether Virtual Servers for VPC instance has all interfaces with IP-spoofing disabled.</strong> and then click the <strong>JSON</strong> tab.</li>
 </ol>
 <p>Each control has a specification, in this case "Check whether Virtual Servers for VPC instance has all interfaces with IP-spoofing disabled" and rules that checks for the desired state against a resource.</p>
-<ol start="8">
+<ol start="9">
 <li>Click <strong>Next</strong>.</li>
 <li>Click the <strong>Scope</strong> pull-down menu.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccCreateAttachmentScopeMenu.png" /></p>
 <p>The scope defines which resources will be evaluated against the controls in the profile.Describe how scan's can be scoped to an account or a resource group. IBM Cloud enterprise accounts have further capabilities to scope at the sub-account or account groups. </p>
-<ol start="10">
+<ol start="11">
 <li>Click <strong>SCC-L3 and then click </strong>Next**.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccCreateAttachmentScopeMenu2.png" /></p>
-<ol start="11">
+<ol start="12">
 <li>Click <strong>Next</strong> on the <strong>Scan settings</strong> page.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccCreateAttachmentScanSettings.png" /></p>
 <p>The scan settings pages allows you to enable or disable the scan, set the schedule for the scan, and enable notifications.  We will cover the <strong>Notifications</strong> in a later demonstration flow.</p>
-<ol start="12">
+<ol start="13">
 <li>Review the attachment settings.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccCreateAttachmentReview.png" /></p>
 <p>Described that the time to take to run a scan depends on the number of controls specified and the scope which defines what resources are to be scanned. Given a scan against the IAM Cloud Security Best Practices will take several minutes, let the audience know that you will now switch to an attachment created earlier with the same parameters.</p>
-<ol start="13">
+<ol start="14">
 <li>
-<p>Click <strong>Cancel</strong> and then click **Cancel on the confirmation dialog that pops up.</p>
+<p>Click <strong>Cancel</strong> and then click <strong>Cancel</strong> on the confirmation dialog that pops up.</p>
 </li>
 <li>
 <p>Click <strong>Attachments</strong> in left-hand menu.</p>
@@ -551,34 +551,35 @@
 <p>Highlight to the audience the attachment named <strong>SCC-L3-attachment - DO NOT DELETE</strong>.</p>
 <p><img alt="" src="../_attachments/sccAttachments-Example.png" /></p>
 <p>This attachment scans for the compliance controls specified in the IBM Cloud Security Best Practices profile. </p>
-<ol start="15">
+<ol start="16">
 <li>Click the ellipses icon (<img alt="" src="../../env/_attachments/ellipses.png" />) for the <strong>SCC-L3-attachment - DO NOT DELETE</strong> entry and then click <strong>View scan results</strong>.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccAttachments-ExampleEllipses.png" /></p>
-<ol start="16">
+<ol start="17">
 <li>Click the most recent (top of list) scan results in the table.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccAttachments-Results.png" /></p>
 <p>The overview page shows the results of the scan that was run. Use the following definitions to describe the results to the audience.</p>
+<p><img alt="" src="../_attachments/sccAttachments-Overview.png" /></p>
 <p>Success rate - % of evaluations that returned a compliant result.</p>
 <p>Evaluation - assessment of a specific control to a specific resource.</p>
 <p><strong>Assessment</strong> - The actual evaluation of a configuration for compliance with applicable standards. An assessment can be either automated or manual depending on the control.</p>
-<ol start="17">
+<ol start="18">
 <li>Click the <strong>Timeframe</strong> pull-down menu for the <strong>Drift</strong> graphic and select a timeframe to best visualize drift.</li>
 </ol>
 <p>This scan was originally setup in early August 02, 2023. After the original scan, several remediation steps were taken to resolve some of the non-compliant checks.  To best show the <strong>drift</strong> in compliance select a the shortest time frame that brings August 02, 2023 into view. For example,select <strong>3 months</strong> if you are running before the end of October, 2023, otherwise select 6 months or 1 year.</p>
 <p><img alt="" src="../_attachments/sccAttachments-ResultsDrift.png" /></p>
 <p>Describe how the Drift view provides a nice visual for the compliance status of the environment over a period of time. It is easy to see where improvements were made and perhaps where some compliance ground was lost.</p>
 <p>The bottom table shows individual resources that have failed an evaluation.</p>
-<ol start="18">
+<ol start="19">
 <li>Click the down arrow icon (<img alt="" src="../_attachments/downArrow.png" />) next to the <strong>scc-test-vsi-do-not-delete</strong> resource in the table.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccAttachments-ResultsSCC-vsi.png" /></p>
 <p>This view shows all the evaluations that passed and failed for a particular resource, in this case a Virtual Server Instance (VSI) in a Virtual Private Cloud (VPC) on IBM Cloud. From here, remediation can begin to improve compliance posture. </p>
-<ol start="19">
+<ol start="20">
 <li>Click the <strong>Controls</strong> tab and then click <strong>Non-compliant</strong> in the Evaluation drop-down menu in the table.</li>
 </ol>
-<p><img alt="" src="_attachments/sccAttachments-ResultsControlsTab.png" /></p>
+<p><img alt="" src="../_attachments/scc-attachmentsRemediationResultsControls.png" /></p>
 <p>There are various views (by Control, by Resource, etc) and filters that can be applied to the output to visualize where issues are in the environments compliance posture and a starting point in understanding where to focus effort in terms of implementing security and compliance measures to remediate potential vulnerabilities.</p>
 <p>Watch a video of the above scenario:</p>
 <p><div class="video-container"><iframe src="./_videos/scc-high-levl.mp4" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
