@@ -41,7 +41,7 @@ Note, if the browser window is narrow, you might see an **account selection** ic
 
 9. Click the browser's back button to return to the **Security and Compliance** overview page.
 
-Note, if you click **Create** in the **{{itz.account}}** account, you will receive an error. 
+Note, if you click **Create** in the **{{itz.CloudAccount}}** account, you will receive an error. 
 
 ![](_attachments/sccOverviewPage2.png)
 
@@ -49,7 +49,7 @@ Note, if you click **Create** in the **{{itz.account}}** account, you will recei
 
 Before using SCC, a few additional steps need to be performed. First, a IBM Cloud Object Storage (COS) bucket needs to be assigned to the SCC instance. COS is used to store the results of scans performed by SCC. The process of provisioning COS and assigning a bucket to SCC is not covered in this guide. To learn more about the process, consult the documentation <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-storage&interface=ui" target="_blank">here</a>.
 
-Workload Protection (WP) is a core part of the SCC suite but is provisioned and configured separately. This integration is already done in this ITZ environment and will be part of the demonstration steps below. To learn more about WP, how it is provisioned, and how to integrate with SCC, check out the documentation <a href="https://cloud.ibm.com/docs/workload-protection?topic=workload-protection-getting-started" target="_blank">here</a>.
+Workload Protection (WP) is a core part of the SCC suite but is provisioned and configured separately. This integration is already done in this ITZ environment and will be part of the demonstration steps that follow. To learn more about WP, how it is provisioned, and how to integrate with SCC, check out the documentation <a href="https://cloud.ibm.com/docs/workload-protection?topic=workload-protection-getting-started" target="_blank">here</a>.
 
 Watch a video of the above scenario:
 

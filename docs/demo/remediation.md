@@ -2,7 +2,9 @@ The remediation flow builds upon the setup performed earlier in the **Configure 
 
 This demonstration flow provides an high-level overview of IBM Cloud Security and Compliance Center (SCC). It introduces the key concepts of controls, profiles, and attachments and illustrates how to use the SCC Dashboard and review SCC scan results. 
 
-!!! Warning "Before proceeding to this step, make sure at least one (1) full hour has passed since you initially created your custom attachment."
+??? Warning "Before proceeding to this step, make sure at least one (1) full hour has passed since you initially created your custom attachment."
+
+    It is important to understand that SCC cache's scan results for one hour. This means if you run the same scan within an hour of the last time the scan was run, a new scan is NOT performed and the old results are returned. This is important to remember when performing a client demonstration or if you are recording your Stand and Deliver.
 
 
 1. Open a web browser to the **IBM Cloud Portal**.

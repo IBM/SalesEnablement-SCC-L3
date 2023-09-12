@@ -52,32 +52,32 @@ Expand one of the controls and describe the compliance check this control perfor
 
 Each control has a specification, in this case "Check whether Virtual Servers for VPC instance has all interfaces with IP-spoofing disabled" and rules that checks for the desired state against a resource.
 
-8. Click **Next**.
-9. Click the **Scope** pull-down menu.
+9. Click **Next**.
+10. Click the **Scope** pull-down menu.
 
 ![](_attachments/sccCreateAttachmentScopeMenu.png)
 
 The scope defines which resources will be evaluated against the controls in the profile.Describe how scan's can be scoped to an account or a resource group. IBM Cloud enterprise accounts have further capabilities to scope at the sub-account or account groups. 
 
-10. Click **{{iam.ResourceGroup}} and then click **Next**.
+11. Click **{{iam.ResourceGroup}} and then click **Next**.
 
 ![](_attachments/sccCreateAttachmentScopeMenu2.png)
 
-11. Click **Next** on the **Scan settings** page.
+12. Click **Next** on the **Scan settings** page.
 
 ![](_attachments/sccCreateAttachmentScanSettings.png)
 
 The scan settings pages allows you to enable or disable the scan, set the schedule for the scan, and enable notifications.  We will cover the **Notifications** in a later demonstration flow.
 
-12. Review the attachment settings.
+13. Review the attachment settings.
 
 ![](_attachments/sccCreateAttachmentReview.png)
 
 Described that the time to take to run a scan depends on the number of controls specified and the scope which defines what resources are to be scanned. Given a scan against the IAM Cloud Security Best Practices will take several minutes, let the audience know that you will now switch to an attachment created earlier with the same parameters.
 
-13. Click **Cancel** and then click **Cancel on the confirmation dialog that pops up.
+14. Click **Cancel** and then click **Cancel** on the confirmation dialog that pops up.
 
-14. Click **Attachments** in left-hand menu.
+15. Click **Attachments** in left-hand menu.
 
 ![](_attachments/sccOverviewPage3-attachments.png)
 
@@ -87,15 +87,17 @@ Highlight to the audience the attachment named **SCC-L3-attachment - DO NOT DELE
 
 This attachment scans for the compliance controls specified in the IBM Cloud Security Best Practices profile. 
 
-15. Click the ellipses icon (![](../env/_attachments/ellipses.png)) for the **SCC-L3-attachment - DO NOT DELETE** entry and then click **View scan results**.
+16. Click the ellipses icon (![](../env/_attachments/ellipses.png)) for the **SCC-L3-attachment - DO NOT DELETE** entry and then click **View scan results**.
 
 ![](_attachments/sccAttachments-ExampleEllipses.png)
 
-16. Click the most recent (top of list) scan results in the table.
+17. Click the most recent (top of list) scan results in the table.
 
 ![](_attachments/sccAttachments-Results.png)
 
 The overview page shows the results of the scan that was run. Use the following definitions to describe the results to the audience.
+
+![](_attachments/sccAttachments-Overview.png)
 
 Success rate - % of evaluations that returned a compliant result.
 
@@ -103,7 +105,7 @@ Evaluation - assessment of a specific control to a specific resource.
 
 **Assessment** - The actual evaluation of a configuration for compliance with applicable standards. An assessment can be either automated or manual depending on the control.
 
-17. Click the **Timeframe** pull-down menu for the **Drift** graphic and select a timeframe to best visualize drift.
+18. Click the **Timeframe** pull-down menu for the **Drift** graphic and select a timeframe to best visualize drift.
 
 This scan was originally setup in early August 02, 2023. After the original scan, several remediation steps were taken to resolve some of the non-compliant checks.  To best show the **drift** in compliance select a the shortest time frame that brings August 02, 2023 into view. For example,select **3 months** if you are running before the end of October, 2023, otherwise select 6 months or 1 year.
 
@@ -113,15 +115,15 @@ Describe how the Drift view provides a nice visual for the compliance status of 
 
 The bottom table shows individual resources that have failed an evaluation.
 
-18. Click the down arrow icon (![](_attachments/downArrow.png)) next to the **scc-test-vsi-do-not-delete** resource in the table.
+19. Click the down arrow icon (![](_attachments/downArrow.png)) next to the **scc-test-vsi-do-not-delete** resource in the table.
 
 ![](_attachments/sccAttachments-ResultsSCC-vsi.png)
 
 This view shows all the evaluations that passed and failed for a particular resource, in this case a Virtual Server Instance (VSI) in a Virtual Private Cloud (VPC) on IBM Cloud. From here, remediation can begin to improve compliance posture. 
 
-19. Click the **Controls** tab and then click **Non-compliant** in the Evaluation drop-down menu in the table.
+20. Click the **Controls** tab and then click **Non-compliant** in the Evaluation drop-down menu in the table.
 
-![](_attachments/sccAttachments-ResultsControlsTab.png)
+![](_attachments/scc-attachmentsRemediationResultsControls.png)
 
 There are various views (by Control, by Resource, etc) and filters that can be applied to the output to visualize where issues are in the environments compliance posture and a starting point in understanding where to focus effort in terms of implementing security and compliance measures to remediate potential vulnerabilities.
 
