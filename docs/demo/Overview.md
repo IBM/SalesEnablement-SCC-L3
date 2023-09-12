@@ -1,16 +1,15 @@
 Do not continue to the next steps until your IBM Technology Zone (ITZ) reservation for the IBM Cloud Security and Compliance Center (SCC) environment is in the **Ready** state, you have accepted the invitation to join the {{itz.CloudAccount}} ITZ account, and you have switched to the {{itz.CloudAccount}} in the IBM Cloud Portal.
 
 This guide presents step-by-step directions for delivering three SCC demonstrations:
-    
-    - High-level demonstration of SCC
-      This flow provides and executive level overview of SCC and how it provides security and compliance management.      
+  
+  - High-level demonstration of SCC
+    This flow provides and executive level overview of SCC and how it provides security and compliance management.      
 
-    - Remediating a failed compliance control
-      This flow is more technical and illustrates how to create profiles and attachments and how to remediate a failed control.    
+  - Remediating a failed compliance control
+    This flow is more technical and illustrates how to create profiles and attachments and how to remediate a failed control.    
     
-    - Demonstration of Workload Protection (WP)
-      This flow provides an overview of WP and its integration with SCC and explores how WP can be used for compliance management of cloud native environments like IBM Kubernetes Service.
-
+  - Demonstration of Workload Protection (WP)
+    This flow provides an overview of WP and its integration with SCC and explores how WP can be used for compliance management of cloud native environments like IBM Kubernetes Service.
 
 While all sellers are encouraged perform all three demonstrations, the requirements for completing the SCC Level 3 learning plan varies by roles. IBM Sales must record a stand and deliver that at a minimum covers the high-level demonstration of SCC flow. IBM Technical Sales must record a stand and deliver that covers at a minimum the high-level demonstration of SCC flow and at least one of the other two flows. Both Business Partner Sales and Technical Sales must pass a short quiz related to the scenarios and environment utilized by these flows.
 
