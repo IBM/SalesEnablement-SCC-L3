@@ -57,7 +57,7 @@ Each control has a specification, in this case "Check whether Virtual Servers fo
 
 ![](_attachments/sccCreateAttachmentScopeMenu.png)
 
-Describe how scan's can be scoped to an account, sub-account or sub-account group (in the case of an Enterprise cloud account), or a resource group. The scope defines which resources will be evaluated against the controls in the profile.
+The scope defines which resources will be evaluated against the controls in the profile.Describe how scan's can be scoped to an account or a resource group. IBM Cloud enterprise accounts have further capabilities to scope at the sub-account or account groups. 
 
 10. Click **{{iam.ResourceGroup}} and then click **Next**.
 
