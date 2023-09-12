@@ -6,7 +6,7 @@ Welcome to the demonstration guide for the {{learningplan.Name}} learning plan. 
     
     To receive Level 3 accreditation, IBMers and Business Partners must demonstrate mastery of the skills learned throughout the various sections of this demonstration guide. Level 3 accreditation requirements— and the way participants will be evaluated before receiving accreditation —differs depending on job role.
 
-    **Business Partners** must pass an accreditation quiz after completing the hands-on portion of the course. The quiz consists of multiple choice questions, with four possible responses (and only one correct answer) for each question. **Hint: keep the demonstration guide and the associated IBM Technology Zone (TechZone) environment active while completing the quiz. Watch for the "BP quiz question" ![](_attachments/questionICON.png) icon in the demonstration guide.**
+    **Business Partners** must pass an accreditation quiz after completing the hands-on portion of the course. The quiz consists of multiple choice questions, with four possible responses (and only one correct answer) for each question. **Hint: keep the demonstration guide and the associated IBM Technology Zone (TechZone) environment active while completing the quiz.**
 
     **IBM Sales and Tech Sales** must develop and record a Stand & Deliver presentation. This video is intended to simulate your delivery of a “live” demo in front of a client — on camera. IBMers will have flexibility in defining a hypothetical client, the pain points that customer has, and the goals they aspire to achieve. The recording will then cover the seller’s hands-on demonstration and pitch to the client of the value of the IBM solution using the environments and techniques of this lab.
 

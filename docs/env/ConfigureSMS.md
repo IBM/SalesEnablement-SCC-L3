@@ -23,7 +23,7 @@ Note, if the browser window is narrow, you might see an **account selection** ic
 
 1. Click the **Settings** option in the left-hand menu of the Security and Compliance page.
 
-![](../demo/_attachments/sccDashboardStartENSetup.png) 
+![](_attachments/sccDashboardStartENSetup.png) 
 
 2. Click the **{{en.Instance}}** link under **Event Notifications**. 
 
