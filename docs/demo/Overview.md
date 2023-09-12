@@ -1,11 +1,14 @@
 Do not continue to the next steps until your IBM Technology Zone (ITZ) reservation for the IBM Cloud Security and Compliance Center (SCC) environment is in the **Ready** state, you have accepted the invitation to join the {{itz.CloudAccount}} ITZ account, and you have switched to the {{itz.CloudAccount}} in the IBM Cloud Portal.
 
-This guide presents step-by-step directions for delivering three SCC demonstrations:
+This guide presents step-by-step directions for delivering four SCC demonstrations:
+  
+  - Provisioning an SCC instance 
+    This flow shows how to provision an SCC instance using the IBM Cloud Portal.
   
   - High-level demonstration of SCC
     This flow provides and executive level overview of SCC and how it provides security and compliance management.      
 
-  - Remediating a failed compliance control
+  - Remediating a failed control
     This flow is more technical and illustrates how to create profiles and attachments and how to remediate a failed control.    
     
   - Demonstration of Workload Protection (WP)
@@ -20,5 +23,3 @@ Additionally, a recording is available for each of the flows. These videos may v
 !!! Warning 
 
     **Several parts of the demonstration script have you stop before clicking a "create" or "submit" button. This "baking-show" approach to demonstrating SCC is used to allow all participants in this learning plan to use the same environment, minimize cost, and avoid lengthy provisioning times of resources. If you do click "create" or "submit" you will receive an error stating you do not have permissions to perform that action.**
-
-Proceed to the next chapter to perform the high-level demonstration of SCC.
