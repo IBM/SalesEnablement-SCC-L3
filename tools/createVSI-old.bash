@@ -49,9 +49,6 @@ curlRC=$(curl -s --write-out "%{http_code}" --output $outputfile -X POST \
       "capacity": 100,
       "profile": {
         "name": "general-purpose"
-      },
-      "encryption_key": {
-       "crn": "crn:v1:bluemix:public:kms:us-south:a/ba0e33c9056f470ca19de009747ec654:494bd977-c997-4d78-a07e-a3c3be33c68a:key:2eeb95e2-21ea-4df8-8c4d-6b2ecfd6aabd"
       }
     },
     "delete_volume_on_instance_delete": true
