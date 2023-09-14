@@ -172,7 +172,7 @@ You will learn more about the **Scope** setting in the next section of the guide
 
 15. Review the details on the **Scan settings** page and click **Next**.
 
-For now, the default settings are fine, and will be explain in more details in the next section of the guide.
+For now, the default settings are fine, and will be explained in more details in the next section of the guide.
 
 ![](_attachments/sccDashboardConfigAttachScanSettings.png)
 

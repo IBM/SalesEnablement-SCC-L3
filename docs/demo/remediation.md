@@ -95,11 +95,11 @@ The issue has now been remediate, so it is time to re-run the scan.
 
 18. Click **Run scan** in the **Scan now** popup window.
 
-![](_attachments/sccRerunScanPopup)
+![](_attachments/sccRerunScanPopup.png)
 
 The **Scan in progress** message will appear for the attachment. After a minute or two, click the browser refresh button.
 
-![](_attachments/sccRerunScanRunning)
+![](_attachments/sccRerunScanRunning.png)
 
 While waiting for the scan to complete, fill the time to answer any questions, or if you enabled Event Notifications, describe that integration.
 
