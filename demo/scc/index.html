@@ -507,19 +507,21 @@
 <ol start="6">
 <li>Click the <strong>Profile</strong> pull down.</li>
 </ol>
-<p><img alt="" src="../_attachments/sccCreateAttachmentProfiles.png" /></p>
+<p><img alt="" src="../_attachments/sccCreateAttachmentProfilesV2.png" /></p>
 <p>Scroll through the pre-defined profiles provided by SCC and describe the most relevant profiles to the client. For example, if the client is in the financial industry, spend some time describing the IBM Cloud for Financial Services profile which is developed and maintained by IBM and leading financial institutions. To learn more about the pre-defined profiles, visit the product documentation <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-predefined-profiles&interface=ui" target="_blank">here</a>. Note, the acronym CIS stands for <strong>Center for Internet Security</strong>: <a href="https://www.cisecurity.org" target="_blank">https://www.cisecurity.org</a>. </p>
 <ol start="7">
-<li>Select the <strong>IBM Cloud Security Best Practices</strong> profile or one of the other pre-defined ones if more appropriate for your client.</li>
+<li>Select the <strong>CIS IBM Foundations Benchmark</strong> profile or one of the other pre-defined ones if more appropriate for your client.</li>
 </ol>
-<p><img alt="" src="../_attachments/sccCreateAttachmentProfilesBestPractices.png" /></p>
-<p>Describe how <strong>profiles</strong> are composed of a set off <strong>controls</strong> which define rules for evaluating the configurations of resources.</p>
+<p><img alt="" src="../_attachments/sccCreateAttachmentProfilesBestPracticesV2.png" /></p>
+<p>Describe how <strong>profiles</strong> are composed of a set off <strong>controls</strong> which specify the specifications and rules for evaluating the configuration of affected resources.</p>
 <p>Expand one of the controls and describe the compliance check this control performs.</p>
 <ol start="8">
-<li>Click the down arrow (<img alt="" src="../_attachments/downArrow.png" />) next to the <strong>Check whether Virtual Servers for VPC instance has all interfaces with IP-spoofing disabled.</strong> and then click the <strong>JSON</strong> tab.</li>
+<li>Click the down arrow (<img alt="" src="../_attachments/downArrow.png" />) next to the <strong>Check whether Cloud Internet Services (CIS) is configured with at least TLS v1.2 for all inbound traffic.</strong> and then click the <strong>JSON</strong> tab.</li>
 </ol>
-<p>Each control has a specification, in this case "Check whether Virtual Servers for VPC instance has all interfaces with IP-spoofing disabled" and rules that checks for the desired state against a resource.</p>
-<ol start="9">
+<p><img alt="" src="../_attachments/sccCreateAttachmentProfilesCISTLS.png" /></p>
+<p>Each control has one or more specification, in this case "Check whether Cloud Internet Services (CIS) is configured with at least TLS v1.2 for all inbound traffic" and rules that checks for the desired state against a resource.</p>
+<p>Click the <strong>Parameters</strong> tab to see the default parameters being used in the rule.</p>
+<ol>
 <li>Click <strong>Next</strong>.</li>
 <li>Click the <strong>Scope</strong> pull-down menu.</li>
 </ol>
@@ -548,44 +550,44 @@
 </li>
 </ol>
 <p><img alt="" src="../_attachments/sccOverviewPage3-attachments.png" /></p>
-<p>Highlight to the audience the attachment named <strong>SCC-L3-attachment - DO NOT DELETE</strong>.</p>
-<p><img alt="" src="../_attachments/sccAttachments-Example.png" /></p>
+<p>Highlight to the audience the attachment named <strong>SCC-L3-CIS - DO NOT DELETE</strong>.</p>
+<p><img alt="" src="../_attachments/sccAttachments-ExampleV2.png" /></p>
 <p>This attachment scans for the compliance controls specified in the IBM Cloud Security Best Practices profile. </p>
 <ol start="16">
 <li>Click the ellipses icon (<img alt="" src="../../env/_attachments/ellipses.png" />) for the <strong>SCC-L3-attachment - DO NOT DELETE</strong> entry and then click <strong>View scan results</strong>.</li>
 </ol>
-<p><img alt="" src="../_attachments/sccAttachments-ExampleEllipses.png" /></p>
+<p><img alt="" src="../_attachments/sccAttachments-ExampleV2Ellipses.png" /></p>
 <ol start="17">
 <li>Click the most recent (top of list) scan results in the table.</li>
 </ol>
-<p><img alt="" src="../_attachments/sccAttachments-Results.png" /></p>
+<p><img alt="" src="../_attachments/sccAttachments-ResultsV2.png" /></p>
 <p>The overview page shows the results of the scan that was run. Use the following definitions to describe the results to the audience.</p>
-<p><img alt="" src="../_attachments/sccAttachments-Overview.png" /></p>
+<p><img alt="" src="../_attachments/sccAttachments-OverviewV2.png" /></p>
 <p>Success rate - % of evaluations that returned a compliant result.</p>
 <p>Evaluation - assessment of a specific control to a specific resource.</p>
 <p><strong>Assessment</strong> - The actual evaluation of a configuration for compliance with applicable standards. An assessment can be either automated or manual depending on the control.</p>
 <ol start="18">
 <li>Click the <strong>Timeframe</strong> pull-down menu for the <strong>Drift</strong> graphic and select a timeframe to best visualize drift.</li>
 </ol>
-<p>This scan was originally setup in early August 02, 2023. After the original scan, several remediation steps were taken to resolve some of the non-compliant checks.  To best show the <strong>drift</strong> in compliance select a the shortest time frame that brings August 02, 2023 into view. For example,select <strong>3 months</strong> if you are running before the end of October, 2023, otherwise select 6 months or 1 year.</p>
-<p><img alt="" src="../_attachments/sccAttachments-ResultsDrift.png" /></p>
+<p>This scan was originally setup in early August 13, 2023. After the original scan, several remediation steps were taken to resolve some of the non-compliant checks.  To best show the <strong>drift</strong> in compliance select a the shortest time frame that brings August 13, 2023 into view. For example,select <strong>3 months</strong> if you are running before the end of October, 2023, otherwise select 6 months or 1 year.</p>
+<p><img alt="" src="../_attachments/sccAttachments-ResultsDriftV2.png" /></p>
 <p>Describe how the Drift view provides a nice visual for the compliance status of the environment over a period of time. It is easy to see where improvements were made and perhaps where some compliance ground was lost.</p>
 <p>The bottom table shows individual resources that have failed an evaluation.</p>
 <ol start="19">
-<li>Click the down arrow icon (<img alt="" src="../_attachments/downArrow.png" />) next to the <strong>scc-test-vsi-do-not-delete</strong> resource in the table.</li>
+<li>Click the down arrow icon (<img alt="" src="../_attachments/downArrow.png" />) next to the <strong>iam-identity</strong> resource in the table.</li>
 </ol>
-<p><img alt="" src="../_attachments/sccAttachments-ResultsSCC-vsi.png" /></p>
-<p>This view shows all the evaluations that passed and failed for a particular resource, in this case a Virtual Server Instance (VSI) in a Virtual Private Cloud (VPC) on IBM Cloud. From here, remediation can begin to improve compliance posture. </p>
+<p><img alt="" src="../_attachments/sccAttachments-ResultsSCC-iam.png" /></p>
+<p>This view shows all the evaluations that passed and failed for a particular resource, in this case Identity and Access Management (IAM). From here, remediation can begin to improve compliance posture. </p>
 <ol start="20">
 <li>Click the <strong>Controls</strong> tab and then click <strong>Non-compliant</strong> in the Evaluation drop-down menu in the table.</li>
 </ol>
-<p><img alt="" src="../_attachments/scc-attachmentsRemediationResultsControls.png" /></p>
+<p><img alt="" src="../_attachments/scc-attachmentsRemediationResultsControlsV2.png" /></p>
 <p>There are various views (by Control, by Resource, etc) and filters that can be applied to the output to visualize where issues are in the environments compliance posture and a starting point in understanding where to focus effort in terms of implementing security and compliance measures to remediate potential vulnerabilities.</p>
 <p>The steps that follow go into more details regarding controls, control libraries, and profiles. </p>
 <ol start="21">
 <li>Click the <strong>Dashboard</strong> link at the top of the page.</li>
 </ol>
-<p><img alt="" src="../_attachments/sccControls.png" /></p>
+<p><img alt="" src="../_attachments/sccControlsV2.png" /></p>
 <p>ABCDEF</p>
 <ol start="22">
 <li>Click the <strong>Controls</strong> option and then <strong>Control libraries</strong> in left-hand menu.</li>
@@ -595,23 +597,22 @@
 <p><img alt="" src="../_attachments/sccControlLibraries.png" /></p>
 <p>ABCDEF (custom predefined)</p>
 <ol start="23">
-<li>Click <strong>IBM Cloud Security Best Practices</strong>.</li>
+<li>Click <strong>CIS IBM Foundations Benchmark</strong>.</li>
 </ol>
-<p><img alt="" src="../_attachments/sccControlLibraries2.png" /></p>
+<p><img alt="" src="../_attachments/sccControlLibraries2V2.png" /></p>
 <p>ABCDEF</p>
-<p><img alt="" src="../_attachments/sccControlLibrariesSecurityBPs1.png" /></p>
+<p><img alt="" src="../_attachments/sccControlLibrariesSecurityCISFB.png" /></p>
 <p>SCROLL DOWN TO SHOW THERE ARE QUITE A FEW OF THEM</p>
 <ol start="24">
 <li>Click the <strong>Grouped by component</strong> tab.</li>
 </ol>
-<p><img alt="" src="../_attachments/sccControlLibrariesSecurityBPs2.png" /></p>
+<p><img alt="" src="../_attachments/sccControlLibrariesSecurityCISFB2.png" /></p>
 <p>ABCD - talk about the component view and where focus of security controls are.</p>
-<p><img alt="" src="../_attachments/sccControlLibrariesSecurityBPsByComp.png" /></p>
 <p>expand some of the components to view the actual controls</p>
-<ol start="25">
+<ol>
 <li>Click the <strong>Security and Compliance</strong> link at the top of the page.</li>
 </ol>
-<p><img alt="" src="../_attachments/sccControlLibrariesSecurityBPsByComp2.png" /></p>
+<p><img alt="" src="../_attachments/sccControlLibrariesSecurityCISFBComp2.png" /></p>
 <ol start="26">
 <li>Click <strong>Profiles</strong> in left-hand menu.</li>
 </ol>
@@ -631,7 +632,7 @@
 </ol>
 <p><img alt="" src="../_attachments/sccProfilesControls.png" /></p>
 <ol start="30">
-<li>Click <strong>IBM Cloud Security Best Practices</strong> and then click <strong>Next</strong>.</li>
+<li>Click <strong>CIS IBM Foundations Benchmark</strong> and then click <strong>Next</strong>.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccProfilesControls2.png" /></p>
 <ol start="31">
