@@ -38,7 +38,7 @@ To run a scan an attachment must first be created.
 
 ![](_attachments/sccCreateAttachmentProfilesV2.png)
 
-Scroll through the pre-defined profiles provided by SCC and describe the most relevant profiles to the client. For example, if the client is in the financial industry, spend some time describing the IBM Cloud for Financial Services profile which is developed and maintained by IBM and leading financial institutions. To learn more about the pre-defined profiles, visit the product documentation <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-predefined-profiles&interface=ui" target="_blank">here</a>. Note, the acronym CIS stands for **Center for Internet Security**: <a href="https://www.cisecurity.org" target="_blank">https://www.cisecurity.org</a>. 
+Scroll through the pre-defined profiles provided by SCC and describe the most relevant profiles to the client. For example, if the client is in the financial industry, spend some time describing the IBM Cloud for Financial Services profile which is developed and maintained by IBM and leading financial institutions. To learn more about the pre-defined profiles, visit the product documentation <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-predefined-profiles&interface=ui" target="_blank">here</a>. Note, the acronym CIS stands for **Center for Internet Security**: <a href="https://www.cisecurity.org" target="_blank">https://www.cisecurity.org</a>. The CIS IBM Foundations Benchmark is the product of a community consensus process and consists of secure configurations guidelines developed for IBM Cloud. You can learn moe about the benchmark <a href="https://www.cisecurity.org/benchmark/ibm_cloud" target="_blank">here</a>.
 
 7. Select the **CIS IBM Foundations Benchmark** profile or one of the other pre-defined ones if more appropriate for your client.
 
@@ -47,8 +47,6 @@ Scroll through the pre-defined profiles provided by SCC and describe the most re
 Describe how **profiles** are composed of a set off **controls** which specify the specifications and rules for evaluating the configuration of affected resources.
 
 Expand one of the controls and describe the compliance check this control performs.
-
-The CIS IBM Foundations Benchmark is the product of a community consensus process and consists of secure configurations guidelines developed for IBM Cloud. You can learn moe about the benchmark <a href="https://www.cisecurity.org/benchmark/ibm_cloud" target="_blank">here</a>.
 
 8. Click the down arrow (![](_attachments/downArrow.png)) next to the **Check whether Cloud Internet Services (CIS) is configured with at least TLS v1.2 for all inbound traffic.** and then click the **JSON** tab.
 
@@ -139,36 +137,31 @@ The steps that follow go into more details regarding controls, control libraries
 
 ![](_attachments/sccControlsV2.png)
 
-ABCDEF
-
 22. Click the **Controls** option and then **Control libraries** in left-hand menu.
 
 ![](_attachments/sccDashboardControlsMenu.png)
 
-ABCDEF
-
 ![](_attachments/sccControlLibraries.png)
 
-ABCDEF (custom predefined)
+Here we see the current control libraries provided by SCC. These controls and control libraries are maintained by IBM and are updated on a regular basis.
+
+The IBM Cloud for Financial Services control library has over 500 controls that have been defined by IBM and industry leading companies that are part of our Financial Services Advisory Council. We also have control libraries specific to cloud native applications and controls libraries specific to cloud native applications on other clouds like AWS, Azure, and Google.
+
+Note: the next steps use the CIS IBM Foundations Benchmark, but feel free to select a control library that best aligns with your client.
 
 23. Click **CIS IBM Foundations Benchmark**.
 
 ![](_attachments/sccControlLibraries2V2.png)
 
-ABCDEF
+Let’s look at the CIS IBM Foundations Benchmark library again.
 
 ![](_attachments/sccControlLibrariesSecurityCISFB.png)
 
-SCROLL DOWN TO SHOW THERE ARE QUITE A FEW OF THEM
+Here we see the all the assessments that make up the library grouped by control, and we can view them grouped by component.
 
 24. Click the **Grouped by component** tab.
 
 ![](_attachments/sccControlLibrariesSecurityCISFB2.png)
-
-
-ABCD - talk about the component view and where focus of security controls are.
-
-expand some of the components to view the actual controls
 
 25.  Click the **Security and Compliance** link at the top of the page.
 
@@ -178,9 +171,9 @@ expand some of the components to view the actual controls
 
 ![](_attachments/sccDashboardControlsMenu2.png)
 
-explain profiles
+Recall, when creating an attachment “profile” was specified and not a control library. Let’s look at profiles next. SCC supports both pre-defined and custom profiles. The pre-defined profiles are, for the most part, aligned with a control library.
 
-27. Click **Create +**.
+27.  Click **Create +**.
 
 ![](_attachments/sccProfiles.png)
 
@@ -188,11 +181,13 @@ explain profiles
 
 ![](_attachments/sccProfilesDetails.png)
 
-talk about version control
+A version control system is available for profiles and control libraries to support updates and changes to controls and standards.
 
 29. Click **Add +** on the **Controls** page.
 
 ![](_attachments/sccProfilesControls.png)
+
+Since not all controls may apply to a client's requirements, you can create custom profile based upon one of the existing libraries.
 
 30. Click **CIS IBM Foundations Benchmark** and then click **Next**.
 
@@ -202,6 +197,8 @@ talk about version control
 
 ![](_attachments/sccProfilesControls3.png)
 
+When building off of an existing control library, clients can select just the controls that apply to their requirements. 
+
 32. Click **Next**.
 
 ![](_attachments/sccProfilesControls4.png)
@@ -210,14 +207,15 @@ talk about version control
 
 ![](_attachments/sccProfilesParameters.png)
 
+The profile can now be saved and used when creating new attachments.
+
+Note, please do not create additional profiles in the shared ITZ environment.
+
 34. Click **Cancel** and click **Cancel** on the confirmation pop-up dialog.
 
 ![](_attachments/sccProfilesReview.png)
 
 While you have permission to save new profiles, to avoid additional cleanup work at the end of this learning plan, please click cancel.
-
-WRAP UP and lead into remediation.
-
 
 Watch a video of the above scenario:
 
