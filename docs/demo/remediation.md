@@ -129,4 +129,4 @@ Notice, the **drift** did not changes as the drift chart is based upon the compl
 
 Watch a video of the above scenario:
 
-![type:video](./_videos/scc-remediation-final.mp4)
+![type:video](./_videos/SCC-remediation-final.mp4)
