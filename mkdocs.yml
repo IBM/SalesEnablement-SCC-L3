@@ -67,7 +67,7 @@ extra:
   generator: false
   gitRepo: "https://github.com/IBM/SalesEnablement-SCC-L3"
   learningplan:
-    Name: "IBM Cloud Security and Compliance Center Level 3"
+    Name: "IBM Cloud Security and Compliance Center (SCC) Level 3"
     YLurlSales: "https://yourlearning.ibm.com/activity/PLAN-6317F3982CA7"
     YLurlTechSales: "https://yourlearning.ibm.com/activity/PLAN-649585526BDA"
     BPurlSales: "https://learn.ibm.com/course"

@@ -1,4 +1,4 @@
-That concludes this part of the {{learningplan.name}}. 
+That concludes this part of the {{learningplan.Name}}. 
 
 !!! Important "Delete any resources that you created!"
 
@@ -8,22 +8,27 @@ That concludes this part of the {{learningplan.name}}.
     
     If you enabled SMS messaging, simply click the unsubscribe link on any of the SMS messages you received on your mobile device and follow the directions to unsubscribe.
 
-TBW - REFER BACK TO SCC PATTERN FOR ADDITIONAL USE CASES. WE DIDN'T COVER MULTI-CLOUD IN THIS DEMO, BUT IT IS A KEY CAPABILITY OF THE OFFERING AND COULD BE DEMOED USING THE DEMOS DESCRIBED IN THE PATTERN.
+This demonstration guide only touched on part of the SCC capabilities. As mentioned in the Welcome section, another excellent resource is the <a href="https://pages.github.ibm.com/IBM-Cloud-Satellite-and-PaaS-Community/technology-pattern-scc/" target="_blank">IBM Technology Patterns for Regulated Cloud workloads</a>. Be sure to check it out!
 
-Remember to complete the {{learningplan.name}} learning plan:
+Remember to complete the {{learningplan.Name}} learning plan:
 
-**IBM Sales** and **IBM Technical** sales must complete a Stand and Deliver exercise to validate their ability to demonstrate {{offering.name}} to potential clients. Refer to the evaluation checklist in the learning plan when preparing the Stand and Deliver.
+**IBM Sales** and **IBM Technical** sales must complete a Stand and Deliver exercise to validate their ability to demonstrate {{offering.Name}} to potential clients. Refer to the evaluation checklist in the learning plan when preparing the Stand and Deliver.
 
-**Business Partners** (both sellers and technical sellers) must pass the {{learningplan.name}} quiz from learn.ibm.com. The Business Partner quiz verifies use of the demonstration environment and click-thru demonstrations, and not one's general knowledge of the offerings.
+**Business Partners** (both sellers and technical sellers) must pass the {{learningplan.Name}} quiz from learn.ibm.com. The Business Partner quiz verifies use of the demonstration environment and click-thru demonstrations, and not one's general knowledge of the offerings.
 
 Use the links below to return to YourLearning (IBMers) or learn.ibm.com (Business Partners). Be sure and mark the Demonstration Guide activity complete.
 
 IBMers:
-    Sales: {{learningplan.YLurlSales}}
-    Technical Sales: {{learningplan.YLurlTechSales}}
+
+- Sales: <a href="{{learningplan.YLurlSales}}" target="_blank">{{learningplan.YLurlSales}}</a>
+
+- Technical Sales: <a href="{{learningplan.YLurlTechSales}}" target="_blank">{{learningplan.YLurlTechSales}}</a>
+
 Business Partners:
-    Sales: {{learningplan.BPurlSales}}
-    Technical Sales: {{learningplan.BPurlTechSales}}
+    
+- Sales: <a href="{{learningplan.BPurlSales}}" target="_blank">{{learningplan.BPurlSales}}</a>
+  
+- Technical Sales: <a href="{{learningplan.BPurlTechSales}}" target="_blank">{{learningplan.BPurlTechSales}}</a>
 
 
 If you have feedback, please add comments in the above learning systems, or reach out directly to the authors of this course via slack in the <a href="https://ibm-technology-sales.slack.com/archives/C03PQ47KRQE" target="_blank">#cloud-platform-demo-feedback</a> slack channel or directly to <a href="https://ibm.enterprise.slack.com/user/@W4EF1M0MT" target="_blank">@andrewj</a>.
