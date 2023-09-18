@@ -221,4 +221,4 @@ WRAP UP and lead into remediation.
 
 Watch a video of the above scenario:
 
-![type:video](./_videos/SCC-high-level-scc-final.mp4)
+![type:video](./_videos/SCC-high-level-scc-v2-final.mp4)
