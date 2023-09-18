@@ -54,7 +54,7 @@ The CIS IBM Foundations Benchmark is the product of a community consensus proces
 
 ![](_attachments/sccCreateAttachmentProfilesCISTLS.png)
 
-Each control has one or more specification, in this case "Check whether Cloud Internet Services (CIS) is configured with at least TLS v1.2 for all inbound traffic" and rules that checks for the desired state against a resource.
+Each control has one or more specification, in this case "Check whether Cloud Internet Services (CIS) is configured with at least TLS v1.2 for all inbound traffic" and rules that check for the desired state against a resource.
 
 Click the **Parameters** tab to see the default parameters being used in the rule.
 
