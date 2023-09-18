@@ -1,6 +1,4 @@
-The remediation flow builds upon the setup performed earlier in the **Configure remediation scenario** chapter of the **Demonstration Environment** section of the demonstration guide. This flow tells the story of remediating a compliance failure and viewing the results in SCC.
-
-This demonstration flow provides an high-level overview of IBM Cloud Security and Compliance Center (SCC). It introduces the key concepts of controls, profiles, and attachments and illustrates how to use the SCC Dashboard and review SCC scan results. 
+The remediation flow builds upon the setup performed earlier in the **Configure remediation scenario** chapter of the **Demonstration Environment** section of the demonstration guide. This flow tells the story of remediating a compliance failure and viewing the improved results in IBM Security and Compliance Center (SCC).
 
 ??? Warning "Before proceeding to this step, make sure at least one (1) full hour has passed since you initially created your custom attachment."
 
@@ -37,6 +35,10 @@ Note, if the browser window is narrow, you might see an **account selection** ic
 
 Describe to the audience the simplified attachment that you created earlier that has a single control that is being evaluated and that the control has failed. 
 
+![](_attachments/scc-attachmentsRemediationResultsOverview.png)
+
+Note, the success rate percentage will likely be different in the IBM Portal than shown here.
+
 7. Click the **Controls** tab.
 
 ![](_attachments/scc-attachmentsRemediationResultsControls.png)
@@ -47,7 +49,7 @@ Describe how this custom profile was created using a single control from one of 
 
 ![](_attachments/scc-attachmentsRemediationResultsResources.png)
 
-Describe how the table shows the VSIs that are not in compliance and now it is time to remediate the issue, for at least one of the VSIs.
+Describe how the table shows the VSIs that are not in compliance. Now it is time to remediate the issue, for at least one of the VSIs.
 
 Note: your view of resources that have failed will vary based upon others using the environment.
 
@@ -97,13 +99,15 @@ The issue has now been remediate, so it is time to re-run the scan.
 
 ![](_attachments/sccRerunScanPopup.png)
 
-The **Scan in progress** message will appear for the attachment. After a minute or two, click the browser refresh button.
+The **Scan in progress** message will appear for the attachment. 
 
 ![](_attachments/sccRerunScanRunning.png)
 
 While waiting for the scan to complete, fill the time to answer any questions, or if you enabled Event Notifications, describe that integration.
 
 If you enabled Event Notifications with your mobile device number, you should receive an SMS message stating something similar to: "Scan complete - at least 1% of controls were non-compliant. 
+
+After a minute or two, or after receiving the SMS notification,  click the browser's refresh button.
 
 Once the scan is complete, proceed.
 
@@ -125,4 +129,4 @@ Notice, the **drift** did not changes as the drift chart is based upon the compl
 
 Watch a video of the above scenario:
 
-![type:video](./_videos/remediation.mp4)
+![type:video](./_videos/scc-remediation-final.mp4)
