@@ -48,6 +48,8 @@ Describe how **profiles** are composed of a set off **controls** which specify t
 
 Expand one of the controls and describe the compliance check this control performs.
 
+The CIS IBM Foundations Benchmark is the product of a community consensus process and consists of secure configurations guidelines developed for IBM Cloud. You can learn moe about the benchmark <a href="https://www.cisecurity.org/benchmark/ibm_cloud" target="_blank">here</a>.
+
 8. Click the down arrow (![](_attachments/downArrow.png)) next to the **Check whether Cloud Internet Services (CIS) is configured with at least TLS v1.2 for all inbound traffic.** and then click the **JSON** tab.
 
 ![](_attachments/sccCreateAttachmentProfilesCISTLS.png)
@@ -56,8 +58,8 @@ Each control has one or more specification, in this case "Check whether Cloud In
 
 Click the **Parameters** tab to see the default parameters being used in the rule.
 
-1. Click **Next**.
-2.  Click the **Scope** pull-down menu.
+9. Click **Next**.
+10.  Click the **Scope** pull-down menu.
 
 ![](_attachments/sccCreateAttachmentScopeMenu.png)
 
@@ -168,7 +170,7 @@ ABCD - talk about the component view and where focus of security controls are.
 
 expand some of the components to view the actual controls
 
-1.  Click the **Security and Compliance** link at the top of the page.
+25.  Click the **Security and Compliance** link at the top of the page.
 
 ![](_attachments/sccControlLibrariesSecurityCISFBComp2.png)
 
