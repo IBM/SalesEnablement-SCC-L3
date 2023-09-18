@@ -508,14 +508,13 @@
 <li>Click the <strong>Profile</strong> pull down.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccCreateAttachmentProfilesV2.png" /></p>
-<p>Scroll through the pre-defined profiles provided by SCC and describe the most relevant profiles to the client. For example, if the client is in the financial industry, spend some time describing the IBM Cloud for Financial Services profile which is developed and maintained by IBM and leading financial institutions. To learn more about the pre-defined profiles, visit the product documentation <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-predefined-profiles&interface=ui" target="_blank">here</a>. Note, the acronym CIS stands for <strong>Center for Internet Security</strong>: <a href="https://www.cisecurity.org" target="_blank">https://www.cisecurity.org</a>. </p>
+<p>Scroll through the pre-defined profiles provided by SCC and describe the most relevant profiles to the client. For example, if the client is in the financial industry, spend some time describing the IBM Cloud for Financial Services profile which is developed and maintained by IBM and leading financial institutions. To learn more about the pre-defined profiles, visit the product documentation <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-predefined-profiles&interface=ui" target="_blank">here</a>. Note, the acronym CIS stands for <strong>Center for Internet Security</strong>: <a href="https://www.cisecurity.org" target="_blank">https://www.cisecurity.org</a>. The CIS IBM Foundations Benchmark is the product of a community consensus process and consists of secure configurations guidelines developed for IBM Cloud. You can learn moe about the benchmark <a href="https://www.cisecurity.org/benchmark/ibm_cloud" target="_blank">here</a>.</p>
 <ol start="7">
 <li>Select the <strong>CIS IBM Foundations Benchmark</strong> profile or one of the other pre-defined ones if more appropriate for your client.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccCreateAttachmentProfilesBestPracticesV2.png" /></p>
 <p>Describe how <strong>profiles</strong> are composed of a set off <strong>controls</strong> which specify the specifications and rules for evaluating the configuration of affected resources.</p>
 <p>Expand one of the controls and describe the compliance check this control performs.</p>
-<p>The CIS IBM Foundations Benchmark is the product of a community consensus process and consists of secure configurations guidelines developed for IBM Cloud. You can learn moe about the benchmark <a href="https://www.cisecurity.org/benchmark/ibm_cloud" target="_blank">here</a>.</p>
 <ol start="8">
 <li>Click the down arrow (<img alt="" src="../_attachments/downArrow.png" />) next to the <strong>Check whether Cloud Internet Services (CIS) is configured with at least TLS v1.2 for all inbound traffic.</strong> and then click the <strong>JSON</strong> tab.</li>
 </ol>
@@ -589,27 +588,25 @@
 <li>Click the <strong>Dashboard</strong> link at the top of the page.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccControlsV2.png" /></p>
-<p>ABCDEF</p>
 <ol start="22">
 <li>Click the <strong>Controls</strong> option and then <strong>Control libraries</strong> in left-hand menu.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccDashboardControlsMenu.png" /></p>
-<p>ABCDEF</p>
 <p><img alt="" src="../_attachments/sccControlLibraries.png" /></p>
-<p>ABCDEF (custom predefined)</p>
+<p>Here we see the current control libraries provided by SCC. These controls and control libraries are maintained by IBM and are updated on a regular basis.</p>
+<p>The IBM Cloud for Financial Services control library has over 500 controls that have been defined by IBM and industry leading companies that are part of our Financial Services Advisory Council. We also have control libraries specific to cloud native applications and controls libraries specific to cloud native applications on other clouds like AWS, Azure, and Google.</p>
+<p>Note: the next steps use the CIS IBM Foundations Benchmark, but feel free to select a control library that best aligns with your client.</p>
 <ol start="23">
 <li>Click <strong>CIS IBM Foundations Benchmark</strong>.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccControlLibraries2V2.png" /></p>
-<p>ABCDEF</p>
+<p>Let’s look at the CIS IBM Foundations Benchmark library again.</p>
 <p><img alt="" src="../_attachments/sccControlLibrariesSecurityCISFB.png" /></p>
-<p>SCROLL DOWN TO SHOW THERE ARE QUITE A FEW OF THEM</p>
+<p>Here we see the all the assessments that make up the library grouped by control, and we can view them grouped by component.</p>
 <ol start="24">
 <li>Click the <strong>Grouped by component</strong> tab.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccControlLibrariesSecurityCISFB2.png" /></p>
-<p>ABCD - talk about the component view and where focus of security controls are.</p>
-<p>expand some of the components to view the actual controls</p>
 <ol start="25">
 <li>Click the <strong>Security and Compliance</strong> link at the top of the page.</li>
 </ol>
@@ -618,7 +615,7 @@
 <li>Click <strong>Profiles</strong> in left-hand menu.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccDashboardControlsMenu2.png" /></p>
-<p>explain profiles</p>
+<p>Recall, when creating an attachment “profile” was specified and not a control library. Let’s look at profiles next. SCC supports both pre-defined and custom profiles. The pre-defined profiles are, for the most part, aligned with a control library.</p>
 <ol start="27">
 <li>Click <strong>Create +</strong>.</li>
 </ol>
@@ -627,11 +624,12 @@
 <li>Enter <strong>test</strong> in the <strong>Name</strong> field and <strong>test</strong> in the <strong>Description</strong> field and then click <strong>Next</strong></li>
 </ol>
 <p><img alt="" src="../_attachments/sccProfilesDetails.png" /></p>
-<p>talk about version control</p>
+<p>A version control system is available for profiles and control libraries to support updates and changes to controls and standards.</p>
 <ol start="29">
 <li>Click <strong>Add +</strong> on the <strong>Controls</strong> page.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccProfilesControls.png" /></p>
+<p>Since not all controls may apply to a client's requirements, you can create custom profile based upon one of the existing libraries.</p>
 <ol start="30">
 <li>Click <strong>CIS IBM Foundations Benchmark</strong> and then click <strong>Next</strong>.</li>
 </ol>
@@ -640,6 +638,7 @@
 <li>Click a couple of the checkboxes to select individual controls and then click <strong>Add</strong>.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccProfilesControls3.png" /></p>
+<p>When building off of an existing control library, clients can select just the controls that apply to their requirements. </p>
 <ol start="32">
 <li>Click <strong>Next</strong>.</li>
 </ol>
@@ -648,12 +647,13 @@
 <li>Click <strong>Next</strong>.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccProfilesParameters.png" /></p>
+<p>The profile can now be saved and used when creating new attachments.</p>
+<p>Note, please do not create additional profiles in the shared ITZ environment.</p>
 <ol start="34">
 <li>Click <strong>Cancel</strong> and click <strong>Cancel</strong> on the confirmation pop-up dialog.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccProfilesReview.png" /></p>
 <p>While you have permission to save new profiles, to avoid additional cleanup work at the end of this learning plan, please click cancel.</p>
-<p>WRAP UP and lead into remediation.</p>
 <p>Watch a video of the above scenario:</p>
 <p><div class="video-container"><iframe src="../_videos/SCC-high-level-scc-v2-final.mp4" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
 
