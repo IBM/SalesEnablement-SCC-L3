@@ -103,9 +103,10 @@ The overview page shows the results of the scan that was run. Use the following 
 
 ![](_attachments/sccAttachments-OverviewV2.png)
 
-Success rate - % of evaluations that returned a compliant result.
+**Success rate** - The rate at which configurations pass the evaluation that is conducted. Note: The number of evaluations conducted does not always match the number of billable evaluations, as there is no charge
+for assessments evaluated as unable to perform. 
 
-Evaluation - assessment of a specific control to a specific resource.
+**Evaluation** - assessment of a specific control to a specific resource.
 
 **Assessment** - The actual evaluation of a configuration for compliance with applicable standards. An assessment can be either automated or manual depending on the control.
 
