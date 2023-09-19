@@ -2,7 +2,7 @@ For this demonstration guide, you leverage a pre-provisioned IBM Cloud Security 
 
 There are several advantages of using a pre-provisioned SCC instance including being able to see historical SCC scans of resources that would not be available if a new instance was provisioned. Additionally, since all users of this learning plan use the same environment there is a cost savings to IBM. 
 
-!!! Warning "This is a shared environment, and you have limited access to creating resources."
+!!! Warning "This is a shared environment."
 
     Since this is a shared environment, your IBM Cloud identification (ID) will have limited access. For instance, you will not be able to provision a new SCC instance, but you will be able to create rules and attachments, initiate scans, view the SCC dashboard, etc. Attempts to perform actions you do not have permissions for will result in an error like:
 
