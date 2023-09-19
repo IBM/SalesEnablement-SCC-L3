@@ -12,17 +12,9 @@ This demonstration guide only touched on part of the SCC capabilities. As mentio
 
 Remember to complete the {{learningplan.Name}} learning plan:
 
-**IBM Sales** and **IBM Technical** sales must complete a Stand and Deliver exercise to validate their ability to demonstrate {{offering.Name}} to potential clients. Refer to the evaluation checklist in the learning plan when preparing the Stand and Deliver.
+**IBMers**  must complete a Stand and Deliver exercise to validate their ability to demonstrate {{offering.Name}} to potential clients. Refer to the evaluation checklist in the <a href="{{learningplan.YLurlTechSales}}" target="_blank">learning plan</a> when preparing the Stand and Deliver.
 
-- Sales: <a href="{{learningplan.YLurlSales}}" target="_blank">{{learningplan.YLurlSales}}</a>
 
-- Technical Sales: <a href="{{learningplan.YLurlTechSales}}" target="_blank">{{learningplan.YLurlTechSales}}</a>
-
-**Business Partners** (both sellers and technical sellers) must pass the {{learningplan.Name}} quiz from learn.ibm.com. The Business Partner quiz verifies use of the demonstration environment, and not one's general knowledge of the offering. You are strongly encouraged to use the ITZ environment while taking your quiz.
-    
-- Sales: <a href="{{learningplan.BPurlSales}}" target="_blank">{{learningplan.BPurlSales}}</a>
+**Business Partners** (both sellers and technical sellers) must pass the {{learningplan.Name}} quiz found in the learning plan <a href="{{learningplan.BPurlTechSales}}" target="_blank">here</a>. The Business Partner quiz verifies use of the demonstration environment, and not one's general knowledge of the offering. You are strongly encouraged to use the ITZ environment while taking your quiz.
   
-- Technical Sales: <a href="{{learningplan.BPurlTechSales}}" target="_blank">{{learningplan.BPurlTechSales}}</a>
-
-
 If you have feedback, please add comments in the above learning systems, or reach out directly to the authors of this course via Slack in the <a href="https://ibm-technology-sales.slack.com/archives/C03PQ47KRQE" target="_blank">#cloud-platform-demo-feedback</a> channel or directly to <a href="https://ibm.enterprise.slack.com/user/@W4EF1M0MT" target="_blank">@andrewj</a>.
