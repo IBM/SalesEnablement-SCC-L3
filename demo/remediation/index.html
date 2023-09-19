@@ -416,7 +416,7 @@
   
     <li class="md-nav__item">
       <a href="../wp/" class="md-nav__link">
-        High-level demonstration of Workload Protection
+        High-level demonstration of Workload Protection - NOT READY
       </a>
     </li>
   
@@ -478,7 +478,7 @@
 
 <p>The remediation flow builds upon the setup performed earlier in the <strong>Configure remediation scenario</strong> chapter of the <strong>Demonstration Environment</strong> section of the demonstration guide. This flow tells the story of remediating a compliance failure and viewing the improved results in IBM Security and Compliance Center (SCC).</p>
 <details class="warning">
-<summary>Before proceeding to this step, make sure at least one (1) full hour has passed since you initially created your custom attachment.</summary>
+<summary>Before proceeding to this step, make sure at least one (1) full hour passed since you initially created your custom attachment.</summary>
 <p>It is important to understand that SCC cache's scan results for one hour. This means if you run the same scan within an hour of the last time the scan was run, a new scan is NOT performed and the old results are returned. This is important to remember when performing a client demonstration or if you are recording your Stand and Deliver.</p>
 </details>
 <ol>
@@ -496,48 +496,48 @@
 </ol>
 <p><img alt="" src="../_attachments/dashBoard.png" /></p>
 <ol start="4">
-<li>Click <strong>Attachments</strong> in left-hand menu.</li>
+<li>Click <strong>Attachments</strong> in the left menu.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccOverviewPage3-attachments.png" /></p>
 <ol start="5">
-<li>Click the ellipses icon (<img alt="" src="../../env/_attachments/ellipses.png" />) of the <strong>Attachment</strong> you created earlier and then click <strong>View scan results</strong>. In this example, <strong>andrew-14294-ipspoofing-compliance</strong>.</li>
+<li>Click the ellipses icon (<img alt="" src="../../env/_attachments/ellipses.png" />) of the <strong>Attachment</strong> that you created earlier and then click <strong>View scan results</strong>. In this example, <strong>andrew-14294-ipspoofing-compliance</strong>.</li>
 </ol>
 <p><img alt="" src="../_attachments/scc-attachmentsPage.png" /></p>
 <ol start="6">
 <li>Click the link for the last scan run.</li>
 </ol>
 <p><img alt="" src="../_attachments/scc-attachmentsRemediationAttachment.png" /></p>
-<p>Describe to the audience the simplified attachment that you created earlier that has a single control that is being evaluated and that the control has failed. </p>
+<p>Describe to the audience the simplified attachment that you created earlier that has a single control that is being evaluated and that the control failed. </p>
 <p><img alt="" src="../_attachments/scc-attachmentsRemediationResultsOverview.png" /></p>
 <p>Note, the success rate percentage will likely be different in the IBM Portal than shown here.</p>
 <ol start="7">
 <li>Click the <strong>Controls</strong> tab.</li>
 </ol>
 <p><img alt="" src="../_attachments/scc-attachmentsRemediationResultsControls.png" /></p>
-<p>Describe how this custom profile was created using a single control from one of the pre-defined profiles. In this case, the control is the check to see if IP spoofing is enabled for any VSIs in VPCs.</p>
+<p>Describe how this custom profile was created by using a single control from one of the pre-defined profiles. In this case, the control is the check to see whether IP spoofing is enabled for any VSIs in VPCs.</p>
 <ol start="8">
-<li>Click the <strong>Resources</strong> tab and then the down arrow icon (<img alt="" src="../_attachments/downArrow.png" />) next to the VSI you created earlier.</li>
+<li>Click the <strong>Resources</strong> tab and then the down arrow icon (<img alt="" src="../_attachments/downArrow.png" />) next to the VSI that you created earlier.</li>
 </ol>
 <p><img alt="" src="../_attachments/scc-attachmentsRemediationResultsResources.png" /></p>
-<p>Describe how the table shows the VSIs that are not in compliance. Now it is time to remediate the issue, for at least one of the VSIs.</p>
+<p>Describe how the table shows the VSIs that are not in compliance. Now, it is time to remediate the issue for at one of the VSIs.</p>
 <p>Note: your view of resources that have failed will vary based upon others using the environment.</p>
 <ol start="9">
 <li>Click the hamburger menu icon (<img alt="" src="../_attachments/hamburgerIcon.png" />) and then click the VPC icon.</li>
 </ol>
 <p><img alt="" src="../_attachments/vpcMenu.png" /></p>
 <ol start="10">
-<li>Click <strong>Virtual server instances</strong> under the <strong>Compute</strong> heading in left-hand menu.</li>
+<li>Click <strong>Virtual server instances</strong> under the <strong>Compute</strong> heading in the left menu.</li>
 </ol>
 <p><img alt="" src="../_attachments/vpcMenu2.png" /></p>
 <ol start="11">
-<li>Click the name of the VSI you created earlier. In this example, <strong>andrew-14294-scc-vsi</strong>.</li>
+<li>Click the name of the VSI that you created earlier. In this example, <strong>andrew-14294-scc-vsi</strong>.</li>
 </ol>
 <p><img alt="" src="../_attachments/vpcVSItable.png" /></p>
 <ol start="12">
 <li>Scroll down to the <strong>Network interfaces</strong> section.</li>
 </ol>
 <p><img alt="" src="../_attachments/vpcVSInetworkInterfaces.png" /></p>
-<p>Note: your view of VSI resources will vary based upon others using the environment.</p>
+<p>Note: your view of VSI resources will vary based on others using the environment.</p>
 <p>Show the audience that the current networking setting for this VSI has IP spoofing enabled and that to fix the compliance issue, it needs to be disabled.</p>
 <ol start="13">
 <li>Click the pencil icon (<img alt="" src="../../env/_attachments/pencilIcon.png" />) to edit the network interface settings.</li>
@@ -547,44 +547,44 @@
 <li>Click the <strong>Allow IP spoofing</strong> toggle to change the setting from Enabled to <strong>Disabled</strong> and click <strong>Save</strong>.</li>
 </ol>
 <p><img alt="" src="../_attachments/vpcVSInetworkInterfacesEdit.png" /></p>
-<p>The issue has now been remediate, so it is time to re-run the scan.</p>
+<p>The issue is remediated, so it is time to rerun the scan.</p>
 <ol start="15">
 <li>Click the hamburger menu icon (<img alt="" src="../_attachments/hamburgerIcon.png" />) and then click the Security and Compliance option.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccMenu.png" /></p>
 <ol start="16">
-<li>Click <strong>Attachments</strong> in left-hand menu.</li>
+<li>Click <strong>Attachments</strong> in the left menu.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccOverviewPage3-attachments.png" /></p>
 <ol start="17">
-<li>Click the ellipses icon (<img alt="" src="../../env/_attachments/ellipses.png" />) of the <strong>Attachment</strong> you created earlier and then click <strong>Run scan</strong>. In this example, <strong>andrew-14294-ipspoofing-compliance</strong>.</li>
+<li>Click the ellipses icon (<img alt="" src="../../env/_attachments/ellipses.png" />) of the <strong>Attachment</strong> that you created earlier and then click <strong>Run scan</strong>. In this example, <strong>andrew-14294-ipspoofing-compliance</strong>.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccRerunScan.png" /></p>
 <ol start="18">
 <li>Click <strong>Run scan</strong> in the <strong>Scan now</strong> popup window.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccRerunScanPopup.png" /></p>
-<p>The <strong>Scan in progress</strong> message will appear for the attachment. </p>
+<p>The <strong>Scan in progress</strong> message appears for the attachment. </p>
 <p><img alt="" src="../_attachments/sccRerunScanRunning.png" /></p>
 <p>While waiting for the scan to complete, fill the time to answer any questions, or if you enabled Event Notifications, describe that integration.</p>
-<p>If you enabled Event Notifications with your mobile device number, you should receive an SMS message stating something similar to: "Scan complete - at least 1% of controls were non-compliant. </p>
-<p>After a minute or two, or after receiving the SMS notification,  click the browser's refresh button.</p>
+<p>If you enabled Event Notifications with your mobile device number, you will receive an SMS message like: "Scan complete - at least 1% of controls were noncompliant. </p>
+<p>After a minute or two, or after receiving the SMS notification, click the browser's refresh button.</p>
 <p>Once the scan is complete, proceed.</p>
 <ol start="19">
-<li>Click the ellipses icon (<img alt="" src="../../env/_attachments/ellipses.png" />) of the <strong>Attachment</strong> you created earlier and then click <strong>View scan results</strong>. In this example, <strong>andrew-14294-ipspoofing-compliance</strong>.</li>
+<li>Click the ellipses icon (<img alt="" src="../../env/_attachments/ellipses.png" />) of the <strong>Attachment</strong> that you created earlier and then click <strong>View scan results</strong>. In this example, <strong>andrew-14294-ipspoofing-compliance</strong>.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccViewRerunScanResults.png" /></p>
 <ol start="20">
-<li>Click the top scan in the table.</li>
+<li>Click the first scan in the table.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccViewRerunScanResultsTable.png" /></p>
 <ol start="21">
 <li>Discuss the new scan results.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccViewRerunScanResultsOverview.png" /></p>
-<p>Notice the difference in the <strong>Success rate</strong> graphic. The value should have increased from when this page was previously viewed. In this case, it went from 0% to 33% which represents the remediation performed on one of the three VSIs that were noncompliant in the IP spoofing control.</p>
-<p>Notice, the <strong>drift</strong> did not changes as the drift chart is based upon the compliance of the control across all resources.</p>
-<p>Watch a video of the above scenario:</p>
+<p>Notice the difference in the <strong>Success rate</strong> graphic. The value should have increased from the previously viewed scan. In this case, it went from 0% to 33% that represents the remediation performed on one of the VSIs that were noncompliant in the IP spoofing control.</p>
+<p>Notice, the <strong>drift</strong> did not change as the drift chart is based on the compliance of the control across all resources.</p>
+<p>Watch a video of the scenario:</p>
 <p><div class="video-container"><iframe src="../_videos/SCC-remediation-final.mp4" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
 
 
@@ -620,13 +620,13 @@
       
       
         
-        <a href="../wp/" class="md-footer__link md-footer__link--next" aria-label="Next: High-level demonstration of Workload Protection" rel="next">
+        <a href="../wp/" class="md-footer__link md-footer__link--next" aria-label="Next: High-level demonstration of Workload Protection - NOT READY" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              High-level demonstration of Workload Protection
+              High-level demonstration of Workload Protection - NOT READY
             </div>
           </div>
           <div class="md-footer__button md-icon">

@@ -416,7 +416,7 @@
   
     <li class="md-nav__item">
       <a href="../wp/" class="md-nav__link">
-        High-level demonstration of Workload Protection
+        High-level demonstration of Workload Protection - NOT READY
       </a>
     </li>
   
@@ -476,7 +476,7 @@
 
   <h1>High-level demonstration of SCC</h1>
 
-<p>This demonstration flow provides an high-level overview of IBM Cloud Security and Compliance Center (SCC). It introduces the key concepts of controls, profiles, and attachments and illustrates how to use the SCC Dashboard and review SCC scan results. </p>
+<p>This demonstration flow provides a high-level overview of IBM Cloud Security and Compliance Center (SCC). It introduces the key concepts of controls, profiles, and attachments and illustrates how to use the SCC Dashboard and review SCC scan results. </p>
 <ol>
 <li>Open a web browser to the <strong>IBM Cloud Portal</strong>.</li>
 </ol>
@@ -493,10 +493,10 @@
 <p><img alt="" src="../_attachments/dashBoard.png" /></p>
 <p>The SCC overview page in the IBM Cloud Portal provides a good starting point for demonstrations.</p>
 <p><img alt="" src="../_attachments/sccOverviewPage3.png" /></p>
-<p>Introduce SCC in an impactful way that will resonate with the audience. For example, discuss recent news stories related to the client's main industry and compliance failures.</p>
-<p>Describe the benefits of SCC, for example, SCC helps protect organizations from financial and civil penalities by identifying misconfigurations and addressing compliance issues both on premises and in the cloud. SCC does this by conducing scans of the client's environment.</p>
-<p>To run a scan an attachment must first be created.</p>
-<ol start="4">
+<p>Introduce SCC in an impactful way that resonates with the audience. For example, discuss recent news stories that are related to the client's main industry and compliance failures.</p>
+<p>Describe the benefits of SCC, for example, SCC helps protect organizations from financial and civil penalities by identifying misconfigurations and addressing compliance issues both on premises and in the cloud. SCC does this by conducting scans of the client's environment.</p>
+<p>To run a scan, an attachment must first be created.</p>
+<ol>
 <li>Click the <strong>Get started</strong> button.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccOverviewPage3-getstarted.png" /></p>
@@ -505,28 +505,28 @@
 </ol>
 <p><img alt="" src="../_attachments/sccCreateAttachment.png" /></p>
 <ol start="6">
-<li>Click the <strong>Profile</strong> pull down.</li>
+<li>Click the <strong>Profile</strong> pull-down.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccCreateAttachmentProfilesV2.png" /></p>
-<p>Scroll through the pre-defined profiles provided by SCC and describe the most relevant profiles to the client. For example, if the client is in the financial industry, spend some time describing the IBM Cloud for Financial Services profile which is developed and maintained by IBM and leading financial institutions. To learn more about the pre-defined profiles, visit the product documentation <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-predefined-profiles&interface=ui" target="_blank">here</a>. Note, the acronym CIS stands for <strong>Center for Internet Security</strong>: <a href="https://www.cisecurity.org" target="_blank">https://www.cisecurity.org</a>. The CIS IBM Foundations Benchmark is the product of a community consensus process and consists of secure configurations guidelines developed for IBM Cloud. You can learn moe about the benchmark <a href="https://www.cisecurity.org/benchmark/ibm_cloud" target="_blank">here</a>.</p>
+<p>Scroll through the pre-defined profiles that are provided by SCC and describe the most relevant profiles to the client. For example, if the client is in the financial industry, spend some time describing the IBM Cloud for Financial Services profile that is developed and maintained by IBM and leading financial institutions. To learn more about the pre-defined profiles, visit the product documentation <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-predefined-profiles&interface=ui" target="_blank">here</a>. Note, the acronym CIS stands for <strong>Center for Internet Security</strong>: <a href="https://www.cisecurity.org" target="_blank">https://www.cisecurity.org</a>. The CIS IBM Foundations Benchmark is the product of a community consensus process and consists of secure configurations guidelines that are developed for IBM Cloud. You can learn more about the benchmark <a href="https://www.cisecurity.org/benchmark/ibm_cloud" target="_blank">here</a>.</p>
 <ol start="7">
 <li>Select the <strong>CIS IBM Foundations Benchmark</strong> profile or one of the other pre-defined ones if more appropriate for your client.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccCreateAttachmentProfilesBestPracticesV2.png" /></p>
-<p>Describe how <strong>profiles</strong> are composed of a set off <strong>controls</strong> which specify the specifications and rules for evaluating the configuration of affected resources.</p>
-<p>Expand one of the controls and describe the compliance check this control performs.</p>
+<p>Describe how <strong>profiles</strong> are composed of a set off <strong>controls</strong>, which specify the specifications and rules for evaluating the configuration of affected resources.</p>
+<p>Expand one of the controls and describe the compliance check that this control performs.</p>
 <ol start="8">
 <li>Click the down arrow (<img alt="" src="../_attachments/downArrow.png" />) next to the <strong>Check whether Cloud Internet Services (CIS) is configured with at least TLS v1.2 for all inbound traffic.</strong> and then click the <strong>JSON</strong> tab.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccCreateAttachmentProfilesCISTLS.png" /></p>
-<p>Each control has one or more specification, in this case "Check whether Cloud Internet Services (CIS) is configured with at least TLS v1.2 for all inbound traffic" and rules that check for the desired state against a resource.</p>
-<p>Click the <strong>Parameters</strong> tab to see the default parameters being used in the rule.</p>
+<p>Each control has one or more specifications, in this case "Check whether Cloud Internet Services (CIS) is configured with at least TLS v1.2 for all inbound traffic" and rules that check for the desired state against a resource.</p>
+<p>Click the <strong>Parameters</strong> tab to see the default parameters used in the rule.</p>
 <ol start="9">
 <li>Click <strong>Next</strong>.</li>
 <li>Click the <strong>Scope</strong> pull-down menu.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccCreateAttachmentScopeMenu.png" /></p>
-<p>The scope defines which resources will be evaluated against the controls in the profile.Describe how scan's can be scoped to an account or a resource group. IBM Cloud enterprise accounts have further capabilities to scope at the sub-account or account groups. </p>
+<p>The scope defines which resources will be evaluated against the controls in the profile. Describe how scan's can be scoped to an account or a resource group. IBM Cloud enterprise accounts have further capabilities to scope at the subaccount or account groups. </p>
 <ol start="11">
 <li>Click <strong>SCC-L3 and then click </strong>Next**.</li>
 </ol>
@@ -535,22 +535,22 @@
 <li>Click <strong>Next</strong> on the <strong>Scan settings</strong> page.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccCreateAttachmentScanSettings.png" /></p>
-<p>The scan settings pages allows you to enable or disable the scan, set the schedule for the scan, and enable notifications.  We will cover the <strong>Notifications</strong> in a later demonstration flow.</p>
+<p>The scan settings page allows you to enable or disable the scan, set the schedule for the scan, and enable notifications. We cover <strong>Notifications</strong> in a later demonstration flow.</p>
 <ol start="13">
 <li>Review the attachment settings.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccCreateAttachmentReview.png" /></p>
-<p>Described that the time to take to run a scan depends on the number of controls specified and the scope which defines what resources are to be scanned. Given a scan against the IAM Cloud Security Best Practices will take several minutes, let the audience know that you will now switch to an attachment created earlier with the same parameters.</p>
+<p>Described that the time to take to run a scan depends on the number of controls that are specified and the scope that defines what resources are to be scanned. Given a scan against the IAM Cloud Security Best Practices take several minutes, let the audience know that you are switching to an attachment created earlier with the same parameters.</p>
 <ol start="14">
 <li>
 <p>Click <strong>Cancel</strong> and then click <strong>Cancel</strong> on the confirmation dialog that pops up.</p>
 </li>
 <li>
-<p>Click <strong>Attachments</strong> in left-hand menu.</p>
+<p>Click <strong>Attachments</strong> in the left menu.</p>
 </li>
 </ol>
 <p><img alt="" src="../_attachments/sccOverviewPage3-attachments.png" /></p>
-<p>Highlight to the audience the attachment named <strong>SCC-L3-CIS - DO NOT DELETE</strong>.</p>
+<p>Highlight the attachment named <strong>SCC-L3-CIS - DO NOT DELETE</strong>.</p>
 <p><img alt="" src="../_attachments/sccAttachments-ExampleV2.png" /></p>
 <p>This attachment scans for the compliance controls specified in the IBM Cloud Security Best Practices profile. </p>
 <ol start="16">
@@ -569,11 +569,11 @@
 <ol start="18">
 <li>Click the <strong>Timeframe</strong> pull-down menu for the <strong>Drift</strong> graphic and select a timeframe to best visualize drift.</li>
 </ol>
-<p>This scan was originally setup in early August 13, 2023. After the original scan, several remediation steps were taken to resolve some of the non-compliant checks.  To best show the <strong>drift</strong> in compliance select a the shortest time frame that brings August 13, 2023 into view. For example,select <strong>3 months</strong> if you are running before the end of October, 2023, otherwise select 6 months or 1 year.</p>
+<p>This scan was originally set up on August 13, 2023. After the original scan, several remediation steps were taken to resolve some of the noncompliant checks. To best show the <strong>drift</strong> in compliance select the shortest time frame that brings August 13, 2023 into view. For example, select <strong>3 months</strong> if you are running before the end of October  2023, otherwise select 6 months or 1 year.</p>
 <p><img alt="" src="../_attachments/sccAttachments-ResultsDriftV2.png" /></p>
-<p>Describe how the Drift view provides a nice visual for the compliance status of the environment over a period of time. It is easy to see where improvements were made and perhaps where some compliance ground was lost.</p>
-<p>The bottom table shows individual resources that have failed an evaluation.</p>
-<ol start="19">
+<p>Describe how the Drift view provides a nice visual for the compliance status of the environment over a time. It is easy to see where improvements were made and perhaps where some compliance ground was lost.</p>
+<p>The bottom table shows individual resources that failed an evaluation.</p>
+<ol>
 <li>Click the down arrow icon (<img alt="" src="../_attachments/downArrow.png" />) next to the <strong>iam-identity</strong> resource in the table.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccAttachments-ResultsSCC-iam.png" /></p>
@@ -582,19 +582,19 @@
 <li>Click the <strong>Controls</strong> tab and then click <strong>Non-compliant</strong> in the Evaluation drop-down menu in the table.</li>
 </ol>
 <p><img alt="" src="../_attachments/scc-attachmentsRemediationResultsControlsV2.png" /></p>
-<p>There are various views (by Control, by Resource, etc) and filters that can be applied to the output to visualize where issues are in the environments compliance posture and a starting point in understanding where to focus effort in terms of implementing security and compliance measures to remediate potential vulnerabilities.</p>
-<p>The steps that follow go into more details regarding controls, control libraries, and profiles. </p>
+<p>There are various views (by Control, by Resource, and so on) and filters that can be applied to the output to visualize where issues are in the environment's compliance posture. This is a starting point in understanding where to focus effort in terms of implementing security and compliance measures to remediate potential vulnerabilities.</p>
+<p>The steps that follow go into more detail regarding controls, control libraries, and profiles. </p>
 <ol start="21">
 <li>Click the <strong>Dashboard</strong> link at the top of the page.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccControlsV2.png" /></p>
 <ol start="22">
-<li>Click the <strong>Controls</strong> option and then <strong>Control libraries</strong> in left-hand menu.</li>
+<li>Click the <strong>Controls</strong> option and then <strong>Control libraries</strong> in the left menu.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccDashboardControlsMenu.png" /></p>
 <p><img alt="" src="../_attachments/sccControlLibraries.png" /></p>
-<p>Here we see the current control libraries provided by SCC. These controls and control libraries are maintained by IBM and are updated on a regular basis.</p>
-<p>The IBM Cloud for Financial Services control library has over 500 controls that have been defined by IBM and industry leading companies that are part of our Financial Services Advisory Council. We also have control libraries specific to cloud native applications and controls libraries specific to cloud native applications on other clouds like AWS, Azure, and Google.</p>
+<p>Here we see the current control libraries that are provided by SCC. These controls and control libraries are maintained by IBM and are updated regularly.</p>
+<p>The IBM Cloud for Financial Services control library has over 500 controls that are defined by IBM and industry-leading companies that are part of our Financial Services Advisory Council. We also have control libraries specific to cloud native applications and control libraries specific to cloud native applications on other clouds like AWS, Azure, and Google.</p>
 <p>Note: the next steps use the CIS IBM Foundations Benchmark, but feel free to select a control library that best aligns with your client.</p>
 <ol start="23">
 <li>Click <strong>CIS IBM Foundations Benchmark</strong>.</li>
@@ -602,7 +602,7 @@
 <p><img alt="" src="../_attachments/sccControlLibraries2V2.png" /></p>
 <p>Let’s look at the CIS IBM Foundations Benchmark library again.</p>
 <p><img alt="" src="../_attachments/sccControlLibrariesSecurityCISFB.png" /></p>
-<p>Here we see the all the assessments that make up the library grouped by control, and we can view them grouped by component.</p>
+<p>Here we see the all the assessments that make up the library that is grouped by control, and we can view them grouped by component.</p>
 <ol start="24">
 <li>Click the <strong>Grouped by component</strong> tab.</li>
 </ol>
@@ -612,10 +612,10 @@
 </ol>
 <p><img alt="" src="../_attachments/sccControlLibrariesSecurityCISFBComp2.png" /></p>
 <ol start="26">
-<li>Click <strong>Profiles</strong> in left-hand menu.</li>
+<li>Click <strong>Profiles</strong> in the left menu.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccDashboardControlsMenu2.png" /></p>
-<p>Recall, when creating an attachment “profile” was specified and not a control library. Let’s look at profiles next. SCC supports both pre-defined and custom profiles. The pre-defined profiles are, for the most part, aligned with a control library.</p>
+<p>Recall when creating an attachment, a “profile” was specified and not a control library. Let’s look at profiles next. SCC supports both pre-defined and custom profiles. The pre-defined profiles are, for the most part, aligned with a control library.</p>
 <ol start="27">
 <li>Click <strong>Create +</strong>.</li>
 </ol>
@@ -629,7 +629,7 @@
 <li>Click <strong>Add +</strong> on the <strong>Controls</strong> page.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccProfilesControls.png" /></p>
-<p>Since not all controls may apply to a client's requirements, you can create custom profile based upon one of the existing libraries.</p>
+<p>Since not all controls might apply to a client's requirements, you can create custom profile based on one of the existing libraries.</p>
 <ol start="30">
 <li>Click <strong>CIS IBM Foundations Benchmark</strong> and then click <strong>Next</strong>.</li>
 </ol>
@@ -638,7 +638,7 @@
 <li>Click a couple of the checkboxes to select individual controls and then click <strong>Add</strong>.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccProfilesControls3.png" /></p>
-<p>When building off of an existing control library, clients can select just the controls that apply to their requirements. </p>
+<p>When building off an existing control library, clients can select just the controls that apply to their requirements. </p>
 <ol start="32">
 <li>Click <strong>Next</strong>.</li>
 </ol>
@@ -647,14 +647,14 @@
 <li>Click <strong>Next</strong>.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccProfilesParameters.png" /></p>
-<p>The profile can now be saved and used when creating new attachments.</p>
-<p>Note, please do not create additional profiles in the shared ITZ environment.</p>
+<p>The profile can now be saved and used to create new attachments.</p>
+<p>Do not create additional profiles in the shared ITZ environment.</p>
 <ol start="34">
 <li>Click <strong>Cancel</strong> and click <strong>Cancel</strong> on the confirmation pop-up dialog.</li>
 </ol>
 <p><img alt="" src="../_attachments/sccProfilesReview.png" /></p>
-<p>While you have permission to save new profiles, to avoid additional cleanup work at the end of this learning plan, please click cancel.</p>
-<p>Watch a video of the above scenario:</p>
+<p>While you have permission to save new profiles, to avoid additional cleanup work at the end of this learning plan, click cancel.</p>
+<p>Watch a video of this scenario:</p>
 <p><div class="video-container"><iframe src="../_videos/SCC-high-level-scc-v2-final.mp4" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
 
 
