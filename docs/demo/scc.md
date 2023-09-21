@@ -218,6 +218,8 @@ Do not create additional profiles in the shared ITZ environment.
 
 While you have permission to save new profiles, to avoid additional cleanup work at the end of this learning plan, click cancel.
 
+In addition to creating custom profiles and custom control libraries, SCC supports the creation of custom rules. The topic of custom rules is not covered in this course, but you can find more information on the topic <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-rules-define&interface=ui" target="_blank">here</a> and in the <a href="https://pages.github.ibm.com/IBM-Cloud-Satellite-and-PaaS-Community/technology-pattern-scc/" target="_blank">IBM Technology Patterns for Regulated Cloud workloads</a>.
+
 Watch a video of this scenario:
 
 ![type:video](./_videos/SCC-high-level-scc-v2-final.mp4)

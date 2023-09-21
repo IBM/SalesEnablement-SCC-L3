@@ -106,6 +106,7 @@ extra:
   iks:
     ClusterName: "scc-l3-iks-DO-NOT-DELETE"
     Pod: "helloworld-57646478c5-tv5hm"
+    Attachment: "IKS benchmark attachment - DO NOT DELETE"
 
 
 
