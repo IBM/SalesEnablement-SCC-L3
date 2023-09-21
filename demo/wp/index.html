@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#view-an-scc-attachment-scan-results-focused-on-kubernetes-deployment" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -428,9 +433,45 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          High-level demonstration of Workload Protection - NOT READY
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         High-level demonstration of Workload Protection - NOT READY
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#view-an-scc-attachment-scan-results-focused-on-kubernetes-deployment" class="md-nav__link">
+    View an SCC attachment scan results focused on Kubernetes deployment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-more-details-using-the-scc-wp-dashboard" class="md-nav__link">
+    View more details using the SCC WP dashboard
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -476,6 +517,28 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#view-an-scc-attachment-scan-results-focused-on-kubernetes-deployment" class="md-nav__link">
+    View an SCC attachment scan results focused on Kubernetes deployment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-more-details-using-the-scc-wp-dashboard" class="md-nav__link">
+    View more details using the SCC WP dashboard
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -493,40 +556,129 @@
 <p>THIS SECTION NOT READY TO BE REVIEWED!!!
 THIS SECTION NOT READY TO BE REVIEWED!!!
 THIS SECTION NOT READY TO BE REVIEWED!!!</p>
-<p>IBM Cloud Security and Compliance Center Workload Protection (WP) offers functionality to protect cloud native workloads, get deep cloud and container visibility, posture management (compliance, benchmarks, CIEM), vulnerability scanning, forensics, and threat detection and blocking. </p>
-<p><strong>SCC Workload Protection (Hybrid Multicloud for CSPM, CWPP, CIEM)</strong>
-Cloud Security Posture Management (CSPM)
-Workload Protection (CWPP)
-- Vulnerability Management
-- Threat Detection
-Identity Entitlement Management (CIEM)
-Automation &amp; Integration
- - With IaC (infrastructure as a code)</p>
-<p>CSPM tools empower companies to identify and remediate risks through security assessments and automated compliance monitoring.</p>
-<p>CWPP - Cloud workload protection platform - is a unified cloud security solution that offers continuous threat monitoring and detection for cloud workloads across different types of modern cloud environments. A CWPP has automatic security features to protect activity across online and physical locations, including servers and virtual machines.</p>
-<p>This demonstration flow focuses on the integration between SCC and WP and provides a brief overview of the WP dashboard.</p>
+<p>IBM Cloud Security and Compliance Center Workload Protection (WP) offers functionality to protect cloud native workloads, get deep cloud and container visibility, posture management (compliance, benchmarks, Cloud Infrastructure Entitlements Management (CIEM)), vulnerability scanning, forensics, and threat detection and blocking. </p>
+<p>This demonstration flow focuses on the integration between SCC and WP and provides a brief overview of the WP capabilities for protecting cloud native workloads.</p>
 <ul>
-<li>start in SCC</li>
-<li>go to the attachment for IKS</li>
-<li>
-<p>show results and dashboard and higlight the deafult workspace issue (5.7.4)</p>
-</li>
-<li>
-<p>these kubernetes scan results are flowing into the SCC dashboard from WP. Here we see that in our SCC instance, we have integrated with an instance of WP.</p>
-</li>
+<li>these kubernetes scan results are flowing into the SCC dashboard from WP. Here we see that in our SCC instance, we have integrated with an instance of WP. NEED A GOOD DESRIPTION OF THE RELATIONSHIP</li>
 </ul>
-<p>-show integrations
-- open WP dashboard</p>
-<p>WP provides multi-cloud support for IBM Cloud, AWS, Google Cloud, Microsoft Azure, and can also be used for on-premises kubernetes instances.</p>
-<p>For our purposes, in this demonstration environment WP has only been enabled to protect a single IBM Cloud Kubernetes Service (IKS) instance.</p>
+<p>WP provides multi-cloud support for IBM Cloud, AWS, Google Cloud, Microsoft Azure, and can also be used for on-premises kubernetes instances. However, in this guide, only resources in IBM Cloud are utilized.</p>
+<p>In this scenario,</p>
 <ul>
-<li>show and talk about scanning.. talk about integration with CI/CD pipelines for image scanning</li>
+<li>view an existing attachment and results that utilizes WP to scan cloud native applications</li>
+<li>use the WP dashboard to learn more about WP's capabilities including NEED TO LIST WHAT WE ARE GOING TO DO HERE</li>
 </ul>
-<p>Cloud Infrastructure Entitlements Management (CIEM) is the security process of managing access rights, permissions, or privileges for the identities of a single or multi-cloud environment. This process helps to identify and avoid risks resulting from privileges being higher or broader than they should.</p>
-<p>In WP...
-Posture-&gt;Sysdig IBM Cloud Kubernetes Service (IKS Benchmark)-&gt;
-Select Requirements -&gt; 5.7.4</p>
-<p>Watch a video of the above scenario:</p>
+<h3 id="view-an-scc-attachment-scan-results-focused-on-kubernetes-deployment">View an SCC attachment scan results focused on Kubernetes deployment</h3>
+<ol>
+<li>Open a web browser to the <strong>IBM Cloud Portal</strong>.</li>
+</ol>
+<p><a href="https://cloud.ibm.com" target="_blank">IBM Cloud Portal</a>.</p>
+<p>When the page loads, authenticate with your IBM Cloud ID and password. The authentication process varies depending on the primary account that your ID is associated with and any multi-factor authentication or other security controls in place for the account.</p>
+<ol start="2">
+<li>Click the <strong>account selection</strong> drop-down menu and select the <strong>2305900 - ITZ - ADHOC03</strong> account.</li>
+</ol>
+<p><img alt="" src="../../env/_attachments/switchAccount.png" /></p>
+<p>Note, if the browser window is narrow, you might see an <strong>account selection</strong> icon like this: <img alt="" src="../../env/_attachments/switchAccountIcon.png" /> instead of the full account name.</p>
+<ol start="3">
+<li>Click the <strong>Security and Compliance</strong> icon (<img alt="" src="../_attachments/sccIcon.png" />) in the menu bar.</li>
+</ol>
+<p><img alt="" src="../_attachments/dashBoard.png" /></p>
+<ol start="4">
+<li>Click <strong>Attachments</strong> in the left menu.</li>
+</ol>
+<p><img alt="" src="../_attachments/sccOverviewPageAttachments.png" /></p>
+<ol start="5">
+<li>Click the <strong>ellipses</strong> (<img alt="" src="../../env/_attachments/ellipses.png" />) icon for the <strong>IKS benchmark attachment - DO NOT DELETE</strong> attachment and then click <strong>View scan results</strong>.</li>
+</ol>
+<p><img alt="" src="../_attachments/sccAttachmentsIKS.png" /></p>
+<p>This attachment performs a scan based upon the <strong>IBM Cloud Kubernetes Service Benchmark</strong> with these settings:</p>
+<p><img alt="" src="../_attachments/sccAttachmentsIKSSettings.png" /></p>
+<ol start="6">
+<li>Click the link for the first scan in the table.</li>
+</ol>
+<p><img alt="" src="../_attachments/sccAttachmentsIKSResults.png" /></p>
+<ol start="7">
+<li>Explore the scan results using what you learned earlier.</li>
+</ol>
+<p><img alt="" src="../_attachments/sccAttachmentsIKSScanResults.png" /></p>
+<p>The results of this scan are similar to the results of the other scans you explored earlier. You can expand the results for the <strong>helloworld</strong> application and describe the controls and assessments performed against that resource. </p>
+<h3 id="view-more-details-using-the-scc-wp-dashboard">View more details using the SCC WP dashboard</h3>
+<p>Now is a good time to transition to looking at the additional details and insights available in SCC WP.</p>
+<ol start="8">
+<li>Click the <strong>Security and Compliance</strong> link at the top of the page.</li>
+</ol>
+<p><img alt="" src="../_attachments/sccAttachmentsIKSScanResultsBack.png" /></p>
+<ol start="9">
+<li>Click <strong>Integrations</strong> in the left menu.</li>
+</ol>
+<p><img alt="" src="../_attachments/sccOverviewPageIntegrations.png" /></p>
+<ol start="10">
+<li>Click the <strong>Open dashboard</strong> button.</li>
+</ol>
+<p><img alt="" src="../_attachments/sccIntegrations.png" /></p>
+<p>The SCC WP dashboard will open in a new browser window or tab.</p>
+<p><img alt="" src="../_attachments/wpGetStarted.png" /></p>
+<p>As you learned in the <strong>IBM Cloud Security and Compliance Center Foundation</strong> seller enablement material, SCC WP is a re-branding of Sysdig (<a href="https://sysdig.com/" target="_blank">https://sysdig.com/</a>). This dashboard may look familiar to those who have use Sysdig in the past.</p>
+<p>The setup of SCC WP is not covered in this scenario, but you can learn more about installing and configuring SCC WP <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-setup-workload-protection" target="_blank">here</a>. </p>
+<ol start="11">
+<li>Hover over <strong>Scanning</strong> in the left menu and then click on <strong>Runtime</strong>.</li>
+</ol>
+<p><img alt="" src="../_attachments/wpGetStartedToScanning.png" /></p>
+<p>The <strong>Runtime image scanning</strong> pages shows all the kubernetes clusters that have been connected to the SCC WP instance and the images that are running in each cluster.</p>
+<ol start="12">
+<li>Click the expand icon (<img alt="" src="../_attachments/expandIcon.png" />) for the scc-l3-iks-DO-NOT-DELETE cluster.</li>
+</ol>
+<p><img alt="" src="../_attachments/wpScanningExpandIKS.png" /></p>
+<p>We can narrow the view to individual clusters and individual namespaces in a cluster.</p>
+<ol start="13">
+<li>Click the <strong>robot-shop</strong> namespace of the <strong>scc-l3-iks-DO-NOT-DELETE</strong> cluster.</li>
+</ol>
+<p><img alt="" src="../_attachments/wpScanningExpandIKSrobot-shop.png" /></p>
+<p>Notice there are images that have failed the image scan test.</p>
+<p><img alt="" src="../_attachments/wpScanningExpandIKSrobot-shopOverview.png" /></p>
+<ol start="14">
+<li>Click the <strong>robotshop/rs-shipping</strong>  image.</li>
+</ol>
+<p><img alt="" src="../_attachments/wpScanningExpandIKSrobot-shopOverviewFirstFailed.png" /></p>
+<ol start="15">
+<li>Click the expand icon (<img alt="" src="../_attachments/leftExpandIcon.png" />) next to <strong>DefaultPolicy</strong>.</li>
+</ol>
+<p><img alt="" src="../_attachments/wpScanningExpandIKSrobot-shopFailedDefaultPolicy.png" /></p>
+<p>In this case the <strong>Default Policy</strong> is checking for specific vulnerabilities and dockerfile instructions.</p>
+<ol start="16">
+<li>Click <strong>Operating System</strong> under <strong>Vulnerabilities</strong>.</li>
+</ol>
+<p><img alt="" src="../_attachments/wpScanningExpandIKSrobot-shopOSVulnerabilities.png" /></p>
+<p>We can view the vulnerabilities related to the <strong>Operating System</strong> (OS). Here we see all the vulnerabilities scanned and their Common Vulnerabilities and Exposures (CVE) ID.</p>
+<ol start="17">
+<li>Click the <strong>High</strong> and <strong>Has fix</strong> filters.</li>
+</ol>
+<p><img alt="" src="../_attachments/wpScanningExpandIKSrobot-shopOSVulnerabilitiesFilters.png" /></p>
+<p>Filters can be used to narrow the view to vulnerabilities of certain severity and those that have fixes that are available.</p>
+<ol start="18">
+<li>Click the <strong>CVE-2022-22822</strong> (or any of the vulnerabilities in the view).</li>
+</ol>
+<p><img alt="" src="../_attachments/wpScanningExpandIKSrobot-shopOSVulnerabilitiesFilteredFirst.png" /></p>
+<p>We can drill down into a specific vulnerability and view more details about the specific vulnerability like what OS package the exposure is in.</p>
+<p><img alt="" src="../_attachments/wpScanningExpandIKSrobot-shopOSVulnerabilitiesDetails.png" /></p>
+<p>SCC WP will also scan for non-operating system vulnerabilities.</p>
+<ol start="19">
+<li>Click <strong>Non-operating System</strong> under <strong>Vulnerabilities</strong>.</li>
+</ol>
+<p><img alt="" src="../_attachments/wpScanningExpandIKSrobot-shopNonOS.png" /></p>
+<p>These scans look at the various libraries that have been added to the base image like Python and Java. </p>
+<p><img alt="" src="../_attachments/wpScanningExpandIKSrobot-shopNonOSLog4J.png" /></p>
+<p>In this case we can see that this image still has the Log4j vulnerability. If you didn't know, the Log4j  library controls how applications log strings of code and information. The vulnerability enables an attacker to gain control over a string and trick the application into requesting and executing malicious code under the attacker's control.</p>
+<ol start="20">
+<li>Click <strong>Java</strong> under <strong>Content</strong>.</li>
+</ol>
+<p><img alt="" src="../_attachments/wpScanningExpandIKSrobot-shopJavaInventory.png" /></p>
+<p>SCC WP also provides an inventory view of all the files associated with a package on the image.</p>
+<ol start="21">
+<li>Hover over <strong>Scanning</strong> and click <strong>Image Results</strong>.</li>
+</ol>
+<p><img alt="" src="../_attachments/wpScanningImageResultsMenu.png" /></p>
+<p>Here we see a view of all the images scanned and our current security posture.</p>
+<p>Watch a video of this scenario:</p>
 <p><div class="video-container"><iframe src="./_videos/wp.mp4" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
 
 
