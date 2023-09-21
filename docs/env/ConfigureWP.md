@@ -40,7 +40,7 @@ The **Kubernetes dashboard** loads in a new browser tab or window.
 
 ![](../env/_attachments/iksClusterDashboardPods.png)
 
-8. Click the **Exec into pod** (![](_attachments/execIntoPodIcon.png)).
+8. Click the **Exec into pod** (![](_attachments/execIntoPodIcon.png)) button.
 
 ![](../env/_attachments/iksClusterDashboardPod.png)
 
@@ -54,6 +54,8 @@ exit
 ```
 
 ![](../env/_attachments/iksClusterDashboardPodExec.png)
+
+10. Close the browser tab or window for the **Kubernetes Dashboard**.
 
 The commands above do a simple listing of the contents of the current directory and lists the running processes. 
 
