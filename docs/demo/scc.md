@@ -170,7 +170,7 @@ Here we see the all the assessments that make up the library that is grouped by 
 
 26. Click **Profiles** in the left menu.
 
-![](_attachments/sccDashboardControlsMenu2.png)
+![](_attachments/sccDashboardControlsMenu3.png)
 
 Recall when creating an attachment, a “profile” was specified and not a control library. Let’s look at profiles next. SCC supports both pre-defined and custom profiles. The pre-defined profiles are, for the most part, aligned with a control library.
 

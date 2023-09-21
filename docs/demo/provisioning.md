@@ -39,9 +39,7 @@ Note, if the browser window is narrow, you might see an **account selection** ic
 
 **Discussion points:** That is all the information required to create an SCC instance. You could discuss the use of resource groups, tags, and access management tags which are used to organize and control access cloud resources. Provisioning the instances typically takes under a couple of minutes. Inform your audience that you will now switch to an existing SCC instance. 
 
-9. Click the browser's back button to return to the **Security and Compliance** overview page.
-
-Note, if you click **Create** in the **{{itz.CloudAccount}}** account, you will receive an error. 
+9. Click the browser's back button to return to the **Security and Compliance** overview page. If you click **Create** in the **{{itz.CloudAccount}}** account, you will receive an error. 
 
 ![](_attachments/sccOverviewPage2.png)
 
