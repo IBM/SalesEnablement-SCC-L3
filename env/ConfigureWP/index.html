@@ -17,7 +17,7 @@
     
     
       
-        <title>Configure remediation scenario - IBM Cloud Security and Compliance Center</title>
+        <title>Configure Workload Protection scenario - IBM Cloud Security and Compliance Center</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#provision-a-vsi-with-ip-spoofing-enabled" class="md-skip">
+        <a href="#access-the-kubernetes-pod-and-run-several-commands" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configure remediation scenario
+              Configure Workload Protection scenario
             
           </span>
         </div>
@@ -292,62 +292,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Configure remediation scenario
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Configure%20the%20environment/" class="md-nav__link">
         Configure remediation scenario
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#provision-a-vsi-with-ip-spoofing-enabled" class="md-nav__link">
-    Provision a VSI with IP spoofing enabled
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#verify-that-the-vsi-was-created-with-ip-spoofing-enabled" class="md-nav__link">
-    Verify that the VSI was created with IP spoofing enabled
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#create-an-scc-attachment-and-run-an-initial-scan" class="md-nav__link">
-    Create an SCC attachment and run an initial scan
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -371,11 +320,48 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../ConfigureWP/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Configure Workload Protection scenario
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Configure Workload Protection scenario
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#access-the-kubernetes-pod-and-run-several-commands" class="md-nav__link">
+    Access the Kubernetes pod and run several commands
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -531,22 +517,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#provision-a-vsi-with-ip-spoofing-enabled" class="md-nav__link">
-    Provision a VSI with IP spoofing enabled
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#verify-that-the-vsi-was-created-with-ip-spoofing-enabled" class="md-nav__link">
-    Verify that the VSI was created with IP spoofing enabled
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#create-an-scc-attachment-and-run-an-initial-scan" class="md-nav__link">
-    Create an SCC attachment and run an initial scan
+  <a href="#access-the-kubernetes-pod-and-run-several-commands" class="md-nav__link">
+    Access the Kubernetes pod and run several commands
   </a>
   
 </li>
@@ -565,176 +537,64 @@
                 
 
 
-  <h1>Configure remediation scenario</h1>
+  <h1>Configure Workload Protection scenario</h1>
 
-<p>A compelling demonstration of IBM Cloud Security and Compliance Center (SCC) not only includes showing the results of a compliance scan, but also demonstrating how compliance failures can be remediated. In this demonstration guide, demonstrate how to remediate a failed compliance scan that is related to internet protocol (IP) address spoofing on a virtual server instance (VSI) running in an IBM Cloud Virtual Private Cloud (VPC). While IP address spoofing has legitimate business uses, it is also a potential vulnerability. Learn more about IP address spoofing <a href="https://en.wikipedia.org/wiki/IP_address_spoofing" target="_blank">here</a>. SCC has a predefined control that checks to see whether a VSI in a VPC has IP address spoofing enabled and flags those VSI's as noncompliant. This scenario was chosen as it is easy to enable and disable this setting on a VSI and VSI's in VPC are inexpensive resources which provision quickly. </p>
-<p>In the next steps:</p>
+<p>In the Client Demonstrations section, you show the client how IBM Cloud Security and Compliance Center (SCC) Workload Protection (WP) can detect a potential threat. </p>
+<p>To set up this scenario:</p>
 <ul>
 <li>
-<p>provision a VSI instance with <strong>IP network spoofing</strong> enabled</p>
+<p>using the IBM Cloud portal, access a Kubernetes pod by using the "exec" command</p>
 </li>
 <li>
-<p>create an SCC attachment that scans for VSIs with IP network spoofing enabled</p>
-</li>
-<li>
-<p>run an initial scan</p>
+<p>run a couple of commands in the pod</p>
 </li>
 </ul>
-<p>In the Client Demonstrations section, you will show the client the compliance failure that is related to the VSI you created, remediate the issue, rerun the scan, and show the new, successful compliance results.</p>
-<h3 id="provision-a-vsi-with-ip-spoofing-enabled">Provision a VSI with IP spoofing enabled</h3>
+<h3 id="access-the-kubernetes-pod-and-run-several-commands">Access the Kubernetes pod and run several commands</h3>
 <ol>
 <li>Open a web browser to the <strong>IBM Cloud Portal</strong>.</li>
 </ol>
 <p><a href="https://cloud.ibm.com" target="_blank">IBM Cloud Portal</a></p>
-<p>When the page loads, authenticate with your IBM Cloud ID and password. The authentication process varies depending on the primary account that your ID is associated with and any multi-factor authentication or other security controls in place for the account.</p>
 <ol start="2">
 <li>Click the <strong>account selection</strong> drop-down menu and select the <strong>2305900 - ITZ - ADHOC03</strong> account.</li>
 </ol>
 <p><img alt="" src="../_attachments/switchAccount.png" /></p>
 <p>Note, if the browser window is narrow, you might see an <strong>account selection</strong> icon like this: <img alt="" src="../_attachments/switchAccountIcon.png" /> instead of the full account name.</p>
-<!-- 3. Click the **VPC Infrastructure** icon (![](_attachments/vpcIcon.png)) in the menu bar.
-
-![](_attachments/dashBoardVPC.png)
-
-4. Click the **Virtual server instances** option in the left-hand menu.
-
-![](_attachments/vpcOverviewVSI.png)
-
-5. Click **Create +**.
-
-![](_attachments/vpcVSIs.png)
-
-Note, you may see an **Authorization error** message on this screen. It can be ignored.
-
-![](_attachments/vpcVSIsAuthErr.png)
-
-6. Enter a unique VSI **Name** in the **Details**  section.
-
-As this is shared environment, it is important to specify a unique name for your VSI. As an example, name your VSI after yourself, like **arjones-vsi**. Note, VSI names must begin with a lower case letter and only alphanumeric characters and hyphens are allowed.
-
-![](_attachments/vpcVSI-name.png)
-
-7. Verify all the other settings are as follows:
-
-  **Architecture**: Intel
-
-  **Location**: Geography = North America, Region = Dallas, Zone = Dallas 2
-
-  **Resource group**: SCC-L3
-
-  **Image**: CentOS, Image type = Stock image
-
-  **Profile**: Balanced|bx2-2x8
-
-  **SSH keys**: scc-l3-key
-
-  **Virtual private cloud**: **vpc-for-scc-l3**.
-
-  If these values are not the same, set them as shown.
-
-  All of these should be the default values. All other fields should will either be empty or have generated values (e.g. Boot volume, Data volumes, etc.).
-
-8. Click **Create virtual server**.
-
-![](_attachments/vpcVSI-save.png)
-
-It should only take about a minute to provision the VSI. Once the VSI shows the status of **Running**, continue to the next steps.
-
-9. Click the VSI name created earlier in the table of **Virtual server instances for VPC**.
-
-![](_attachments/vpcVSIlist.png)
-
-10. Scroll down to the **Network interfaces** section and click the pencil icon (![](_attachments/pencilIcon.png)) to edit the **eth0** network interface.
-
-![](_attachments/vpcVSINetworkInterfaces.png)
-
-11. Click the **Allow IP spoofing** toggle button to set it to **Enabled** and then click **Save**.
-
-![](_attachments/vpcVSINetworkInterfaceEnableIPSpoofing.png) -->
-
 <ol start="3">
-<li>Click the <strong>IBM Cloud Shell</strong> icon (<img alt="" src="../_attachments/cloudShellIcon.png" />)</li>
+<li>Click the <strong>Kubernetes</strong> icon (<img alt="" src="../_attachments/kubernetesIcon.png" />) in the left menu.</li>
 </ol>
-<p><img alt="" src="../_attachments/dashboardCloudShell.png" /></p>
-<p>A new browser window or tab will open with the IBM Cloud Shell. Proceed to the next step when the command prompt is ready (similar to the one highlighted below).</p>
-<p><img alt="" src="../_attachments/cloudShell.png" /></p>
+<p><img alt="" src="../_attachments/kubernetes.png" /></p>
 <ol start="4">
-<li>Copy and paste (<img alt="" src="../_attachments/copyAndPasteIcon.png" />) the following commands to the IBM Cloud Shell window and press enter. </li>
+<li>Click <strong>scc-l3-iks-DO-NOT-DELETE</strong> in the table of clusters.</li>
 </ol>
-<p>The script calls the IBM Cloud command line interfaces to provision a VSI in a pre-provisioned VPC instance.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>#
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>#
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>wget -O createVSI.bash https://raw.githubusercontent.com/IBM/SalesEnablement-SCC-L3/main/tools/createVSI.bash
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>chmod +x createVSI.bash
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>./createVSI.bash
-</code></pre></div>
-<p>Example output:</p>
-<p><img alt="" src="../_attachments/createVSIoutput.png" /></p>
-<p>Take note of the name of the VSI created (highlighted above). Your VSI's name is the first part of your IBM Cloud user ID (typically email address) followed by a random number and <strong>-scc-vsi</strong>. For example: <strong>andrew-14294-scc-vsi</strong></p>
-<h3 id="verify-that-the-vsi-was-created-with-ip-spoofing-enabled">Verify that the VSI was created with IP spoofing enabled</h3>
-<p>Return to the IBM Cloud browser window/tab.</p>
+<p><img alt="" src="../_attachments/iksClusters.png" /></p>
 <ol start="5">
-<li>Click the <strong>VPC Infrastructure</strong> icon (<img alt="" src="../_attachments/vpcIcon.png" />) in the menu bar.</li>
+<li>Click the <strong>Kubernetes dashboard</strong> button.</li>
 </ol>
-<p><img alt="" src="../_attachments/dashBoardVPC.png" /></p>
+<p><img alt="" src="../_attachments/iksClusterOverview.png" /></p>
+<p>The <strong>Kubernetes dashboard</strong> loads in a new browser tab or window.</p>
 <ol start="6">
-<li>Click the <strong>Virtual server instances</strong> option in the left-hand menu.</li>
+<li>Click <strong>Pods</strong> in the left menu.</li>
 </ol>
-<p><img alt="" src="../_attachments/vpcOverviewVSI.png" /></p>
+<p><img alt="" src="../_attachments/iksClusterDashboard.png" /></p>
 <ol start="7">
-<li>Click your VSI's name in the table.</li>
+<li>Click the <strong>helloworld-57646478c5-tv5hm</strong> link in the <strong>Pods</strong> table.</li>
 </ol>
-<p>If you do not see your VSI, verify the <strong>Region</strong> is set to <strong>Dallas</strong>.</p>
-<p><img alt="" src="../_attachments/vpcListOfVSIs.png" /></p>
+<p><img alt="" src="../_attachments/iksClusterDashboardPods.png" /></p>
 <ol start="8">
-<li>Scroll down to the <strong>Network interfaces</strong> section and verify that <strong>Allow IP spoofing</strong> is enabled.</li>
+<li>Click the <strong>Exec into pod</strong> (<img alt="" src="../_attachments/execIntoPodIcon.png" />).</li>
 </ol>
-<p><img alt="" src="../_attachments/vpcVSISpoofingEnabled.png" /></p>
-<h3 id="create-an-scc-attachment-and-run-an-initial-scan">Create an SCC attachment and run an initial scan</h3>
-<p>In the steps that follow, using a pre-provisioned instance of SCC, you create an <strong>attachment</strong> which scans for VSIs on VPCs in a single IBM Cloud resource group to see whether <strong>IP network spoofing</strong> is enabled. When the <strong>attachment</strong> is saved, the first scan will automatically be performed.  </p>
-<p>Recall in the scenario described earlier, we will show the failed compliance check (IP spoofing is disabled for all VSIs in VPCs), remediate the issue, and then rescan to show the compliance check is successful. It is important to understand that SCC cache's scan results for one hour. This means if you run the same scan within an hour of the last time the scan was run, a new scan is NOT performed and the old results are returned. This is important to remember when performing a client demonstration or if you are recording your Stand and Deliver. </p>
-<p>In the Client Demonstration section of this guide, you demonstrate how to view the scan results, remediate the issue, rerun the scan, and view the new results and the "drift" in compliance between the scans. More commentary is provided in that section of the guide. For now, follow the next steps to create the attachment and have the first scan run.</p>
+<p><img alt="" src="../_attachments/iksClusterDashboardPod.png" /></p>
 <ol start="9">
-<li>Navigate to the <strong>SCC Dashboard</strong> page in the IBM Cloud portal.</li>
+<li>Copy (<img alt="" src="../_attachments/copyAndPasteIcon.png" />) and paste <strong>(Ctrl v)</strong> the commands that follow in the <strong>Shell</strong> window.</li>
 </ol>
-<p><img alt="" src="../_attachments/vpcVSINetworkInterfaceReady.png" /></p>
-<ol start="10">
-<li>Click <strong>Attachments</strong> in the left-hand menu.</li>
-</ol>
-<p><img alt="" src="../_attachments/sccDashboardConfig.png" /></p>
-<ol start="11">
-<li>Click <strong>Create +</strong>.</li>
-</ol>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachments.png" /></p>
-<ol start="12">
-<li>Enter a unique <strong>Name</strong> for your attachment and then click <strong>Next</strong>.</li>
-</ol>
-<p>Attachment names need to be unique. To avoid issues, it is suggested that you use a name similar to the VSI created earlier, for example: <strong>andrew-14294-ipspoofing-compliance</strong>.</p>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachmDetails.png" /></p>
-<ol start="13">
-<li>Select <strong>se-scc-l3-DO-NOT-DELETE</strong> in the <strong>Profile</strong> pull-down menu and then click <strong>Next</strong></li>
-</ol>
-<p>You will examine the <strong>se-scc-l3-DO-NOT-DELETE</strong> profile in detail in the next section of the guide.</p>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachProfile.png" /></p>
-<ol start="14">
-<li>Select <strong>SCC-L3</strong> in the <strong>Scope</strong> pull-down menu and click <strong>Next</strong>.</li>
-</ol>
-<p>You will learn more about the <strong>Scope</strong> setting in the next section of the guide.</p>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachScope.png" /></p>
-<ol start="15">
-<li>Review the details on the <strong>Scan settings</strong> page and click <strong>Next</strong>.</li>
-</ol>
-<p>For now, the default settings are fine, and will be explained in more details in the next section of the guide.</p>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachScanSettings.png" /></p>
-<ol start="16">
-<li>Review all the <strong>attachment</strong> settings and click <strong>Create</strong>.</li>
-</ol>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachReview.png" /></p>
-<p>The <strong>attachment</strong> is now saved and the initial scan is being run. Notice the <strong>Scan in progress</strong> message for your attachment. Due to a user interface issue with this page (at least some browsers), this progress message remains on the screen until you refresh the page. As this is a simple scan of one control on a very limited scope, this scan takes a minute or two to run. <strong>Wait a couple of minutes and then click the browser's refresh button and the <em>Next scan</em> information should update.</strong></p>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachRunning.png" /></p>
-<p>After refreshing your browser, the table should be similar to the one below.</p>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachNextScan.png" /></p>
-<p>You can now proceed to the next chapter to learn about and configure IBM Cloud Event Notifications to enhance your client demonstration or continue to the next section to perform a client demonstration. While enabling IBM Cloud Event Notifications is optional, you are encouraged to at least read the introduction to learn more about IBM Cloud Event Notifications.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ls -l
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>ps -ef
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>exit
+</code></pre></div>
+<p><img alt="" src="../_attachments/iksClusterDashboardPodExec.png" /></p>
+<p>The commands above do a simple listing of the contents of the current directory and lists the running processes. </p>
+<p>The ability to <strong>exec</strong> into a running pod is a potential security vulnerability that bad actors might use to perform nefarious acts. Attackers with permissions might run ‘kubectl exec’ (the command line equivalent to what was performed above) to run malicious code and compromise resources within a cluster.</p>
+<p>In the "High-level demonstration of Workload Protection" chapter you see an event was triggered based on the action you performed and demonstrate how WP can detect threats.</p>
 
 
 
@@ -753,7 +613,7 @@ It should only take about a minute to provision the VSI. Once the VSI shows the 
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../Access%20the%20environment/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Access the environment" rel="prev">
+        <a href="../ConfigureSMS/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Configure SMS messaging (OPTIONAL)" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -762,20 +622,20 @@ It should only take about a minute to provision the VSI. Once the VSI shows the 
               <span class="md-footer__direction">
                 Previous
               </span>
-              Access the environment
+              Configure SMS messaging (OPTIONAL)
             </div>
           </div>
         </a>
       
       
         
-        <a href="../ConfigureSMS/" class="md-footer__link md-footer__link--next" aria-label="Next: Configure SMS messaging (OPTIONAL)" rel="next">
+        <a href="../../demo/Overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Configure SMS messaging (OPTIONAL)
+              Overview
             </div>
           </div>
           <div class="md-footer__button md-icon">
