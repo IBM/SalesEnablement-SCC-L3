@@ -20,6 +20,7 @@ nav:
     - 'Access the environment': 'env/Access the environment.md'
     - 'Configure remediation scenario': 'env/Configure the environment.md'
     - 'Configure SMS messaging (OPTIONAL)': 'env/ConfigureSMS.md'
+    - 'Configure Workload Protection scenario': 'env/ConfigureWP.md'
   - 'Client Demonstrations':
     - 'Overview': 'demo/Overview.md'
     - 'Provisioning an SCC instance (OPTIONAL)': 'demo/provisioning.md'
@@ -102,6 +103,9 @@ extra:
   vpc:
     Instance: "vpc-for-scc-l3"
     SSHkey: "scc-l3-key"
+  iks:
+    ClusterName: "scc-l3-iks-DO-NOT-DELETE"
+    Pod: "helloworld-57646478c5-tv5hm"
 
 
 

@@ -8,7 +8,7 @@ In the next steps:
   
   - run an initial scan
 
-In the Client Demonstration section, you will show the client the compliance failure that is related to the VSI you created, remediate the issue, rerun the scan, and show the new, successful compliance results.
+In the Client Demonstrations section, you will show the client the compliance failure that is related to the VSI you created, remediate the issue, rerun the scan, and show the new, successful compliance results.
 
 ### Provision a VSI with IP spoofing enabled
   
