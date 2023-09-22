@@ -1,11 +1,4 @@
-THIS SECTION NOT READY TO BE REVIEWED!!!
-THIS SECTION NOT READY TO BE REVIEWED!!!
-THIS SECTION NOT READY TO BE REVIEWED!!!
-
-
 IBM Cloud Security and Compliance Center Workload Protection (WP) protects cloud native workloads, provides deep cloud and container visibility. SCC WP enhances an enterprise's posture management (compliance, benchmarks, Cloud Infrastructure Entitlements Management (CIEM)), vulnerability scanning, forensics, and threat detection and blocking. 
-
-This demonstration flow focuses on the integration between SCC and WP and provides a brief overview of the WP capabilities for protecting cloud native workloads.
 
 WP provides multi-cloud support for IBM Cloud, AWS, Google Cloud, Microsoft Azure, and can also be used for on-premises Kubernetes instances. However, in this guide, only resources in IBM Cloud are used.
 
@@ -67,6 +60,8 @@ Now is a good time to transition to looking at the additional details and insigh
 
 ![](_attachments/sccOverviewPageIntegrations.png)
 
+The setup of SCC WP is not covered in this scenario, but you can learn more about installing and configuring SCC WP <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-setup-workload-protection" target="_blank">here</a>. 
+
 10. Click the **Open dashboard** button.
 
 ![](_attachments/sccIntegrations.png)
@@ -76,8 +71,6 @@ The SCC WP dashboard opens in a new browser window or tab.
 ![](_attachments/wpGetStarted.png)
 
 As you learned in the **{{level2learningplan.Name}}** seller enablement material, SCC WP is a rebranding of Sysdig (<a href="https://sysdig.com/" target="_blank">https://sysdig.com/</a>). This dashboard might look familiar to anyone who has used Sysdig in the past.
-
-The setup of SCC WP is not covered in this scenario, but you can learn more about installing and configuring SCC WP <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-setup-workload-protection" target="_blank">here</a>. 
 
 11. Hover over **Scanning** in the left menu and then click **Runtime**.
 
@@ -161,7 +154,7 @@ Information on these topics is available at the Sysdig documentation site:
 
 - <a href="https://docs.sysdig.com/en/docs/sysdig-secure/scanning/integrate-with-container-registries/" target="_blank">Registries</a>
   
-- <a href="https://docs.sysdig.com/en/docs/sysdig-secure/scanning/manage-scanning-alerts/" target="_blank">Manage Scanning Alerts</a>
+- <a href="https://docs.sysdig.com/en/docs/sysdig-secure/scanning/manage-scanning-alerts/" target="_blank">Alerts</a>
 
 - <a href="https://docs.sysdig.com/en/docs/sysdig-secure/vulnerabilities/reporting/" target="_blank">Reports</a>
 

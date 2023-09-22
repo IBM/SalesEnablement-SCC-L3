@@ -2,7 +2,15 @@ That concludes this part of the {{learningplan.Name}}.
 
 !!! Important "Delete any resources that you created!"
 
-    The IBM Technology Zone (ITZ) environment you used is shared by everyone using this learning plan.  Please remove all resources you may have created in completing the course, like Virtual Server Instances (VSIs), SCC attachments and rules, etc.
+    The IBM Technology Zone (ITZ) environment you used is shared by everyone using this learning plan. Please remove all resources you may have created in completing the course, like SCC attachments and Virtual Server Instances (VSIs). If you configured SCC to send SMS messages to your mobile device, be sure to unsubscribe or remove our mobile devices number from Event Notifications to avoid receive additional messages. Do not delete the entire subscription!
+
+    ![](_attachments/deleteAttachment.png)
+
+    ![](_attachments/deleteVSI.png)
+
+    ![](_attachments/deleteNotifications.png)
+
+
 
 !!! Important "Unsubscribe to Event Notifications!"
     
