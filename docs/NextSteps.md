@@ -8,13 +8,11 @@ That concludes this part of the {{learningplan.Name}}.
 
     ![](_attachments/deleteVSI.png)
 
-    ![](_attachments/deleteNotifications.png)
-
-
-
 !!! Important "Unsubscribe to Event Notifications!"
     
     If you enabled SMS messaging, simply click the unsubscribe link on any of the SMS messages you received on your mobile device and follow the directions to unsubscribe.
+
+    ![](_attachments/deleteNotifications.png)
 
 This demonstration guide only touched on part of the SCC capabilities. As mentioned in the Welcome section, another excellent resource is the <a href="https://pages.github.ibm.com/IBM-Cloud-Satellite-and-PaaS-Community/technology-pattern-scc/" target="_blank">IBM Technology Patterns for Regulated Cloud workloads</a>. Be sure to check it out!
 
