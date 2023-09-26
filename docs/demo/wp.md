@@ -240,7 +240,6 @@ While running the ```ps``` command is benign, what if you saw commands that copi
 
 That wraps up this scenario. Again, as mentioned earlier, SCC WP has more capabilities that we did not cover today, but hopefully you have a better understanding of the power SCC WP has in protecting your cloud native workloads and improving your security posture.
 
-Watch a video of this scenario: COMING SOON
+Watch a video of this scenario:
 
-<!-- 
-![type:video](./_videos/wp.mp4) -->
+![type:video](./_videos/SCC-workloadprotection-final.mp4)
