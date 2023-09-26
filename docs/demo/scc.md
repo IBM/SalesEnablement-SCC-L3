@@ -38,9 +38,13 @@ To run a scan, an attachment must first be created.
 
 ![](_attachments/sccCreateAttachmentProfilesV2.png)
 
-Scroll through the pre-defined profiles that are provided by SCC and describe the most relevant profiles to the client. For example, if the client is in the financial industry, spend some time describing the IBM Cloud for Financial Services profile that is developed and maintained by IBM and leading financial institutions. To learn more about the pre-defined profiles, visit the product documentation <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-predefined-profiles&interface=ui" target="_blank">here</a>. Note, the acronym CIS stands for **Center for Internet Security**: <a href="https://www.cisecurity.org" target="_blank">https://www.cisecurity.org</a>. The CIS IBM Foundations Benchmark is the product of a community consensus process and consists of secure configurations guidelines that are developed for IBM Cloud. You can learn more about the benchmark <a href="https://www.cisecurity.org/benchmark/ibm_cloud" target="_blank">here</a>.
+Scroll through the pre-defined profiles that are provided by SCC and describe the most relevant profiles to the client. For example, if the client is in the financial industry, spend some time describing the IBM Cloud for Financial Services profile that is developed and maintained by IBM and leading financial institutions. To learn more about the pre-defined profiles, visit the product documentation <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-predefined-profiles&interface=ui" target="_blank">here</a>. These profiles along with the related control libraries are updated on a regular basis. Learn about the latest updates in the <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-release-notes&interface=ui" target="_blank">**release notes**</a>. Note, the acronym CIS stands for **Center for Internet Security**: <a href="https://www.cisecurity.org" target="_blank">https://www.cisecurity.org</a>. The CIS IBM Cloud Foundations Benchmark is the product of a community consensus process and consists of secure configurations guidelines that are developed for IBM Cloud. You can learn more about the benchmark <a href="https://www.cisecurity.org/benchmark/ibm_cloud" target="_blank">here</a>.
 
-7. Select the **CIS IBM Foundations Benchmark** profile or one of the other pre-defined ones if more appropriate for your client.
+!!! Note "Profile name changes"
+
+    In the September 23, 2023 release update for SCC, several of the profile names were updated with minor changes. For example, CIS IBM Foundations Benchmark was renamed to CIS IBM *Cloud* Foundations Benchmark. These updates may not be reflected in the image captures provided in this demonstration guide.
+
+1. Select the **CIS IBM CLoud Foundations Benchmark** profile or one of the other pre-defined ones if more appropriate for your client.
 
 ![](_attachments/sccCreateAttachmentProfilesBestPracticesV2.png)
 

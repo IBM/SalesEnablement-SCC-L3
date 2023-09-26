@@ -46,6 +46,10 @@ The **Kubernetes dashboard** loads in a new browser tab or window.
 
 9. Copy (![](_attachments/copyAndPasteIcon.png)) and paste **(Ctrl v)** the commands that follow in the **Shell** window.
 
+!!! Warning "Copy and paste issues"
+
+    Some users have reported issues that pasting with **Ctrl v** doesn't always work. Make sure focus is in the IBM Cloud terminal window before doing **Ctrl v**. If it does not paste, try clicking the right mouse and selecting **Paste** from the context pop-up menu.
+
 ```
 ls -l
 ps -ef
@@ -55,7 +59,7 @@ exit
 
 ![](../env/_attachments/iksClusterDashboardPodExec.png)
 
-10. Close the browser tab or window for the **Kubernetes Dashboard**.
+1.  Close the browser tab or window for the **Kubernetes Dashboard**.
 
 The commands above do a simple listing of the contents of the current directory and lists the running processes. 
 
