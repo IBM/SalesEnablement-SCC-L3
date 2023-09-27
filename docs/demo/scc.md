@@ -26,7 +26,7 @@ Describe the benefits of SCC, for example, SCC helps protect organizations from 
 
 To run a scan, an attachment must first be created.
 
-1. Click the **Get started** button.
+4. Click the **Get started** button.
 
 ![](_attachments/sccOverviewPage3-getstarted.png)
 
@@ -44,7 +44,7 @@ Scroll through the pre-defined profiles that are provided by SCC and describe th
 
     In the September 23, 2023 release update for SCC, several of the profile names were updated with minor changes. For example, CIS IBM Foundations Benchmark was renamed to CIS IBM *Cloud* Foundations Benchmark. These updates may not be reflected in the image captures provided in this demonstration guide.
 
-1. Select the **CIS IBM CLoud Foundations Benchmark** profile or one of the other pre-defined ones if more appropriate for your client.
+7. Select the **CIS IBM CLoud Foundations Benchmark** profile or one of the other pre-defined ones if more appropriate for your client.
 
 ![](_attachments/sccCreateAttachmentProfilesBestPracticesV2.png)
 
@@ -65,7 +65,7 @@ Click the **Parameters** tab to see the default parameters used in the rule.
 
 ![](_attachments/sccCreateAttachmentScopeMenu.png)
 
-The scope defines which resources will be evaluated against the controls in the profile. Describe how scan's can be scoped to an account or a resource group. IBM Cloud enterprise accounts have further capabilities to scope at the subaccount or account groups. 
+The scope defines which resources will be evaluated against the controls in the profile. Describe how scan's can be scoped to an account or a resource group. IBM Cloud enterprise accounts have further capabilities to scope at the sub-account or account groups. 
 
 11. Click **{{iam.ResourceGroup}} and then click **Next**.
 
@@ -124,7 +124,7 @@ Describe how the Drift view provides a nice visual for the compliance status of 
 
 The bottom table shows individual resources that failed an evaluation.
 
-1.  Click the down arrow icon (![](_attachments/downArrow.png)) next to the **iam-identity** resource in the table.
+19.  Click the down arrow icon (![](_attachments/downArrow.png)) next to the **iam-identity** resource in the table.
 
 ![](_attachments/sccAttachments-ResultsSCC-iam.png)
 
@@ -176,7 +176,7 @@ Here we see the all the assessments that make up the library that is grouped by 
 
 ![](_attachments/sccDashboardControlsMenu3.png)
 
-Recall when creating an attachment, a “profile” was specified and not a control library. Let’s look at profiles next. SCC supports both pre-defined and custom profiles. The pre-defined profiles are, for the most part, aligned with a control library.
+Recall when creating an attachment, a “profile” was specified and not a control library. Let’s look at profiles next. SCC supports both pre-defined and custom profiles. The pre-defined profiles are, for the most part, aligned with a control library. Before continuing, explore the pre-defined profiles that are currently available.
 
 27.  Click **Create +**.
 
@@ -227,3 +227,7 @@ In addition to creating custom profiles and custom control libraries, SCC suppor
 Watch a video of this scenario:
 
 ![type:video](./_videos/SCC-high-level-scc-v2-final.mp4)
+
+Before continuing to the next chapter, explore all the options in the SCC dashboard.
+
+![](_attachments/SCCexploreOptions.png)

@@ -42,7 +42,7 @@ This attachment performs a scan based on the **IBM Cloud Kubernetes Service Benc
 
 ![](_attachments/sccAttachmentsIKSSettings.png)
 
-1. Click the link for the first scan in the table.
+6. Click the link for the first scan in the table.
 
 ![](_attachments/sccAttachmentsIKSResults.png)
 
@@ -212,11 +212,13 @@ SCC WP has thousands of rules. The rules can be easily filtered by using tags. T
 
 ![](_attachments/wpEventsExpand.png)
 
-If you don't see this event, you either did not complete the "Configure Workload Protection scenario" chapter of the demonstration guide, or you did so outside of the time frame that is currently displayed. Return to that chapter to have an event triggered or try adjusting the time frame at the bottom of the screen.
+If you don't see this event, you either did not complete the "Configure Workload Protection scenario" chapter of the demonstration guide, or you did so outside of the timeline that is currently displayed. Return to that chapter to have an event triggered or try adjusting the timeline at the bottom of the screen.
+
+![](_attachments/wpTimeFrame.png)
 
 The number of **Sysdig runtime Notable Events** might vary from the image above. As this is a shared environment, others might have caused this event to be triggered. It doesn't matter which specific event you explore in the steps that follow.
 
-30. Click  **kubernetes.cluster.name** under one of the **Terminal shell in container** events.
+30.  Click  **kubernetes.cluster.name** under one of the **Terminal shell in container** events.
 
 ![](_attachments/wpEventsExpand2.png)
 

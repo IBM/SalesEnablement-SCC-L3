@@ -59,7 +59,7 @@ exit
 
 ![](../env/_attachments/iksClusterDashboardPodExec.png)
 
-1.  Close the browser tab or window for the **Kubernetes Dashboard**.
+10.  Close the browser tab or window for the **Kubernetes Dashboard**.
 
 The commands above do a simple listing of the contents of the current directory and lists the running processes. 
 
