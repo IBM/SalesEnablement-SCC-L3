@@ -14,7 +14,7 @@ That concludes this part of the {{learningplan.Name}}.
 
     ![](_attachments/deleteNotifications.png)
 
-This demonstration guide only touched on part of the SCC capabilities. As mentioned in the Welcome section, another excellent resource is the <a href="https://pages.github.ibm.com/IBM-Cloud-Satellite-and-PaaS-Community/technology-pattern-scc/" target="_blank">IBM Technology Patterns for Regulated Cloud workloads</a>. Be sure to check it out!
+This demonstration guide only touched on part of the SCC capabilities. As mentioned in the Welcome section, another excellent resource for IBMers is the <a href="https://pages.github.ibm.com/IBM-Cloud-Satellite-and-PaaS-Community/technology-pattern-scc/" target="_blank">IBM Technology Patterns for Regulated Cloud workloads</a>. Be sure to check it out!
 
 Remember to complete the {{learningplan.Name}} learning plan:
 
