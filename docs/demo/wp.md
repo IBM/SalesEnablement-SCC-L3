@@ -70,6 +70,8 @@ The setup of SCC WP is not covered in this scenario, but you can learn more abou
 
 ![](_attachments/sccIntegrations.png)
 
+??? "Question" "BP Quiz Question"
+
 The SCC WP dashboard opens in a new browser window or tab.
 
 ![](_attachments/wpGetStarted.png)
@@ -228,6 +230,8 @@ The details of the event are displayed in the new window. Knowing the event was 
 
 ![](_attachments/wpEventsExpand2Details.png)
 
+??? "Question" "BP Quiz Question"
+
 A new browser tab or window opens to the **Investigate** view in SCC WP for the selected event.
 
 ![](_attachments/wpEventsInvestigate.png)
@@ -249,3 +253,10 @@ That wraps up this scenario. Again, as mentioned earlier, SCC WP has more capabi
 Watch a video of this scenario:
 
 ![type:video](./_videos/SCC-workloadprotection-final.mp4)
+
+Before continuing to the next chapter, explore all the options in the SCC dashboard.
+
+??? "Question" "BP Quiz Question"
+
+![](_attachments/WPexploreOptions.png)
+

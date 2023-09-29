@@ -176,6 +176,8 @@ Here we see the all the assessments that make up the library that is grouped by 
 
 ![](_attachments/sccDashboardControlsMenu3.png)
 
+??? "Question" "BP Quiz Question"
+
 Recall when creating an attachment, a “profile” was specified and not a control library. Let’s look at profiles next. SCC supports both pre-defined and custom profiles. The pre-defined profiles are, for the most part, aligned with a control library. Before continuing, explore the pre-defined profiles that are currently available.
 
 27.  Click **Create +**.
@@ -229,5 +231,7 @@ Watch a video of this scenario:
 ![type:video](./_videos/SCC-high-level-scc-v2-final.mp4)
 
 Before continuing to the next chapter, explore all the options in the SCC dashboard.
+
+??? "Question" "BP Quiz Question"
 
 ![](_attachments/SCCexploreOptions.png)
