@@ -30,9 +30,9 @@ Note, if the browser window is narrow, you might see an **account selection** ic
 
 ![](_attachments/sccOverviewPageAttachments.png)
 
-!!! warning "Issue reported with the {{iks.Attachment}} attachment"
+<!-- !!! warning "Issue reported with the {{iks.Attachment}} attachment"
 
-    A support ticket has been opened with the SCC IBM Cloud team to resolve the issue with this scan not running. We hope to have it resolved soon. Ignore the error. You can still access the last results as described in the steps that follow.
+    A support ticket has been opened with the SCC IBM Cloud team to resolve the issue with this scan not running. We hope to have it resolved soon. Ignore the error. You can still access the last results as described in the steps that follow. -->
 
 5. Click the **ellipses** (![](../env/_attachments/ellipses.png)) icon for the **{{iks.Attachment}}** attachment and then click **View scan results**.
 
