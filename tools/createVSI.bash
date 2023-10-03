@@ -6,7 +6,7 @@ echo "Retrieving IAM token..."
 export iam_token=`ibmcloud iam oauth-tokens |cut -f 5 -d' '`
 # Get user id to create vsi name, change any .'s to -'s since VPC VSIs can't contain periods 
 #export userName=`id -un`
-export userName=`id -un|tr '.' '-'`
+export userName=`id -un|tr '.' '-'|tr '_' '-'`
 # convert to lower case and add unique extension so I know which VSIs came from our lab
 export vsiName="${userName,,}"-$RANDOM-scc-vsi
 echo "Creating VSI named: $vsiName ..."
