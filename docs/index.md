@@ -4,7 +4,7 @@ Welcome to the demonstration guide for the {{learningplan.Name}} learning plan. 
 
 !!! Information "Having trouble?" 
 
-    If you encounter any issues with this course, please post in he #cloud-platform-demo-feedback Slack channel or directly to @andrewj or via email: <href="mailto:andrewj@us.ibm.com" target="_blank">andrewj@us.ibm.com</a>.
+    If you encounter any issues with this course, please post in he #cloud-platform-demo-feedback Slack channel or directly to @andrewj or via email: <a href="mailto:andrewj@us.ibm.com" target="_blank">andrewj@us.ibm.com</a>.
 
 !!! tip "ACCREDITATION"
     
