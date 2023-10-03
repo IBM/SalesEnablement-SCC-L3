@@ -2,6 +2,10 @@
 
 Welcome to the demonstration guide for the {{learningplan.Name}} learning plan. In this Level 3 course, learn how to demonstrate IBM Cloud Security and Compliance Center (SCC) and IBM Cloud Security and Compliance Center Workload Protection (WP) to clients. 
 
+!!! Information "Having trouble?" 
+
+    If you encounter any issues with this course, please post in he #cloud-platform-demo-feedback Slack channel or directly to @andrewj or via email: <href="mailto:andrewj@us.ibm.com" target="_blank">andrewj@us.ibm.com</a>.
+
 !!! tip "ACCREDITATION"
     
     To receive Level 3 accreditation, IBMers and Business Partners must demonstrate mastery of the skills learned throughout the various sections of this demonstration guide. Level 3 accreditation requirements— and the way participants will be evaluated before receiving accreditation —differs depending on job role.
@@ -55,5 +59,24 @@ These concepts can be visualized in these steps:
 3. Once saved, the initial scan of the attachment is performed against the scoped resources. Scan's are typically done daily, weekly, or monthly basis, but can also be run ad-hoc.
 4. The results of the scan or stored in a IBM Cloud Object Storage (COS) specified by the client when the SCC instance is created.
 5. Finally, the results are made accessible through the SCC Dashboard in the IBM Cloud Portal.
+
+#
+# Navigating the Demonstration Guide
+-----------------------------
+
+!!! warning "WARNING"
+    The agile nature of cloud means that the interface and layout of the IBM Cloud Portal, as well as the SCC offering, will change on a regular basis. Screenshots and videos captured within this documentation may not always reflect the latest view in IBM Cloud. The IBM Learning Content Development team strives to update these assets on a regular basis.
+
+In some images, the following styles of highlighting are utilized:
+
+- **Action highlight box**: Illustrates where to click, enter, or select an item.
+![](_attachments/welcome-1.png)
+
+- **Path/explore highlight box**: Illustrates one of two things: the path to follow to get to a specific location in the user interface; or areas to explore.
+![](_attachments/welcome-2.png)
+
+- **Copy to clipboard box**: The text is copied to the clipboard. Click the copy icon (highlighted below) and then paste using the operating systems paste function; for example, entering ```Ctrl+v```, ```Cmd+v```, or right-click and select ```Paste```.
+![](_attachments/welcome-3.png)
+
 
 In the next sections of this demonstration guide, learn how to demonstrate SCC to clients using the flow above along with sample talking points and additional demonstration ideas that might be relevant to specific client audiences.

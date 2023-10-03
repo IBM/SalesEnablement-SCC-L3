@@ -174,7 +174,7 @@ You will learn more about the **Scope** setting in the next section of the guide
 
 For now, the default settings are fine, and will be explained in more details in the next section of the guide.
 
-![](_attachments/sccDashboardConfigAttachScanSettings.png)
+![](_attachments/sccDashboardConfigAttachScanSettings2.png)
 
 16. Review all the **attachment** settings and click **Create**.
 
