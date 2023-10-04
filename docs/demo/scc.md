@@ -44,7 +44,7 @@ Scroll through the pre-defined profiles that are provided by SCC and describe th
 
     In the September 23, 2023 release update for SCC, several of the profile names were updated with minor changes. For example, CIS IBM Foundations Benchmark was renamed to CIS IBM *Cloud* Foundations Benchmark. These updates may not be reflected in the image captures provided in this demonstration guide.
 
-7. Select the **CIS IBM CLoud Foundations Benchmark** profile or one of the other pre-defined ones if more appropriate for your client.
+7. Select the **CIS IBM Cloud Foundations Benchmark** profile or one of the other pre-defined ones if more appropriate for your client.
 
 ![](_attachments/sccCreateAttachmentProfilesBestPracticesV2.png)
 
@@ -65,9 +65,9 @@ Click the **Parameters** tab to see the default parameters used in the rule.
 
 ![](_attachments/sccCreateAttachmentScopeMenu.png)
 
-The scope defines which resources will be evaluated against the controls in the profile. Describe how scan's can be scoped to an account or a resource group. IBM Cloud enterprise accounts have further capabilities to scope at the sub-account or account groups. 
+The scope defines which resources will be evaluated against the controls in the profile. Describe how scans can be limited by specifying the scope. IBM Cloud enterprise accounts have further capabilities to scope at the sub-account or account groups. 
 
-11. Click **{{iam.ResourceGroup}} and then click **Next**.
+11. Click **{{iam.ResourceGroup}}** and then click **Next**.
 
 ![](_attachments/sccCreateAttachmentScopeMenu2.png)
 
@@ -81,7 +81,7 @@ The scan settings page allows you to enable or disable the scan, set the schedul
 
 ![](_attachments/sccCreateAttachmentReview.png)
 
-Described that the time to take to run a scan depends on the number of controls that are specified and the scope that defines what resources are to be scanned. Given a scan against the IAM Cloud Security Best Practices take several minutes, let the audience know that you are switching to an attachment created earlier with the same parameters.
+Describe that the time to take to run a scan depends on several factors including the number of controls that are specified and the scope that defines what resources are to be scanned. The scan against the IAM Cloud Security Best Practices with the scope specified takes several minutes to complete. Let the audience know that you are switching to an attachment created earlier with the same parameters.
 
 14. Click **Cancel** and then click **Cancel** on the confirmation dialog that pops up.
 
