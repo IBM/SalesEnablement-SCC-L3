@@ -2,7 +2,7 @@ The remediation flow builds upon the setup performed earlier in the **Configure 
 
 ??? Warning "Before proceeding to this step, make sure at least one (1) full hour passed since you initially created your custom attachment."
 
-    It is important to understand that SCC cache's scan results for one hour. This means if you run the same scan within an hour of the last time the scan was run, a new scan is NOT performed and the old results are returned. This is important to remember when performing a client demonstration or if you are recording your Stand and Deliver.
+    It is important to understand that SCC caches scan results for one hour. This means if you run the same scan within an hour of the last time the scan was run, a new scan is NOT performed and the old results are returned. This is important to remember when performing a client demonstration or if you are recording your Stand and Deliver.
 
 
 1. Open a web browser to the **IBM Cloud Portal**.
@@ -37,7 +37,7 @@ Describe to the audience the simplified attachment that you created earlier that
 
 ![](_attachments/scc-attachmentsRemediationResultsOverview.png)
 
-Note, the success rate percentage will likely be different in the IBM Portal than shown here.
+Note, the success rate percentage will likely be different in the IBM Portal than shown here depending on other users of the environment adding and removing resources.
 
 7. Click the **Controls** tab.
 

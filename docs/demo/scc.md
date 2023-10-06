@@ -200,6 +200,9 @@ Since not all controls might apply to a client's requirements, you can create cu
 
 ![](_attachments/sccProfilesControls2.png)
 
+!!! Note "New Controls and Profiles are added regularly"
+    The image above may not match what you see as new controls, control libraries, and profiles are added regularly.  
+
 31. Click a couple of the checkboxes to select individual controls and then click **Add**.
 
 ![](_attachments/sccProfilesControls3.png)

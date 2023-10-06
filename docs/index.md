@@ -57,7 +57,7 @@ These concepts can be visualized in these steps:
 1. A security or compliance focal specifies the controls to be enabled. This is done by selecting a pre-defined profile (for example IBM Cloud Security Best Practices, IBM Cloud for Financial Services, and so on) or creating a custom profile with specific controls. Optionally, the focal might create custom rules.
 2. Next, the focal creates an attachment of the profile. The attachment defines the scope of resources to be scanned along with any optional, customized parameters for specific controls.
 3. Once saved, the initial scan of the attachment is performed against the scoped resources. Scan's are typically done daily, weekly, or monthly basis, but can also be run ad-hoc.
-4. The results of the scan or stored in a IBM Cloud Object Storage (COS) specified by the client when the SCC instance is created.
+4. The results of the scan are stored in a IBM Cloud Object Storage (COS) specified by the client when the SCC instance is created.
 5. Finally, the results are made accessible through the SCC Dashboard in the IBM Cloud Portal.
 
 #

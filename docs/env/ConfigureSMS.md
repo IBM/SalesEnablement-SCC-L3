@@ -74,9 +74,9 @@ A new browser window or tab opens on your mobile device.
 
 10. Return to the Event Notification's Subscriptions browser window and close it.
 
-Note, the scan you created earlier is not enabled to send notifications. Lets edit that scan and enable notifications.
+Note, the scan you created earlier is not enabled to send notifications. Edit that scan and enable notifications.
 
-11. Return the browser window or tab with the SCC **Settings** page and click the **Attachments** option in left-hand menu.
+11. Return to the browser window or tab with the SCC **Settings** page and click the **Attachments** option in left-hand menu.
 
 ![](_attachments/sccSettingsPage2.png)
 
