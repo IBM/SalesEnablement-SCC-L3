@@ -19,7 +19,7 @@ Welcome to the demonstration guide for the {{learningplan.Name}} learning plan. 
 Before starting this learning plan, it is highly recommended that you complete the {{level2learningplan.Name}} learning plan as that base knowledge is assumed for this course. The Level 2 courses can be found here:
 
 - IBMers: <a href="{{level2learningplan.YLurl}}" target="_blank">{{level2learningplan.YLurl}}</a>
-- Business Partners: <a href="{{level2learningplan.BPurl}} target="_blank">{{level2learningplan.BPurl}}</a>
+- Business Partners: <a href="{{level2learningplan.BPurl}}" target="_blank">{{level2learningplan.BPurl}}</a>
 
 Another excellent resource is the <a href="https://pages.github.ibm.com/IBM-Cloud-Satellite-and-PaaS-Community/technology-pattern-scc/" target="_blank">IBM Technology Patterns for Regulated Cloud workloads</a>. **Note: at this time, the Technology Patterns site is only available to IBMers.** This website includes use cases, client stories, and other seller enablement. Expand the left hand menu by clicking "Compliance and Workload Protection" to see everything on the site. The site includes more assets for demos and labs that are related to SCC. These assets include reservable IBM Technology Zone (ITZ) environments. These environments are excellent options for proof-of-concepts, and the like, for custom client engagements. This environment differs from the environment that is used for this learning plan. The ITZ environment for this learning plan utilizes pre-provisioned resources in a shared environment allowing sellers and technical sellers to quickly have access to a demonstration environment without the need for time-consuming provisioning and configuration tasks.
 
