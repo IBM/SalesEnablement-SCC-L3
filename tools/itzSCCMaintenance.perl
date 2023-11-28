@@ -1,0 +1,122 @@
+#/usr/bin/perl
+#
+# This script requires the IBM Cloud CLI along with the following plug-ins:
+# - VPC (ibmcloud plugin install vpc-infrastructure)
+# - Event Notifications (ibmcloud plugin install en)
+# You must have administrative rights to the cloud account: 2305900 - ITZ- ADHOC03.
+# This script will show you all the current users that are part of the SCC-L3 access group and the 
+# date their ID was added to the account.  It should be safe to remove any resources crated by users
+# that are no longer in the SCC-L3 access group and any user that was added > 2 weeks prior to todays date.
+
+#---------------------------------------------------------------------------------------------
+# functions
+#---------------------------------------------------------------------------------------------
+sub prompt {
+  my ($query) = @_; # take a prompt string as argument
+  local $| = 1; # activate autoflush to immediately show the prompt
+  print $query;
+  chomp(my $answer = <STDIN>);
+  return $answer;
+}
+sub prompt_yn {
+  my ($query) = @_;
+  my $answer = prompt("$query (Y/N): ");
+  return lc($answer) eq 'y';
+}
+#---------------------------------------------------------------------------------------------
+
+$AccessGroup="SCC-L3";
+$ResourceGroup="SCC-L3";
+$EN_Instance="SCC-L3";
+$EN_GUID="92b0ab43-4dfa-4288-932c-6b93040bdf83";
+$EN_SUBSCRIPTION="afc8dd72-151a-475a-ae0a-e20222781e49";
+$AccountID="ba0e33c9056f470ca19de009747ec654";
+$USERS_FILE="allUsers.json";
+$REGION="us-south";
+
+# set the target region
+print "Set region to $REGION\n";
+`ibmcloud target -r $REGION > /dev/null 2>&1`;
+
+# get iam token so can query IAM
+print "Retrieving OAUTH TOKEN\n";
+$TOKEN=`ibmcloud iam oauth-tokens|cut -f2 -d':'`;
+
+# get all the users in the account so we can get users added-on date
+print "Retrieving all the users in the account.\n";
+`curl -X GET   https://user-management.cloud.ibm.com/v2/accounts/$AccountID/users   -H 'Authorization: $TOKEN' > $USERS_FILE 2> /dev/null`;
+
+
+# use tail -n 2 to get rid of the header
+print "Retrieving all the users in the $AccessGroup access group.\n";
+@users=`ibmcloud iam access-group-users $AccessGroup -q | tail -n +2`;
+chomp @users;
+
+print "The following users are actively in the $AccessGroup Access Group:\n";
+# print "User ID                       IBM ID               Added On Date\n";
+printf("%-35s %17s %25s\n","User ID", "IBM ID", "Added on Date");
+foreach my $user (@users)
+{
+    # find the user in the json output  file and parse out the fields we want
+    @userInfo=`jq -r '.resources[] | select(.user_id=="$user") | .iam_id,.added_on' $USERS_FILE`;
+    chomp @userInfo;
+    printf("%-35s %17s %25s\n",$user,@userInfo[0],@userInfo[1]);
+}
+
+print "Retrieving all active VSIs in the $ResourceGroup resource group.\n";
+@instances = `ibmcloud is instances --resource-group-name $ResourceGroup -q | tail -n +2`;
+print "\n";
+
+chomp @instances;
+
+foreach my $line (@instances)
+{
+        # print "$line\n";
+        @vsis = split ' ', $line;
+        # print "id = $vsis[0] name = $vsis[1] \n";
+
+        # get creation date
+        @createdDate=split ' ', `ibmcloud is instance $vsis[0] |grep -i created`;
+        print "Instance $vsis[1] ($vsis[0]) was created on $createdDate[1]\n";
+        if(prompt_yn("Do you want to delete it?")) {
+            print "Deleting it...\n";
+            #`ibmcloud is instance-delete $vsis[0]`;
+            print "ibmcloud is instance-delete $vsis[0]\n";
+        } else {
+
+            print "Keeping it...\n";
+        }
+        print "\n";
+}
+
+print "\n";
+# remove any ids?
+if(prompt_yn("Do you want to remove any user ids that are in the $AccessGroup access group?")) {
+    
+    foreach my $user (@users)
+    {
+        # find the user in the json output  file and parse out the fields we want
+        @userInfo=`jq -r '.resources[] | select(.user_id=="$user") | .iam_id,.added_on,.account_id' $USERS_FILE`;
+        chomp @userInfo;
+        printf("%-35s %17s %35s %25s\n","User ID", "IBM ID", "Account ID", "Added on Date");
+        printf("%-35s %17s %35s %25s\n",$user,@userInfo[0],@userInfo[2],@userInfo[1]);
+        if(prompt_yn("Do you want to remove the user from the account?")) {
+            print "Removing it...\n";
+            print "ibmcloud account user-remove $userInfo[2]\n";
+        } else {
+            print "Keeping it...\n";
+        }
+        print "\n";
+    }
+
+}
+
+### Event Notifications
+# if(prompt_yn("Do you want to manage the EventNotifications subscriptions)) {
+#    print "Initializing EN instance $EventNotificationsInstance";
+#    `ibmcloud en init --instance-id $EN_GUID`;
+#
+# }
+
+print "Exiting.\n"; 
+
