@@ -65,4 +65,12 @@ Users are instructed to create and remove several resources while executing this
 
 
 
-6. Event notifications
+6. Event notifications (EN) - Using event notifications is an optional part of the lab. Users are encouraged to remove themselves, but they don't always do that. The EN CLI's don't allow you to remove users from a subscription so I do this manually. I mainly look for:
+   
+   - expired invitations
+   - active SMS numbers with an "Date activated" > 2 weeks from today.
+   - unsubscribed SMS numbers 
+
+This video shows the above.
+
+![type:video](_videos/SCC-L3-Maintenance for EN.mp4)
