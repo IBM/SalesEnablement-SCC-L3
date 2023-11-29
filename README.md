@@ -13,7 +13,7 @@ ITZ account: ITZ - ADHOC03
 
 ## Summary of environment and automation
 
-For this lab, no new resources are provisioned. The lab consists of many click-thru demonstrations, pre-provisioned instances of SCC and Event Notifications.
+For this lab, no new resources are provisioned as part of the ITZ automation; however, the user is instructed to create a VSI on VPC and optionally adding their mobile device to receive notifications through IMB Cloud Event Notifications. The lab consists of many click-thru demonstrations, pre-provisioned instances of SCC and Event Notifications.
 
 In the ITZ automation:
 
