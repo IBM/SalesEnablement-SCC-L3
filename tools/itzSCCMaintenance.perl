@@ -105,8 +105,8 @@ if(prompt_yn("Do you want to remove any user ids that are in the $AccessGroup ac
         printf("%-35s %17s %35s %25s\n",$user,@userInfo[0],@userInfo[2],@userInfo[1]);
         if(prompt_yn("Do you want to remove the user from the account?")) {
             print "Removing it...\n";
-            print "ibmcloud account user-remove $userInfo[2] --force\n";
-            `ibmcloud account user-remove $userInfo[2] --force`;
+            print "ibmcloud account user-remove $userInfo[0] --force\n";
+            `ibmcloud account user-remove $userInfo[0] --force`;
         } else {
             print "Keeping it...\n";
         }
