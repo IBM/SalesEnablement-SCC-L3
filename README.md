@@ -24,6 +24,8 @@ In the ITZ automation:
 
 ## Maintenance
 
+**To perform the maintenance steps below, you must have admin access in the ITZ IBM Cloud account: 2305900 - iTZ - ADHOC03.**
+
 Verify the following resources are available (https://cloud.ibm.com/security-compliance/crn%3Av1%3Abluemix%3Apublic%3Acompliance%3Aus-south%3Aa%2Fba0e33c9056f470ca19de009747ec654%3A8b744abd-ca79-48c0-b82c-0b22f1663a8b%3A%3A/overview):
 
 **Instance:** SCC-L3 (us-south)
@@ -45,19 +47,17 @@ Verify the following resources are available (https://cloud.ibm.com/security-com
 **IKS clusters**: scc-l3-iks-DO-NOT-DELETE
 scc-l3k8s-cluster - need to see who created this and if it can be removed. I don't think it is actively used in the lab.
 
-
 **Workload Protections->Git Integrations:** Robot-shop
 
 **VSIs:** scc-l3-test-vsi, scc-test-vsi-do-not-delete
 
-
 Users are instructed to create and remove several resources while executing this lab. You should check that this is being done.
 
-1. Go to SCC Profiles for the SCC-L3 instance, sort on "type" and remove any **Custom** profile that is > 2weeks old and is not one of the above listed pre-provisioned profiles.
+1. Go to SCC Profiles for the SCC-L3 instance, sort on "type" and remove any **Custom** profile that is > 2 weeks old and is not one of the above listed pre-provisioned profiles.
 
-2. Go to SCC Control libraries for the SCC-L3 instance, sort on "type" and remove any **Custom** profile that is > 2weeks old and is not one of the above listed pre-provisioned libraries.
+2. Go to SCC Control libraries for the SCC-L3 instance, sort on "type" and remove any **Custom** profile that is > 2 weeks old and is not one of the above listed pre-provisioned libraries.
 
-3. Go to SCC Rules for the SCC-L3 instance, sort on "type" and remove any **Custom** profile that is > 2weeks old and is not one of the above listed pre-provisioned rules.
+3. Go to SCC Rules for the SCC-L3 instance, sort on "type" and remove any **Custom** profile that is > 2 weeks old and is not one of the above listed pre-provisioned rules.
 
 4. Verify the **scc-l3-iks-DO-NOT-DELETE** IKS cluster is active and in the normal state.
 
