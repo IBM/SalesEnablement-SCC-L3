@@ -84,7 +84,7 @@ foreach my $line (@instances)
             print "Deleting it...\n";
             #`ibmcloud is instance-delete $vsis[0]`;
             print "ibmcloud is instance-delete $vsis[0]\n";
-            `ibmcloud is instance-delete $vsis[0]`
+            `ibmcloud is instance-delete $vsis[0]`;
         } else {
 
             print "Keeping it...\n";
@@ -106,7 +106,7 @@ if(prompt_yn("Do you want to remove any user ids that are in the $AccessGroup ac
         if(prompt_yn("Do you want to remove the user from the account?")) {
             print "Removing it...\n";
             print "ibmcloud account user-remove $userInfo[2]\n";
-            `ibmcloud account user-remove $userInfo[2]`
+            `ibmcloud account user-remove $userInfo[2]`;
         } else {
             print "Keeping it...\n";
         }
