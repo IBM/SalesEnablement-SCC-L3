@@ -13,7 +13,7 @@ ITZ account: ITZ - ADHOC03
 
 ## Summary of environment and automation
 
-For this lab, no new resource are provisioned. The lab consists of many click-thru demonstrations, pre-provisioned instances of SCC, ....
+For this lab, no new resources are provisioned. The lab consists of many click-thru demonstrations, pre-provisioned instances of SCC and Event Notifications.
 
 In the ITZ automation:
 
@@ -62,6 +62,14 @@ Users are instructed to create and remove several resources while executing this
 4. Verify the **scc-l3-iks-DO-NOT-DELETE** IKS cluster is active and in the normal state.
 
 5. Remove any old (>2 weeks) VSIs in the VPC. Most users will create their VSI in the Dallas region, but you should check all the regions.  Any VSI in the *SCC-L3* resource group that is > 2 weeks should be removed. You can check this by looking at the dates of each VSI, or comparing the VSI name with the list of current users in the SCC-L3 IAM access group, or you can run the following commands in a cloud shell instance or on your machine if you have the IBM Cloud CLI's installed (along with VPC plugin). The script assumes you are authenticated (ibmcloud login -sso).
+
+```
+wget -O itzSCCMaintenance.perl https://raw.githubusercontent.com/IBM/SalesEnablement-SCC-L3/main/tools/itzSCCMaintenance.perl
+
+chmod +x itzSCCMaintenance.perl
+
+perl ./itzSCCMaintenance.perl
+```
 
 
 

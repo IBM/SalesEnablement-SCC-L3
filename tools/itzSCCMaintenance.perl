@@ -43,8 +43,10 @@ print "Retrieving OAUTH TOKEN\n";
 $TOKEN=`ibmcloud iam oauth-tokens|cut -f2 -d':'`;
 
 # get all the users in the account so we can get users added-on date
+# added the '--http1.1' flag to make this work in IBM CLoud Shell
+
 print "Retrieving all the users in the account.\n";
-`curl -X GET   https://user-management.cloud.ibm.com/v2/accounts/$AccountID/users   -H 'Authorization: $TOKEN' > $USERS_FILE 2> /dev/null`;
+`curl --http1.1 -X GET   https://user-management.cloud.ibm.com/v2/accounts/$AccountID/users   -H 'Authorization: $TOKEN' > $USERS_FILE 2> /dev/null`;
 
 
 # use tail -n 2 to get rid of the header
@@ -82,6 +84,7 @@ foreach my $line (@instances)
             print "Deleting it...\n";
             #`ibmcloud is instance-delete $vsis[0]`;
             print "ibmcloud is instance-delete $vsis[0]\n";
+            `ibmcloud is instance-delete $vsis[0]`
         } else {
 
             print "Keeping it...\n";
@@ -103,6 +106,7 @@ if(prompt_yn("Do you want to remove any user ids that are in the $AccessGroup ac
         if(prompt_yn("Do you want to remove the user from the account?")) {
             print "Removing it...\n";
             print "ibmcloud account user-remove $userInfo[2]\n";
+            `ibmcloud account user-remove $userInfo[2]`
         } else {
             print "Keeping it...\n";
         }
