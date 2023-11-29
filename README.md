@@ -78,4 +78,5 @@ perl ./itzSCCMaintenance.perl
 
 This video shows the above.
 
-![type:video](_videos/SCC-L3-Maintenance for EN.mp4)
+<video src='_videos/SCC-L3-Maintenance for EN-final.mp4' width =180>
+
