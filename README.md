@@ -61,7 +61,7 @@ Users are instructed to create and remove several resources while executing this
 
 4. Verify the **scc-l3-iks-DO-NOT-DELETE** IKS cluster is active and in the normal state.
 
-5. Remove any old (>2 weeks) VSIs in the VPC. Most users will create their VSI in the Dallas region, but you should check all the regions.  Any VSI in the *SCC-L3* resource group that is > 2 weeks should be removed. You can check this by looking at the dates of each VSI, or comparing the VSI name with the list of current users in the SCC-L3 IAM access group, or you can run the following commands in a cloud shell instance or on your machine if you have the IBM Cloud CLI's installed (along with VPC plugin). The script assumes you are authenticated (ibmcloud login -sso).
+5. Remove any old (>2 weeks) VSIs in the VPC. Most users will create their VSI in the Dallas region, but you should check all the regions. Any VSI in the *SCC-L3* resource group that is > 2 weeks should be removed. You can check this by looking at the dates of each VSI, or comparing the VSI name with the list of current users in the SCC-L3 IAM access group, **or you can run the following commands** in a cloud shell instance or on your machine if you have the IBM Cloud CLI's installed (along with VPC plugin). The script assumes you are authenticated (ibmcloud login -sso). The script is interactive and will prompt you through cleaning up left-over VSIs. It will also remove any stray users (interactively) but this shouldn't be necessary.
 
 ```
 wget -O itzSCCMaintenance.perl https://raw.githubusercontent.com/IBM/SalesEnablement-SCC-L3/main/tools/itzSCCMaintenance.perl
@@ -70,9 +70,6 @@ chmod +x itzSCCMaintenance.perl
 
 perl ./itzSCCMaintenance.perl
 ```
-
-
-
 6. Event notifications (EN) - Using event notifications is an optional part of the lab. Users are encouraged to remove themselves, but they don't always do that. The EN CLI's don't allow you to remove users from a subscription so I do this manually. I mainly look for:
    
    - expired invitations
