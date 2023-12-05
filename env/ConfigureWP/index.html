@@ -12,8 +12,15 @@
         <meta name="author" content="Andrew R. Jones (andrewj@us.ibm.com)">
       
       
+      
+        <link rel="prev" href="../ConfigureSMS/">
+      
+      
+        <link rel="next" href="../../demo/Overview/">
+      
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.0">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
     
     
       
@@ -21,14 +28,17 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.69437709.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35e1ed30.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
-        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
       
       
+
+
     
+    
+      
     
     
       
@@ -46,6 +56,7 @@
 
     
     
+    
   </head>
   
   
@@ -56,7 +67,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     
@@ -80,7 +91,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="IBM Cloud Security and Compliance Center" class="md-header__button md-logo" aria-label="IBM Cloud Security and Compliance Center" data-md-component="logo">
       
@@ -89,6 +102,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
+      
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
@@ -108,31 +122,36 @@
       </div>
     </div>
     
-      <form class="md-header__option" data-md-component="palette">
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
-          
-            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
-            </label>
-          
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
-          
-            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
-            </label>
-          
-        
-      </form>
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
     
       <label class="md-header__button md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
@@ -141,12 +160,15 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -158,7 +180,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -188,6 +210,7 @@
                     
 
 
+
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="IBM Cloud Security and Compliance Center" class="md-nav__button md-logo" aria-label="IBM Cloud Security and Compliance Center" data-md-component="logo">
@@ -203,14 +226,18 @@
     
       
       
-      
-
   
   
   
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
-        Welcome
+        
+  
+  <span class="md-ellipsis">
+    Welcome
+  </span>
+  
+
       </a>
     </li>
   
@@ -218,106 +245,144 @@
     
       
       
-      
-
   
   
     
   
   
+    
+    
+    
+    
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2">
-          Demonstration Environment
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Demonstration Environment" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
-          <span class="md-nav__icon md-icon"></span>
-          Demonstration Environment
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
           
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Demonstration Environment
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Demonstration Environment
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../Overview/" class="md-nav__link">
-        Overview
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../Create%20a%20reservation/" class="md-nav__link">
-        Provisioning the environment
+        
+  
+  <span class="md-ellipsis">
+    Provisioning the environment
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../Access%20the%20environment/" class="md-nav__link">
-        Access the environment
+        
+  
+  <span class="md-ellipsis">
+    Access the environment
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../Configure%20the%20environment/" class="md-nav__link">
-        Configure remediation scenario
+        
+  
+  <span class="md-ellipsis">
+    Configure remediation scenario
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../ConfigureSMS/" class="md-nav__link">
-        Configure SMS messaging (OPTIONAL)
+        
+  
+  <span class="md-ellipsis">
+    Configure SMS messaging (OPTIONAL)
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
     
@@ -325,17 +390,29 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Configure Workload Protection scenario
+          
+  
+  <span class="md-ellipsis">
+    Configure Workload Protection scenario
+  </span>
+  
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Configure Workload Protection scenario
+        
+  
+  <span class="md-ellipsis">
+    Configure Workload Protection scenario
+  </span>
+  
+
       </a>
       
         
@@ -365,128 +442,172 @@
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
   
   
   
     
+    
+    
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3">
-          Client Demonstrations
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Client Demonstrations" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Client Demonstrations
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
           
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Client Demonstrations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Client Demonstrations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../demo/Overview/" class="md-nav__link">
-        Overview
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../demo/provisioning/" class="md-nav__link">
-        Provisioning an SCC instance (OPTIONAL)
+        
+  
+  <span class="md-ellipsis">
+    Provisioning an SCC instance (OPTIONAL)
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../demo/scc/" class="md-nav__link">
-        High-level demonstration of SCC
+        
+  
+  <span class="md-ellipsis">
+    High-level demonstration of SCC
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../demo/remediation/" class="md-nav__link">
-        Remediating a failed compliance control
+        
+  
+  <span class="md-ellipsis">
+    Remediating a failed compliance control
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../demo/wp/" class="md-nav__link">
-        High-level demonstration of Workload Protection
+        
+  
+  <span class="md-ellipsis">
+    High-level demonstration of Workload Protection
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
   
   
   
     <li class="md-nav__item">
       <a href="../../NextSteps/" class="md-nav__link">
-        Next Steps
+        
+  
+  <span class="md-ellipsis">
+    Next Steps
+  </span>
+  
+
       </a>
     </li>
   
@@ -531,15 +652,16 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
+                  
 
 
   <h1>Configure Workload Protection scenario</h1>
 
-<p>In the Client Demonstrations section, you show the client how IBM Cloud Security and Compliance Center (SCC) Workload Protection (WP) can detect a potential threat. </p>
+<div><p>In the Client Demonstrations section, you show the client how IBM Cloud Security and Compliance Center (SCC) Workload Protection (WP) can detect a potential threat. </p>
 <p>To set up this scenario:</p>
 <ul>
 <li>
@@ -557,35 +679,35 @@
 <ol start="2">
 <li>Click the <strong>account selection</strong> drop-down menu and select the <strong>2305900 - ITZ - ADHOC03</strong> account.</li>
 </ol>
-<p><img alt="" src="../_attachments/switchAccount.png" /></p>
-<p>Note, if the browser window is narrow, you might see an <strong>account selection</strong> icon like this: <img alt="" src="../_attachments/switchAccountIcon.png" /> instead of the full account name.</p>
+<p><img alt="" src="../_attachments/switchAccount.png"></p>
+<p>Note, if the browser window is narrow, you might see an <strong>account selection</strong> icon like this: <img alt="" src="../_attachments/switchAccountIcon.png"> instead of the full account name.</p>
 <ol start="3">
-<li>Click the <strong>Kubernetes</strong> icon (<img alt="" src="../_attachments/kubernetesIcon.png" />) in the left menu.</li>
+<li>Click the <strong>Kubernetes</strong> icon (<img alt="" src="../_attachments/kubernetesIcon.png">) in the left menu.</li>
 </ol>
-<p><img alt="" src="../_attachments/kubernetes.png" /></p>
+<p><img alt="" src="../_attachments/kubernetes.png"></p>
 <ol start="4">
 <li>Click <strong>scc-l3-iks-DO-NOT-DELETE</strong> in the table of clusters.</li>
 </ol>
-<p><img alt="" src="../_attachments/iksClusters.png" /></p>
+<p><img alt="" src="../_attachments/iksClusters.png"></p>
 <ol start="5">
 <li>Click the <strong>Kubernetes dashboard</strong> button.</li>
 </ol>
-<p><img alt="" src="../_attachments/iksClusterOverview.png" /></p>
+<p><img alt="" src="../_attachments/iksClusterOverview.png"></p>
 <p>The <strong>Kubernetes dashboard</strong> loads in a new browser tab or window.</p>
 <ol start="6">
 <li>Click <strong>Pods</strong> in the left menu.</li>
 </ol>
-<p><img alt="" src="../_attachments/iksClusterDashboard.png" /></p>
+<p><img alt="" src="../_attachments/iksClusterDashboard.png"></p>
 <ol start="7">
 <li>Click the <strong>helloworld-57646478c5-tv5hm</strong> link in the <strong>Pods</strong> table.</li>
 </ol>
-<p><img alt="" src="../_attachments/iksClusterDashboardPods.png" /></p>
+<p><img alt="" src="../_attachments/iksClusterDashboardPods.png"></p>
 <ol start="8">
-<li>Click the <strong>Exec into pod</strong> (<img alt="" src="../_attachments/execIntoPodIcon.png" />) button.</li>
+<li>Click the <strong>Exec into pod</strong> (<img alt="" src="../_attachments/execIntoPodIcon.png">) button.</li>
 </ol>
-<p><img alt="" src="../_attachments/iksClusterDashboardPod.png" /></p>
+<p><img alt="" src="../_attachments/iksClusterDashboardPod.png"></p>
 <ol start="9">
-<li>Copy (<img alt="" src="../_attachments/copyAndPasteIcon.png" />) and paste <strong>(Ctrl v)</strong> the commands that follow in the <strong>Shell</strong> window.</li>
+<li>Copy (<img alt="" src="../_attachments/copyAndPasteIcon.png">) and paste <strong>(Ctrl v)</strong> the commands that follow in the <strong>Shell</strong> window.</li>
 </ol>
 <div class="admonition warning">
 <p class="admonition-title">Copy and paste issues</p>
@@ -595,62 +717,28 @@
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>ps -ef
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>exit
 </code></pre></div>
-<p><img alt="" src="../_attachments/iksClusterDashboardPodExec.png" /></p>
+<p><img alt="" src="../_attachments/iksClusterDashboardPodExec.png"></p>
 <ol start="10">
 <li>Close the browser tab or window for the <strong>Kubernetes Dashboard</strong>.</li>
 </ol>
 <p>The commands above do a simple listing of the contents of the current directory and lists the running processes. </p>
 <p>The ability to <strong>exec</strong> into a running pod is a potential security vulnerability that bad actors might use to perform nefarious acts. Attackers with permissions might run ‘kubectl exec’ (the command line equivalent to what was performed above) to run malicious code and compromise resources within a cluster.</p>
-<p>In the "High-level demonstration of Workload Protection" chapter you see an event was triggered based on the action you performed and demonstrate how WP can detect threats.</p>
+<p>In the "High-level demonstration of Workload Protection" chapter you see an event was triggered based on the action you performed and demonstrate how WP can detect threats.</p></div>
 
 
 
 
-              
-            </article>
-            
-          </div>
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../ConfigureSMS/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Configure SMS messaging (OPTIONAL)" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Configure SMS messaging (OPTIONAL)
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../../demo/Overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Overview
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -672,10 +760,11 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.9c69f0bc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.aecac24b.min.js"></script>
       
     
   </body>

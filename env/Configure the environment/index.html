@@ -12,8 +12,15 @@
         <meta name="author" content="Andrew R. Jones (andrewj@us.ibm.com)">
       
       
+      
+        <link rel="prev" href="../Access%20the%20environment/">
+      
+      
+        <link rel="next" href="../ConfigureSMS/">
+      
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.0">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
     
     
       
@@ -21,14 +28,17 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.69437709.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35e1ed30.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
-        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
       
       
+
+
     
+    
+      
     
     
       
@@ -46,6 +56,7 @@
 
     
     
+    
   </head>
   
   
@@ -56,7 +67,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     
@@ -80,7 +91,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="IBM Cloud Security and Compliance Center" class="md-header__button md-logo" aria-label="IBM Cloud Security and Compliance Center" data-md-component="logo">
       
@@ -89,6 +102,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
+      
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
@@ -108,31 +122,36 @@
       </div>
     </div>
     
-      <form class="md-header__option" data-md-component="palette">
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
-          
-            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
-            </label>
-          
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
-          
-            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
-            </label>
-          
-        
-      </form>
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
     
       <label class="md-header__button md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
@@ -141,12 +160,15 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -158,7 +180,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -188,6 +210,7 @@
                     
 
 
+
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="IBM Cloud Security and Compliance Center" class="md-nav__button md-logo" aria-label="IBM Cloud Security and Compliance Center" data-md-component="logo">
@@ -203,14 +226,18 @@
     
       
       
-      
-
   
   
   
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
-        Welcome
+        
+  
+  <span class="md-ellipsis">
+    Welcome
+  </span>
+  
+
       </a>
     </li>
   
@@ -218,78 +245,104 @@
     
       
       
-      
-
   
   
     
   
   
+    
+    
+    
+    
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2">
-          Demonstration Environment
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Demonstration Environment" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
-          <span class="md-nav__icon md-icon"></span>
-          Demonstration Environment
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
           
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Demonstration Environment
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Demonstration Environment
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../Overview/" class="md-nav__link">
-        Overview
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../Create%20a%20reservation/" class="md-nav__link">
-        Provisioning the environment
+        
+  
+  <span class="md-ellipsis">
+    Provisioning the environment
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../Access%20the%20environment/" class="md-nav__link">
-        Access the environment
+        
+  
+  <span class="md-ellipsis">
+    Access the environment
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
     
@@ -297,17 +350,29 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Configure remediation scenario
+          
+  
+  <span class="md-ellipsis">
+    Configure remediation scenario
+  </span>
+  
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Configure remediation scenario
+        
+  
+  <span class="md-ellipsis">
+    Configure remediation scenario
+  </span>
+  
+
       </a>
       
         
@@ -351,156 +416,212 @@
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../ConfigureSMS/" class="md-nav__link">
-        Configure SMS messaging (OPTIONAL)
+        
+  
+  <span class="md-ellipsis">
+    Configure SMS messaging (OPTIONAL)
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../ConfigureWP/" class="md-nav__link">
-        Configure Workload Protection scenario
+        
+  
+  <span class="md-ellipsis">
+    Configure Workload Protection scenario
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
   
   
   
     
+    
+    
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3">
-          Client Demonstrations
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Client Demonstrations" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Client Demonstrations
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
           
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Client Demonstrations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Client Demonstrations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../demo/Overview/" class="md-nav__link">
-        Overview
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../demo/provisioning/" class="md-nav__link">
-        Provisioning an SCC instance (OPTIONAL)
+        
+  
+  <span class="md-ellipsis">
+    Provisioning an SCC instance (OPTIONAL)
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../demo/scc/" class="md-nav__link">
-        High-level demonstration of SCC
+        
+  
+  <span class="md-ellipsis">
+    High-level demonstration of SCC
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../demo/remediation/" class="md-nav__link">
-        Remediating a failed compliance control
+        
+  
+  <span class="md-ellipsis">
+    Remediating a failed compliance control
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../demo/wp/" class="md-nav__link">
-        High-level demonstration of Workload Protection
+        
+  
+  <span class="md-ellipsis">
+    High-level demonstration of Workload Protection
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
   
   
   
     <li class="md-nav__item">
       <a href="../../NextSteps/" class="md-nav__link">
-        Next Steps
+        
+  
+  <span class="md-ellipsis">
+    Next Steps
+  </span>
+  
+
       </a>
     </li>
   
@@ -559,15 +680,16 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
+                  
 
 
   <h1>Configure remediation scenario</h1>
 
-<p>A compelling demonstration of IBM Cloud Security and Compliance Center (SCC) not only includes showing the results of a compliance scan, but also demonstrating how compliance failures can be remediated. In this demonstration guide, demonstrate how to remediate a failed compliance scan that is related to internet protocol (IP) address spoofing on a virtual server instance (VSI) running in an IBM Cloud Virtual Private Cloud (VPC). While IP address spoofing has legitimate business uses, it is also a potential vulnerability. Learn more about IP address spoofing <a href="https://en.wikipedia.org/wiki/IP_address_spoofing" target="_blank">here</a>. SCC has a predefined control that checks to see whether a VSI in a VPC has IP address spoofing enabled and flags those VSI's as noncompliant. This scenario was chosen as it is easy to enable and disable this setting on a VSI and VSI's in VPC are inexpensive resources which provision quickly. </p>
+<div><p>A compelling demonstration of IBM Cloud Security and Compliance Center (SCC) not only includes showing the results of a compliance scan, but also demonstrating how compliance failures can be remediated. In this demonstration guide, demonstrate how to remediate a failed compliance scan that is related to internet protocol (IP) address spoofing on a virtual server instance (VSI) running in an IBM Cloud Virtual Private Cloud (VPC). While IP address spoofing has legitimate business uses, it is also a potential vulnerability. Learn more about IP address spoofing <a href="https://en.wikipedia.org/wiki/IP_address_spoofing" target="_blank">here</a>. SCC has a predefined control that checks to see whether a VSI in a VPC has IP address spoofing enabled and flags those VSI's as noncompliant. This scenario was chosen as it is easy to enable and disable this setting on a VSI and VSI's in VPC are inexpensive resources which provision quickly. </p>
 <p>In the next steps:</p>
 <ul>
 <li>
@@ -590,8 +712,8 @@
 <ol start="2">
 <li>Click the <strong>account selection</strong> drop-down menu and select the <strong>2305900 - ITZ - ADHOC03</strong> account.</li>
 </ol>
-<p><img alt="" src="../_attachments/switchAccount.png" /></p>
-<p>Note, if the browser window is narrow, you might see an <strong>account selection</strong> icon like this: <img alt="" src="../_attachments/switchAccountIcon.png" /> instead of the full account name.</p>
+<p><img alt="" src="../_attachments/switchAccount.png"></p>
+<p>Note, if the browser window is narrow, you might see an <strong>account selection</strong> icon like this: <img alt="" src="../_attachments/switchAccountIcon.png"> instead of the full account name.</p>
 <!-- 3. Click the **VPC Infrastructure** icon (![](_attachments/vpcIcon.png)) in the menu bar.
 
 ![](_attachments/dashBoardVPC.png)
@@ -653,13 +775,13 @@ It should only take about a minute to provision the VSI. Once the VSI shows the 
 ![](_attachments/vpcVSINetworkInterfaceEnableIPSpoofing.png) -->
 
 <ol start="3">
-<li>Click the <strong>IBM Cloud Shell</strong> icon (<img alt="" src="../_attachments/cloudShellIcon.png" />)</li>
+<li>Click the <strong>IBM Cloud Shell</strong> icon (<img alt="" src="../_attachments/cloudShellIcon.png">)</li>
 </ol>
-<p><img alt="" src="../_attachments/dashboardCloudShell.png" /></p>
+<p><img alt="" src="../_attachments/dashboardCloudShell.png"></p>
 <p>A new browser window or tab will open with the IBM Cloud Shell. Proceed to the next step when the command prompt is ready (similar to the one highlighted below).</p>
-<p><img alt="" src="../_attachments/cloudShell.png" /></p>
+<p><img alt="" src="../_attachments/cloudShell.png"></p>
 <ol start="4">
-<li>Copy and paste (<img alt="" src="../_attachments/copyAndPasteIcon.png" />) the following commands to the IBM Cloud Shell window and press enter. </li>
+<li>Copy and paste (<img alt="" src="../_attachments/copyAndPasteIcon.png">) the following commands to the IBM Cloud Shell window and press enter. </li>
 </ol>
 <p>The script calls the IBM Cloud command line interfaces to provision a VSI in a pre-provisioned VPC instance.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>#
@@ -669,27 +791,27 @@ It should only take about a minute to provision the VSI. Once the VSI shows the 
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>./createVSI.bash
 </code></pre></div>
 <p>Example output:</p>
-<p><img alt="" src="../_attachments/createVSIoutput.png" /></p>
+<p><img alt="" src="../_attachments/createVSIoutput.png"></p>
 <p>Take note of the name of the VSI created (highlighted above). Your VSI's name is the first part of your IBM Cloud user ID (typically email address) followed by a random number and <strong>-scc-vsi</strong>. For example: <strong>andrew-14294-scc-vsi</strong></p>
 <h3 id="verify-that-the-vsi-was-created-with-ip-spoofing-enabled">Verify that the VSI was created with IP spoofing enabled</h3>
 <p>Return to the IBM Cloud browser window/tab.</p>
 <ol start="5">
-<li>Click the <strong>VPC Infrastructure</strong> icon (<img alt="" src="../_attachments/vpcIcon.png" />) in the menu bar.</li>
+<li>Click the <strong>VPC Infrastructure</strong> icon (<img alt="" src="../_attachments/vpcIcon.png">) in the menu bar.</li>
 </ol>
-<p><img alt="" src="../_attachments/dashBoardVPC.png" /></p>
+<p><img alt="" src="../_attachments/dashBoardVPC.png"></p>
 <ol start="6">
 <li>Click the <strong>Virtual server instances</strong> option in the left-hand menu.</li>
 </ol>
-<p><img alt="" src="../_attachments/vpcOverviewVSI.png" /></p>
+<p><img alt="" src="../_attachments/vpcOverviewVSI.png"></p>
 <ol start="7">
 <li>Click your VSI's name in the table.</li>
 </ol>
 <p>If you do not see your VSI, verify the <strong>Region</strong> is set to <strong>Dallas</strong>.</p>
-<p><img alt="" src="../_attachments/vpcListOfVSIs.png" /></p>
+<p><img alt="" src="../_attachments/vpcListOfVSIs.png"></p>
 <ol start="8">
 <li>Scroll down to the <strong>Network interfaces</strong> section and verify that <strong>Allow IP spoofing</strong> is enabled.</li>
 </ol>
-<p><img alt="" src="../_attachments/vpcVSISpoofingEnabled.png" /></p>
+<p><img alt="" src="../_attachments/vpcVSISpoofingEnabled.png"></p>
 <h3 id="create-an-scc-attachment-and-run-an-initial-scan">Create an SCC attachment and run an initial scan</h3>
 <p>In the steps that follow, using a pre-provisioned instance of SCC, you create an <strong>attachment</strong> which scans for VSIs on VPCs in a single IBM Cloud resource group to see whether <strong>IP network spoofing</strong> is enabled. When the <strong>attachment</strong> is saved, the first scan will automatically be performed.  </p>
 <p>Recall in the scenario described earlier, we will show the failed compliance check (IP spoofing is disabled for all VSIs in VPCs), remediate the issue, and then rescan to show the compliance check is successful. It is important to understand that SCC cache's scan results for one hour. This means if you run the same scan within an hour of the last time the scan was run, a new scan is NOT performed and the old results are returned. This is important to remember when performing a client demonstration or if you are recording your Stand and Deliver. </p>
@@ -697,93 +819,59 @@ It should only take about a minute to provision the VSI. Once the VSI shows the 
 <ol start="9">
 <li>Navigate to the <strong>SCC Dashboard</strong> page in the IBM Cloud portal.</li>
 </ol>
-<p><img alt="" src="../_attachments/vpcVSINetworkInterfaceReady.png" /></p>
+<p><img alt="" src="../_attachments/vpcVSINetworkInterfaceReady.png"></p>
 <ol start="10">
 <li>Click <strong>Attachments</strong> in the left-hand menu.</li>
 </ol>
-<p><img alt="" src="../_attachments/sccDashboardConfig.png" /></p>
+<p><img alt="" src="../_attachments/sccDashboardConfig.png"></p>
 <ol start="11">
 <li>Click <strong>Create +</strong>.</li>
 </ol>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachments.png" /></p>
+<p><img alt="" src="../_attachments/sccDashboardConfigAttachments.png"></p>
 <ol start="12">
 <li>Enter a unique <strong>Name</strong> for your attachment and then click <strong>Next</strong>.</li>
 </ol>
 <p>Attachment names need to be unique. To avoid issues, it is suggested that you use a name similar to the VSI created earlier, for example: <strong>andrew-14294-ipspoofing-compliance</strong>.</p>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachmDetails.png" /></p>
+<p><img alt="" src="../_attachments/sccDashboardConfigAttachmDetails.png"></p>
 <ol start="13">
 <li>Select <strong>se-scc-l3-DO-NOT-DELETE</strong> in the <strong>Profile</strong> pull-down menu and then click <strong>Next</strong></li>
 </ol>
 <p>You will examine the <strong>se-scc-l3-DO-NOT-DELETE</strong> profile in detail in the next section of the guide.</p>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachProfile.png" /></p>
+<p><img alt="" src="../_attachments/sccDashboardConfigAttachProfile.png"></p>
 <ol start="14">
 <li>Select <strong>SCC-L3</strong> in the <strong>Scope</strong> pull-down menu and click <strong>Next</strong>.</li>
 </ol>
 <p>You will learn more about the <strong>Scope</strong> setting in the next section of the guide.</p>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachScope.png" /></p>
+<p><img alt="" src="../_attachments/sccDashboardConfigAttachScope.png"></p>
 <ol start="15">
 <li>Review the details on the <strong>Scan settings</strong> page and click <strong>Next</strong>.</li>
 </ol>
 <p>For now, the default settings are fine, and will be explained in more details in the next section of the guide.</p>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachScanSettings2.png" /></p>
+<p><img alt="" src="../_attachments/sccDashboardConfigAttachScanSettings2.png"></p>
 <ol start="16">
 <li>Review all the <strong>attachment</strong> settings and click <strong>Create</strong>.</li>
 </ol>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachReview.png" /></p>
+<p><img alt="" src="../_attachments/sccDashboardConfigAttachReview.png"></p>
 <p>The <strong>attachment</strong> is now saved and the initial scan is being run. Notice the <strong>Scan in progress</strong> message for your attachment. Due to a user interface issue with this page (at least some browsers), this progress message remains on the screen until you refresh the page. As this is a simple scan of one control on a very limited scope, this scan takes a minute or two to run. <strong>Wait a couple of minutes and then click the browser's refresh button and the <em>Next scan</em> information should update.</strong></p>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachRunning.png" /></p>
+<p><img alt="" src="../_attachments/sccDashboardConfigAttachRunning.png"></p>
 <p>After refreshing your browser, the table should be similar to the one below.</p>
-<p><img alt="" src="../_attachments/sccDashboardConfigAttachNextScan.png" /></p>
-<p>You can now proceed to the next chapter to learn about and configure IBM Cloud Event Notifications to enhance your client demonstration or continue to the next section to perform a client demonstration. While enabling IBM Cloud Event Notifications is optional, you are encouraged to at least read the introduction to learn more about IBM Cloud Event Notifications.</p>
+<p><img alt="" src="../_attachments/sccDashboardConfigAttachNextScan.png"></p>
+<p>You can now proceed to the next chapter to learn about and configure IBM Cloud Event Notifications to enhance your client demonstration or continue to the next section to perform a client demonstration. While enabling IBM Cloud Event Notifications is optional, you are encouraged to at least read the introduction to learn more about IBM Cloud Event Notifications.</p></div>
 
 
 
 
-              
-            </article>
-            
-          </div>
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../Access%20the%20environment/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Access the environment" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Access the environment
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../ConfigureSMS/" class="md-footer__link md-footer__link--next" aria-label="Next: Configure SMS messaging (OPTIONAL)" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Configure SMS messaging (OPTIONAL)
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -805,10 +893,11 @@ It should only take about a minute to provision the VSI. Once the VSI shows the 
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.9c69f0bc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.aecac24b.min.js"></script>
       
     
   </body>
