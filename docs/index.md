@@ -2,10 +2,6 @@
 
 Welcome to the demonstration guide for the {{learningplan.Name}} learning plan. In this Level 3 course, learn how to demonstrate IBM Cloud Security and Compliance Center (SCC) and IBM Cloud Security and Compliance Center Workload Protection (WP) to clients. 
 
-!!! Information "Having trouble?" 
-
-    If you encounter any issues with this course, please post in the <a href="https://ibm-cloudplatform.slack.com/archives/C03PQ47KRQE" target="_blank">#cloud-platform-demo-feedback</a> Slack channel or directly to @andrewj or via email: <a href="mailto:andrewj@us.ibm.com" target="_blank">andrewj@us.ibm.com</a>.
-
 !!! tip "ACCREDITATION"
     
     To receive Level 3 accreditation, IBMers and Business Partners must demonstrate mastery of the skills learned throughout the various sections of this demonstration guide. Level 3 accreditation requirements— and the way participants will be evaluated before receiving accreditation —differs depending on job role.
@@ -60,9 +56,23 @@ These concepts can be visualized in these steps:
 4. The results of the scan are stored in a IBM Cloud Object Storage (COS) specified by the client when the SCC instance is created.
 5. Finally, the results are made accessible through the SCC Dashboard in the IBM Cloud Portal.
 
-#
-# Navigating the Demonstration Guide
------------------------------
+## Support
+
+Think something is down? Check the applicable status pages for current updates:
+
+-  <a href="https://techzone.status.io/" target="_blank">IBM Technology Zone</a>
+-  <a href="https://cloud.ibm.com/status" target="_blank">IBM Cloud</a>
+
+For issues with provisioning or accessing an environment in IBM Technology Zone (ITZ) open a ticket with ITZ support:
+- Web:  <a href="https://ibmsf.force.com/ibminternalproducts/s/createrecord/NewCase?language=en_US" target="_blank">IBM Technology Zone</a>
+- E-mail: <a href="mailto:techzone.help@ibm.com" target="_blank">techzone.help.ibm.com</a>
+
+For issues related to specific steps found in the demonstration guide after the ITZ environment is provisioned, contact the authors:
+
+- Slack: <a href="{{supportSlack.url}}" target="_blank">{{supportSlack.name}}</a> - IBM only
+- E-mail: <a href="{{supportEmail}}" target="_blank">{{supportEmail}}</a>
+
+## Using the demonstration guide
 
 !!! warning "WARNING"
     The agile nature of cloud means that the interface and layout of the IBM Cloud Portal, as well as the SCC offering, will change on a regular basis. Screenshots and videos captured within this documentation may not always reflect the latest view in IBM Cloud. The IBM Learning Content Development team strives to update these assets on a regular basis.

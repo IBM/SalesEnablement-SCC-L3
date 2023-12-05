@@ -66,6 +66,10 @@ markdown_extensions:
 
 extra:
   generator: false
+  supportEmail: "andrewj@us.ibm.com"
+  supportSlack: 
+    name: "#cloud-platform-demo-feedback"
+    url: "https://ibm-technology-sales.slack.com/archives/C03PQ47KRQE"
   gitRepo: "https://github.com/IBM/SalesEnablement-SCC-L3"
   learningplan:
     Name: "IBM Cloud Security and Compliance Center (SCC) Level 3"
