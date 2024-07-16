@@ -81,7 +81,7 @@ curlRC=$(curl -s --write-out "%{http_code}" --output $outputfile -X POST \
     "host_failure": "restart"
   },
   "image": {
-    "id": "r006-907911a7-0ffe-467e-8821-3cc9a0d82a39"
+    "id": "r006-cf915612-e159-4f82-b871-34f6eabfe05c"
   }
 }') 
 
