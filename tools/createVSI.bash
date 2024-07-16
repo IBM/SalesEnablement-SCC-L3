@@ -9,6 +9,11 @@ export iam_token=`ibmcloud iam oauth-tokens |cut -f 5 -d' '`
 export userName=`id -un|tr '.' '-'|tr '_' '-'`
 # convert to lower case and add unique extension so I know which VSIs came from our lab
 export vsiName="${userName,,}"-$RANDOM-scc-vsi
+
+# make sure we use an image that is publich and available
+# issue encountered on 7/16 when the image that was hardcoded was removed from the available catalog
+export imageID=`ibmcloud is images --status available --resource-group-name SCC-L3 --visibility public |grep -i centos |head -1 | cut -f1 -d" "`
+
 echo "Creating VSI named: $vsiName ..."
 echo ""
 #
@@ -81,7 +86,7 @@ curlRC=$(curl -s --write-out "%{http_code}" --output $outputfile -X POST \
     "host_failure": "restart"
   },
   "image": {
-    "id": "r006-cf915612-e159-4f82-b871-34f6eabfe05c"
+    "id": "'$imageID'"
   }
 }') 
 
