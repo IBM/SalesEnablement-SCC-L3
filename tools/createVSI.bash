@@ -10,11 +10,22 @@ export userName=`id -un|tr '.' '-'|tr '_' '-'`
 # convert to lower case and add unique extension so I know which VSIs came from our lab
 export vsiName="${userName,,}"-$RANDOM-scc-vsi
 
+# we need to do everything out of same data center and since our VPC is in dallas, we need to make sure
+# we use the dallas image caalog and set the zoneproperly
+
+export region="us-south"
+export zoneName="us-south-2"
+export resourceGroup="SCC-L3"
+#export region=`ibmcloud target -q|grep Region | cut -f2 -d":"| awk '{$1=$1;print}'`
+echo "Setting region to '$region' and resoureGroup to '$resourceGropu'"
+ibmcloud  target -r ${region} -g ${resourceGroup}
+
+echo "Retrieving image catalog..."
 # make sure we use an image that is publich and available
 # issue encountered on 7/16 when the image that was hardcoded was removed from the available catalog
 export imageID=`ibmcloud is images --status available --resource-group-name SCC-L3 --visibility public |grep -i centos |head -1 | cut -f1 -d" "`
 
-echo "Creating VSI named: $vsiName ..."
+echo "Creating VSI named: $vsiName with image: $imageID"
 echo ""
 #
 #
@@ -25,13 +36,13 @@ echo ""
 export outputfile="$HOME/curlVSI.output"
 
 curlRC=$(curl -s --write-out "%{http_code}" --output $outputfile -X POST \
-  "https://us-south.iaas.cloud.ibm.com/v1/instances?version=2023-08-24&generation=2" \
+  "https://us-south.iaas.cloud.ibm.com/v1/instances?version=2024-07-25&generation=2" \
   -H "Authorization: Bearer $iam_token" \
   -H "Content-Type: application/json" \
   -H "accept: application/json" \
   -d '{
   "zone": {
-    "name": "us-south-2"
+    "name": "'$zoneName'"
   },
   "resource_group": {
     "id": "803825d084f54f43b7405b8cf8403c47"
