@@ -17,7 +17,7 @@ export region="us-south"
 export zoneName="us-south-2"
 export resourceGroup="SCC-L3"
 #export region=`ibmcloud target -q|grep Region | cut -f2 -d":"| awk '{$1=$1;print}'`
-echo "Setting region to '$region' and resoureGroup to '$resourceGropu'"
+echo "Setting region to '$region' and resourceGroup to '$resourceGroup'"
 ibmcloud  target -r ${region} -g ${resourceGroup}
 
 echo "Retrieving image catalog..."
