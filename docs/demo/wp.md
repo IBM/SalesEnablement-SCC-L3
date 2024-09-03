@@ -68,10 +68,6 @@ The setup of SCC WP is not covered in this scenario, but you can learn more abou
 
 10. Click the **Open dashboard** button.
 
-!!! Danger "Workload Protection has changed!!!"
-
-    On September 3, 2024, the Workload Protection user interface has completely changed. We are investigating the changes and how they affect this demonstration guide. At this time, steps 11 - 21 cannot be completed as written. You are encouraged to explore the new interface on your own at this time.
-
 ![](_attachments/sccIntegrations.png)
 
 !!! Question "BP Quiz Question"
@@ -82,13 +78,13 @@ The SCC WP dashboard opens in a new browser window or tab.
 
 As you learned in the **{{level2learningplan.Name}}** seller enablement material, SCC WP is a rebranding of Sysdig (<a href="https://sysdig.com/" target="_blank">https://sysdig.com/</a>). This dashboard might look familiar to anyone who has used Sysdig in the past.
 
-11. Hover over **Scanning** in the left menu and then click **Runtime**.
+11. Hover over **Inventory** in the left menu and then click **Kubernetes Live**.
 
-![](_attachments/wpGetStartedToScanning.png)
+![](_attachments/kubernetesLive.png)
 
-The **Runtime image scanning** page shows all the Kubernetes clusters that have been connected to the SCC WP instance and the images that are running in each cluster.
+The **Kubernetes Live** page shows all the Kubernetes clusters that have been connected to the SCC WP instance.
 
-12. Click the expand icon (![](_attachments/expandIcon.png)) for the {{iks.ClusterName}} cluster.
+12.  Click the expand icon (![](_attachments/expandIcon.png)) for the {{iks.ClusterName}} cluster.
 
 ![](_attachments/wpScanningExpandIKS.png)
 
@@ -98,33 +94,39 @@ We can narrow the view to individual clusters and individual namespaces in a clu
 
 ![](_attachments/wpScanningExpandIKSrobot-shop.png)
 
+14. Click the **Images** tab.
+
+![](_attachments/wpscanningrobot-shopImagesTab.png)
+
 Notice there are images that failed the image scan test.
 
 ![](_attachments/wpScanningExpandIKSrobot-shopOverview.png)
 
-14. Click the **robotshop/rs-shipping** image.
+15.  Click the **robotshop/rs-shipping** image (you may need to scroll to the bottom of the page).
 
 ![](_attachments/wpScanningExpandIKSrobot-shopOverviewFirstFailed.png)
 
-15. Click the expand icon (![](_attachments/leftExpandIcon.png)) next to **DefaultPolicy**.
+16. Explore the **Overview** page.
 
-![](_attachments/wpScanningExpandIKSrobot-shopFailedDefaultPolicy.png)
+![](_attachments/wpScanningExpandIKSrobot-rs-shippingOverview2.png)
 
-In this case, the **Default Policy** is checking for specific vulnerabilities and Dockerfile instructions.
+17. Click the **Vulnerabilities** tab.
 
-16. Click **Operating System** under **Vulnerabilities**.
+![](_attachments/wpScanningExpandIKSrobot-rs-shippingOverview2vTab.png)
 
-![](_attachments/wpScanningExpandIKSrobot-shopOSVulnerabilities.png)
+18. Click **OS** in the **Vuln Type** drop-down list in the **Search** bar.
+
+![](_attachments/wpScanningExpandIKSrobot-rs-shippingVulSearch.png)
 
 We can view the vulnerabilities that are related to the **Operating System** (OS). Here we see all the vulnerabilities that are scanned and their Common Vulnerabilities and Exposures (CVE) ID.
 
-17. Click the **High** and **Has fix** filters.
+19. Change the search filter to show vulnerabilities where the **Severity** is greater than or equal to **Hight** and a fix is available.
 
-![](_attachments/wpScanningExpandIKSrobot-shopOSVulnerabilitiesFilters.png)
+![](_attachments/wpScanningExpandIKSrobot-rs-shippingVulSearch2.png)
 
 Filters can be used to narrow the view to vulnerabilities of certain severity and ones that have fixes that are available.
 
-18. Click the **CVE-2022-22822** (or any of the vulnerabilities in the view).
+20. Click the **CVE-2021-22945** (or any of the vulnerabilities in the view) vulnerability.
 
 ![](_attachments/wpScanningExpandIKSrobot-shopOSVulnerabilitiesFilteredFirst.png)
 
@@ -132,51 +134,17 @@ We can drill down into a specific vulnerability and view more details about the 
 
 ![](_attachments/wpScanningExpandIKSrobot-shopOSVulnerabilitiesDetails.png)
 
-SCC WP also scans for non-operating system vulnerabilities.
+Other SCC WP vulnerability detection capabilities include the ability to scan image registries and schedule and receive reports and alerts through channels like email and slack.
 
-19. Click **Non-operating System** under **Vulnerabilities**.
-
-![](_attachments/wpScanningExpandIKSrobot-shopNonOS.png)
-
-These scans look at the libraries added to the base image like Python and Java. 
-
-![](_attachments/wpScanningExpandIKSrobot-shopNonOSLog4J.png)
-
-We can see that this image still has the Log4j vulnerability. The Log4j library controls how applications log strings of code and information. The vulnerability enables an attacker to gain control over a string and trick the application into requesting and running malicious code under the attacker's control.
-
-20. Click **Java** under **Content**.
-
-![](_attachments/wpScanningExpandIKSrobot-shopJavaInventory.png)
-
-SCC WP also provides an inventory view of all the files that are associated with a package on the image.
-
-21. Hover over **Scanning** and click **Image Results**.
-
-![](_attachments/wpScanningImageResultsMenu.png)
-
-Here we see a view of all the images that are scanned and our current security posture.
-
-![](_attachments/wpScanningImageResults.png)
-
-Other SCC WP vulnerability detection capabilities include the ability to scan image registries and schedule and receive reports and alerts through channels like email and slack. It also can deploy an **Admission Controller** to enable policies that control what images can and cannot be deployed to a cluster. For example, you can specify a policy to allow images with high, medium, and low, but not critical vulnerabilities. 
-
-Information on these topics is available at the Sysdig documentation site:
-
-- <a href="https://docs.sysdig.com/en/docs/sysdig-secure/scanning/integrate-with-container-registries/" target="_blank">Registries</a>
-  
-- <a href="https://docs.sysdig.com/en/docs/sysdig-secure/scanning/manage-scanning-alerts/" target="_blank">Alerts</a>
-
-- <a href="https://docs.sysdig.com/en/docs/sysdig-secure/vulnerabilities/reporting/" target="_blank">Reports</a>
-
-- <a href="https://docs.sysdig.com/en/docs/sysdig-secure/scanning/admission-controller/" target="_blank">Admission Controller</a>
+Information on these topics is available at the Sysdig documentation site <a href="https://docs.sysdig.com/en/docs/sysdig-secure/vulnerabilities" target="_blank">here</a>.
 
 SCC WP also provides Infrastructure as Code (IaC) security capabilities through integration with Git.
 
-22. Hover over **Integrations** and then click **Git Integrations** in the left menu.
+21. Hover over **Integrations** and then click **Git Integrations** in the left menu.
 
 ![](_attachments/wpGitMenu.png)
 
-23. Click **Robot-shop**.
+22. Click **Robot-shop**.
 
 ![](_attachments/wpGitRobotShop.png)
 
@@ -184,7 +152,7 @@ Here you see the integration with the Git repository for the robot-shop cloud na
 
 With this integration, anytime a pull request is performed against the repository it is scanned for image vulnerabilities. If the scan fails, the pull request is blocked.
 
-24. Hover over **Policies** and then click **Runtime Policies**.
+23. Hover over **Policies** and then click **Runtime Policies**.
 
 ![](_attachments/wpPoliciesMenuRuntime.png)
 
@@ -192,57 +160,53 @@ SCC WP has standard runtime policies for kubernetes-based cloud native applicati
 
 These policies contain rules that detect known common threats or unexpected activities. SCC WP also allows clients to create custom policies.
 
-25.  Click **Sysdig Runtime Notable Events**.
+24. Scroll to the **Workload** section and click **Sysdig Runtime Notable Events**.
 
 ![](_attachments/wpPoliciesMenuRuntimeNotableEvents.png)
 
 This Notable Events policy contains rules that might indicate undesired behavior. 
 
-26.  Scroll through the list of rules and expand the **Terminal shell in container** rule.
+25.  Scroll through the list of rules and expand the **Terminal shell in container** rule.
 
 ![](_attachments/wpPoliciesMenuRuntimeNotableEventsExecRule.png)
 
 Recall in the configuration step you did the **exec into pod**. Doing so triggered an event for this rule. Shortly, we will examine the event in more detail, but first look at all the rules in SCC WP.
 
-27. Hover over **Policies** and then click **Rules** and then click **Rules Library**.
+26. Hover over **Policies** and then click **Rules** and then click **Rules Library**.
 
 ![](_attachments/wpPoliciesMenuRules.png)
 
 SCC WP has thousands of rules. The rules can be easily filtered by using tags. To view all the rules related to the MITRE ATT&CK (spelling is correct) framework, click one of the MITRE tags. Learn more about MITRE ATT&CK <a href="https://attack.mitre.org/" target="_blank">here</a>.
 
-28.  Hover over **Events** and then click **Events Feed**.
+27.  Hover over **Threats** and then click **Events Feed**.
 
 ![](_attachments/wpEventsMenu.png)
 
-29. Click the expand icon (![](_attachments/blueExpandIcon.png)) next to **Sysdig Runtime Notable Events**.
+28. Expand the **Sysdig Runtime Notable Events** entry in the **events** table.
 
 ![](_attachments/wpEventsExpand.png)
 
 If you don't see this event, you either did not complete the "Configure Workload Protection scenario" chapter of the demonstration guide, or you did so outside of the timeline that is currently displayed. Return to that chapter to have an event triggered or try adjusting the timeline at the bottom of the screen.
 
-![](_attachments/wpTimeFrame.png)
-
 The number of **Sysdig runtime Notable Events** might vary from the image above. As this is a shared environment, others might have caused this event to be triggered. It doesn't matter which specific event you explore in the steps that follow.
 
-30.  Click  **kubernetes.cluster.name** under one of the **Terminal shell in container** events.
+29.   Click on one of the **Terminal shell in container** events.
 
 ![](_attachments/wpEventsExpand2.png)
 
 The details of the event are displayed in the new window. Knowing the event was triggered is potentially cause for concern and warrants more investigation.
 
-31. Click **View Activity Audit**.
+30. Click **View Activity Audit**.
 
 ![](_attachments/wpEventsExpand2Details.png)
 
-!!! Question "BP Quiz Question"
-
-A new browser tab or window opens to the **Investigate** view in SCC WP for the selected event.
+A new browser tab or window opens to the **Activity Audit** view in SCC WP for the selected event.
 
 ![](_attachments/wpEventsInvestigate.png)
 
 The audit view provides insights into all the commands that were run during the event.
 
-32. Click the ![](_attachments/reconstructIcon.png) icon.
+31. Click the ![](_attachments/reconstructIcon.png) icon.
 
 ![](_attachments/wpEventsInvestigateReconstruct.png)
 
@@ -253,6 +217,10 @@ This new view shows all the activity that occurred during the event.
 While running the ```ps``` command is benign, what if you saw commands that copied and transferred sensitive data from the container? The **Activity Audit** can provide critical information about a malicious attack. The information can also be used to further identify more changes that should be made to the Kubernetes resources to prevent such attacks in the future.
 
 That wraps up this scenario. Again, as mentioned earlier, SCC WP has more capabilities that we did not cover today, but hopefully you have a better understanding of the power SCC WP has in protecting your cloud native workloads and improving your security posture.
+
+!!! Warning "Video that follows uses earlier version of Workload Protection"
+
+    In September 2024, the user interface for Workload Protection was updated. The previous steps and images were update to reflect these changes; however, the video below was not updated to reflect the new user interface. The video is retained to provide a sample flow and talking points that can still be utilized with the new interface.
 
 Watch a video of this scenario:
 
