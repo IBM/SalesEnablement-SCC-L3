@@ -68,6 +68,10 @@ The setup of SCC WP is not covered in this scenario, but you can learn more abou
 
 10. Click the **Open dashboard** button.
 
+!!! Danger "Workload Protection has changed!!!"
+
+    On September 3, 2024, the Workload Protection user interface has completely changed. We are investigating the changes and how they affect this demonstration guide. At this time, steps 11 - 21 cannot be completed as written. You are encouraged to explore the new interface on your own at this time.
+
 ![](_attachments/sccIntegrations.png)
 
 !!! Question "BP Quiz Question"
