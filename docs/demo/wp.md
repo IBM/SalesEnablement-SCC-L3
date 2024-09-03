@@ -100,7 +100,7 @@ Now is a good time to transition to looking at the additional details and insigh
 
     Notice there are images that failed the image scan test.
 
-![](_attachments/wpScanningExpandIKSrobot-shopOverview.png)
+    ![](_attachments/wpScanningExpandIKSrobot-shopOverview.png)
 
 15.  Click the **robotshop/rs-shipping** image (you may need to scroll to the bottom of the page).
 
@@ -180,7 +180,7 @@ SCC WP also provides Infrastructure as Code (IaC) security capabilities through 
 
 27.  Hover over **Threats** and then click **Events Feed**.
 
-![](_attachments/wpEventsMenu.png)
+    ![](_attachments/wpEventsMenu.png)
 
 28. Expand the **Sysdig Runtime Notable Events** entry in the **events** table.
 
