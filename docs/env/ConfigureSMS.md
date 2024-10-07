@@ -1,3 +1,7 @@
+!!! Bug "The pre-provisioned Event Notification instance is throwing an error when an attempt is made to edit the subscription."
+
+    A ticket has been opened with IBM Cloud on Oct. 7, 2024 for this issue. This message will be removed once the issue is resolved. Until then, you will NOT be able to complete this section. You are encouraged to read through the steps to understand the process.
+
 This is an optional task for the Level 3 learning plan requirements. 
 
 IBM Cloud Security and Compliance Center (SCC) can integrate with IBM Cloud Event Notifications, which is used to send notifications to users via email, SMS, or other supported notification channels (recall the **Notify me** toggle in the **Scan settings** page when creating an attachment). The ITZ environment for this demonstration guide is enabled with IBM Cloud Event Notifications. Step-by-step instructions for enabling SMS notifications to your personal mobile device are provided below. To learn about provisioning IBM Cloud Event Notifications and configuration SCC to use it, read the documentation <a href="https://cloud.ibm.com/docs/security-compliance?topic=security-compliance-event-notifications&interface=ui" target="_blank">here</a>.
