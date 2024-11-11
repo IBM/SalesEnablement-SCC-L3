@@ -839,10 +839,18 @@ It should only take about a minute to provision the VSI. Once the VSI shows the 
 <p>In the steps that follow, using a pre-provisioned instance of SCC, you create an <strong>attachment</strong> which scans for VSIs on VPCs in a single IBM Cloud resource group to see whether <strong>IP network spoofing</strong> is enabled. When the <strong>attachment</strong> is saved, the first scan will automatically be performed.  </p>
 <p>Recall in the scenario described earlier, we will show the failed compliance check (IP spoofing is disabled for all VSIs in VPCs), remediate the issue, and then rescan to show the compliance check is successful. It is important to understand that SCC cache's scan results for one hour. This means if you run the same scan within an hour of the last time the scan was run, a new scan is NOT performed and the old results are returned. This is important to remember when performing a client demonstration or if you are recording your Stand and Deliver. </p>
 <p>In the Client Demonstration section of this guide, you demonstrate how to view the scan results, remediate the issue, rerun the scan, and view the new results and the "drift" in compliance between the scans. More commentary is provided in that section of the guide. For now, follow the next steps to create the attachment and have the first scan run.</p>
+<div class="admonition warning">
+<p class="admonition-title">The IBM Cloud portal user interface recently changed.</p>
+<p>In October 2024, IBM Cloud made changes to the structure of resources in the portal. In step 9, an animated gif has been added to show where to locate the pre-provisioned SCC instance: SCC-L3. Other images have not been updated, but the structure should be similar once you locate the instance as illustrated in the animated gif.</p>
+</div>
 <ol start="9">
-<li>Navigate to the <strong>SCC Dashboard</strong> page in the IBM Cloud portal.</li>
+<li>
+<p>Navigate to the <strong>SCC Dashboard</strong> page in the IBM Cloud portal.</p>
+<p><img alt="" src="../_attachments/newSCCMenu.gif"></p>
+</li>
 </ol>
-<p><img alt="" src="../_attachments/vpcVSINetworkInterfaceReady.png"></p>
+<!-- ![](_attachments/vpcVSINetworkInterfaceReady.png) -->
+
 <ol start="10">
 <li>Click <strong>Attachments</strong> in the left-hand menu.</li>
 </ol>
