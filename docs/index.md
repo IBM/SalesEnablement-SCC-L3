@@ -1,4 +1,6 @@
 # {{guide.Name}}
+!!! warning "WARNING"
+    The agile nature of cloud means that the interface and layout of the IBM Cloud Portal, as well as the SCC offering, will change on a regular basis. Screenshots and videos captured within this documentation may not always reflect the latest view in IBM Cloud. The IBM Learning Content Development team strives to update these assets on a regular basis.
 
 Welcome to the demonstration guide for the {{learningplan.Name}} learning plan. In this Level 3 course, learn how to demonstrate IBM Cloud Security and Compliance Center (SCC) and IBM Cloud Security and Compliance Center Workload Protection (WP) to clients. 
 
