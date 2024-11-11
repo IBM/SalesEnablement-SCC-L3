@@ -140,9 +140,14 @@ Recall in the scenario described earlier, we will show the failed compliance che
 
 In the Client Demonstration section of this guide, you demonstrate how to view the scan results, remediate the issue, rerun the scan, and view the new results and the "drift" in compliance between the scans. More commentary is provided in that section of the guide. For now, follow the next steps to create the attachment and have the first scan run.
 
+!!! Warning "The IBM Cloud portal user interface recently changed."
+
+    In October 2024, IBM Cloud made changes to the structure of resources in the portal. In step 9, an animated gif has been added to show where to locate the pre-provisioned SCC instance: {{scc.Instance}}. Other images have not been updated, but the structure should be similar once you locate the instance as illustrated in the animated gif.
+
 9. Navigate to the **SCC Dashboard** page in the IBM Cloud portal.
 
-![](_attachments/vpcVSINetworkInterfaceReady.png)
+    ![](_attachments/newSCCMenu.gif)
+<!-- ![](_attachments/vpcVSINetworkInterfaceReady.png) -->
 
 10. Click **Attachments** in the left-hand menu.
 
